@@ -1,0 +1,6 @@
+TRANSLATE("AnalogOut is only 16 bits. Value must be less than 65536.")
+Q(deinit)
+Q(__enter__)
+Q(__exit__)
+Q(value)
+Q(AnalogOut)

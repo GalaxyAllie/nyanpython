@@ -1,0 +1,3 @@
+Q(mount)
+Q(umount)
+TRANSLATE("Cannot remount '/' when USB is active.")

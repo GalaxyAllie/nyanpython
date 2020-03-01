@@ -1,0 +1,8 @@
+Q(board)
+Q(microcontroller)
+Q(pin)
+Q(microcontroller)
+Q(pin)
+Q(Pin)
+TRANSLATE("Expected a %q")
+TRANSLATE("%q in use")
