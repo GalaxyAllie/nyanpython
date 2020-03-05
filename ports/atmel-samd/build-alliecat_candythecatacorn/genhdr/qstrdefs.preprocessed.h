@@ -7445,6 +7445,10 @@ Q(EACCES)
 
 Q(EAGAIN)
 
+Q(EAR_L)
+
+Q(EAR_R)
+
 Q(EEXIST)
 
 Q(EINVAL)
@@ -7468,6 +7472,8 @@ Q(EPERM)
 Q(EVEN)
 
 Q(EVEN)
+
+Q(EYE_CORNERS)
 
 Q(Ellipsis)
 
@@ -7603,6 +7609,8 @@ Q(PA09)
 
 Q(PA10)
 
+Q(PAWS)
+
 Q(PUSH_PULL)
 
 Q(PUSH_PULL)
@@ -7700,6 +7708,10 @@ Q(SyntaxError)
 Q(SystemExit)
 
 Q(SystemExit)
+
+Q(TAIL1)
+
+Q(TAIL2)
 
 Q(TX)
 
