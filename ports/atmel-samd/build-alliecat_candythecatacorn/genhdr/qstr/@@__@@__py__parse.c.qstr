@@ -1,3 +1,4 @@
+TRANSLATE("Name too long")
 Q(const)
 TRANSLATE("constant must be an integer")
 TRANSLATE("Unable to init parser")

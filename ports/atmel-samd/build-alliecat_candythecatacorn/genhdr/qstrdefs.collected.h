@@ -2294,6 +2294,8 @@ TRANSLATE("MicroPython NLR jump failed. Likely memory corruption.")
 
 TRANSLATE("MicroPython fatal error.")
 
+TRANSLATE("Name too long")
+
 TRANSLATE("No RX pin")
 
 TRANSLATE("No TX pin")
@@ -2740,6 +2742,8 @@ TRANSLATE("slice step cannot be zero")
 
 TRANSLATE("slice step cannot be zero")
 
+TRANSLATE("slice step cannot be zero")
+
 TRANSLATE("small int overflow")
 
 TRANSLATE("small int overflow")
@@ -2791,6 +2795,8 @@ TRANSLATE("tuple index out of range")
 TRANSLATE("tuple index out of range")
 
 TRANSLATE("tuple/list has wrong length")
+
+TRANSLATE("tx and rx cannot both be None")
 
 TRANSLATE("tx and rx cannot both be None")
 

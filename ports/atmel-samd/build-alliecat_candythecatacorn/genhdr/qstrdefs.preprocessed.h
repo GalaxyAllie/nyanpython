@@ -6682,11 +6682,11 @@ typedef long mp_off_t;
 # 180 "../../py/circuitpy_mpconfig.h"
 # 1 "boards/alliecat_candythecatacorn/mpconfigboard.h" 1
 # 181 "../../py/circuitpy_mpconfig.h" 2
-# 232 "../../py/circuitpy_mpconfig.h"
+# 235 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t analogio_module;
-# 295 "../../py/circuitpy_mpconfig.h"
+# 298 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t board_module;
-# 315 "../../py/circuitpy_mpconfig.h"
+# 318 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t busio_module;
 
 
@@ -6695,9 +6695,9 @@ extern const struct _mp_obj_module_t busio_module;
 
 
 extern const struct _mp_obj_module_t digitalio_module;
-# 382 "../../py/circuitpy_mpconfig.h"
+# 385 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t math_module;
-# 396 "../../py/circuitpy_mpconfig.h"
+# 399 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t microcontroller_module;
 
 
@@ -6706,15 +6706,15 @@ extern const struct _mp_obj_module_t microcontroller_module;
 
 
 extern const struct _mp_obj_module_t neopixel_write_module;
-# 428 "../../py/circuitpy_mpconfig.h"
+# 431 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t nvm_module;
 
 
 
 extern const struct _mp_obj_module_t os_module;
-# 455 "../../py/circuitpy_mpconfig.h"
+# 458 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t pulseio_module;
-# 469 "../../py/circuitpy_mpconfig.h"
+# 472 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t random_module;
 
 
@@ -6730,7 +6730,7 @@ extern const struct _mp_obj_module_t rotaryio_module;
 
 
 extern const struct _mp_obj_module_t rtc_module;
-# 504 "../../py/circuitpy_mpconfig.h"
+# 507 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t storage_module;
 
 
@@ -6753,9 +6753,9 @@ extern const struct _mp_obj_module_t supervisor_module;
 
 
 extern const struct _mp_obj_module_t time_module;
-# 534 "../../py/circuitpy_mpconfig.h"
+# 537 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t touchio_module;
-# 548 "../../py/circuitpy_mpconfig.h"
+# 551 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t usb_hid_module;
 
 
@@ -6764,7 +6764,7 @@ extern const struct _mp_obj_module_t usb_hid_module;
 
 
 extern const struct _mp_obj_module_t usb_midi_module;
-# 667 "../../py/circuitpy_mpconfig.h"
+# 676 "../../py/circuitpy_mpconfig.h"
 # 1 "/usr/arm-none-eabi/include/alloca.h" 1 3
 # 10 "/usr/arm-none-eabi/include/alloca.h" 3
 # 1 "/usr/arm-none-eabi/include/_ansi.h" 1 3
@@ -7212,7 +7212,7 @@ extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
 # 12 "/usr/arm-none-eabi/include/alloca.h" 2 3
-# 668 "../../py/circuitpy_mpconfig.h" 2
+# 677 "../../py/circuitpy_mpconfig.h" 2
 
 
 
@@ -7220,10 +7220,10 @@ void _reclaim_reent (struct _reent *);
 # 32 "../../supervisor/flash_root_pointers.h"
 # 1 "./supervisor/internal_flash_root_pointers.h" 1
 # 33 "../../supervisor/flash_root_pointers.h" 2
-# 672 "../../py/circuitpy_mpconfig.h" 2
-# 684 "../../py/circuitpy_mpconfig.h"
+# 681 "../../py/circuitpy_mpconfig.h" 2
+# 693 "../../py/circuitpy_mpconfig.h"
 
-# 684 "../../py/circuitpy_mpconfig.h"
+# 693 "../../py/circuitpy_mpconfig.h"
 void supervisor_run_background_tasks_if_tick(void);
 # 91 "./mpconfigport.h" 2
 # 224 "./mpconfigport.h"
@@ -7274,7 +7274,7 @@ uint8_t dma_transfer_status(uint8_t channel_number);
 DmacDescriptor* dma_descriptor(uint8_t channel_number);
 # 225 "./mpconfigport.h" 2
 # 46 "../../py/mpconfig.h" 2
-# 601 "../../py/mpconfig.h"
+# 606 "../../py/mpconfig.h"
 typedef float mp_float_t;
 # 28 "<stdin>" 2
 
@@ -9605,6 +9605,8 @@ TRANSLATE("MicroPython NLR jump failed. Likely memory corruption.")
 
 TRANSLATE("MicroPython fatal error.")
 
+TRANSLATE("Name too long")
+
 TRANSLATE("No RX pin")
 
 TRANSLATE("No TX pin")
@@ -10051,6 +10053,8 @@ TRANSLATE("slice step cannot be zero")
 
 TRANSLATE("slice step cannot be zero")
 
+TRANSLATE("slice step cannot be zero")
+
 TRANSLATE("small int overflow")
 
 TRANSLATE("small int overflow")
@@ -10102,6 +10106,8 @@ TRANSLATE("tuple index out of range")
 TRANSLATE("tuple index out of range")
 
 TRANSLATE("tuple/list has wrong length")
+
+TRANSLATE("tx and rx cannot both be None")
 
 TRANSLATE("tx and rx cannot both be None")
 
