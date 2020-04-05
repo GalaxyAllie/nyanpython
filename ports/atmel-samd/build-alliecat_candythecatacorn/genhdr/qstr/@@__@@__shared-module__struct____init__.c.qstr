@@ -1,0 +1,4 @@
+TRANSLATE("buffer too small")
+TRANSLATE("too many arguments provided with the given format")
+TRANSLATE("buffer size must match format")
+TRANSLATE("buffer too small")

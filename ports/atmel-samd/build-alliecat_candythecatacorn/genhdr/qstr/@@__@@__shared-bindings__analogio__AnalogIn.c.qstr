@@ -1,0 +1,6 @@
+Q(deinit)
+Q(__enter__)
+Q(__exit__)
+Q(value)
+Q(reference_voltage)
+Q(AnalogIn)

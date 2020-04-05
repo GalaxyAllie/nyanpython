@@ -1,0 +1,2 @@
+TRANSLATE("Both pins must support hardware interrupts")
+TRANSLATE("A hardware interrupt channel is already in use")

@@ -4,6 +4,7 @@ NyanPython
 This is a fork of Adafruit's CircuitPython, which is meant for the `Candy the Catacorn
 <https://github.com/MermaidAllie/Candy-the-Catacorn>`__ board. What follows below are the notes for CircuitPython, but please note this is **not** CircuitPython! This is a new fork of it, and attempts to remain CircuitPython-compatible.
 
+=======
 **original CircuitPython notes:**
 
 |Build Status| |Doc Status| |License| |Discord|

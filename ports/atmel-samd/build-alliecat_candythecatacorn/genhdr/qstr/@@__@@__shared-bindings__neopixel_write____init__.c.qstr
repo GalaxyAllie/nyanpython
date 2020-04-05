@@ -1,0 +1,4 @@
+TRANSLATE("Expected a %q")
+Q(__name__)
+Q(neopixel_write)
+Q(neopixel_write)

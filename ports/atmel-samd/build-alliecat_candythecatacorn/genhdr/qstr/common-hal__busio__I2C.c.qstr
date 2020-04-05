@@ -1,0 +1,3 @@
+TRANSLATE("Invalid pins")
+TRANSLATE("SDA or SCL needs a pull up")
+TRANSLATE("Unsupported baudrate")
