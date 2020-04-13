@@ -243,7 +243,7 @@ Linker script and memory map
                 0x0000000020007ff8                _estack = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x8)
                 0x0000000020007ffc                _bootloader_dbl_tap = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x4)
 
-.text           0x0000000000002000    0x2d5a4
+.text           0x0000000000002000    0x2d5ac
                 0x0000000000002000                . = ALIGN (0x4)
                 0x0000000000002000                _sfixed = .
  *(.vectors)
@@ -2874,2323 +2874,2325 @@ Linker script and memory map
  .rodata.f_mkfs.constprop.0.str1.1
                 0x0000000000025e2a       0x20 firmware.elf.lto.o
  .rodata.filesystem_init.str1.1
-                0x0000000000025e4a       0x47 firmware.elf.lto.o
-                                         0x4e (size before relaxing)
+                0x0000000000025e4a       0x4a firmware.elf.lto.o
+                                         0x51 (size before relaxing)
  .rodata.mscd_xfer_cb.str1.1
-                0x0000000000025e91       0x1e firmware.elf.lto.o
+                0x0000000000025e94       0x1e firmware.elf.lto.o
  .rodata.module_print.str1.1
-                0x0000000000025eaf       0x26 firmware.elf.lto.o
+                0x0000000000025eb2       0x26 firmware.elf.lto.o
  .rodata.instance_print.str1.1
-                0x0000000000025ed5       0x12 firmware.elf.lto.o
+                0x0000000000025ed8       0x12 firmware.elf.lto.o
  .rodata.dict_view_print.str1.1
-                0x0000000000025ee7        0x6 firmware.elf.lto.o
+                0x0000000000025eea        0x6 firmware.elf.lto.o
  .rodata.pulseio_pwmout_make_new.str1.1
-                0x0000000000025eed        0x4 firmware.elf.lto.o
+                0x0000000000025ef0        0x4 firmware.elf.lto.o
  .rodata.mp_lexer_to_next.str1.1
-                0x0000000000025ef1       0x41 firmware.elf.lto.o
+                0x0000000000025ef4       0x41 firmware.elf.lto.o
  .rodata.stat_dir_or_file.str1.1
-                0x0000000000025f32       0x41 firmware.elf.lto.o
+                0x0000000000025f35       0x41 firmware.elf.lto.o
                                           0x4 (size before relaxing)
  .rodata.readline.str1.1
-                0x0000000000025f32        0x8 firmware.elf.lto.o
+                0x0000000000025f35        0x8 firmware.elf.lto.o
                                          0x12 (size before relaxing)
  .rodata.float_print.str1.1
-                0x0000000000025f3a        0x8 firmware.elf.lto.o
+                0x0000000000025f3d        0x8 firmware.elf.lto.o
                                           0x3 (size before relaxing)
  .rodata.mp_obj_str_format_helper.str1.1
-                0x0000000000025f3a       0x15 firmware.elf.lto.o
+                0x0000000000025f3d       0x15 firmware.elf.lto.o
  .rodata.mp_builtin_help.str1.1
-                0x0000000000025f4f       0x3d firmware.elf.lto.o
+                0x0000000000025f52       0x3d firmware.elf.lto.o
                                          0x40 (size before relaxing)
  .rodata.mp_builtin___import__.str1.1
-                0x0000000000025f8c        0xc firmware.elf.lto.o
+                0x0000000000025f8f        0xc firmware.elf.lto.o
  .rodata.parse_compile_execute.str1.1
-                0x0000000000025f98        0x2 firmware.elf.lto.o
+                0x0000000000025f9b        0x2 firmware.elf.lto.o
  .rodata.run_boot_py.str1.1
-                0x0000000000025f9a       0x76 firmware.elf.lto.o
+                0x0000000000025f9d       0x76 firmware.elf.lto.o
  .rodata.main.str1.1
-                0x0000000000026010       0x74 firmware.elf.lto.o
+                0x0000000000026013       0x74 firmware.elf.lto.o
                                          0x89 (size before relaxing)
  .rodata.str1.1
-                0x0000000000026084     0x1838 firmware.elf.lto.o
+                0x0000000000026087     0x1838 firmware.elf.lto.o
                                        0x1868 (size before relaxing)
  .rodata.CSWTCH.205
-                0x00000000000278bc        0x9 firmware.elf.lto.o
+                0x00000000000278bf        0x9 firmware.elf.lto.o
  .rodata.CSWTCH.208
-                0x00000000000278c5        0xb firmware.elf.lto.o
+                0x00000000000278c8        0xb firmware.elf.lto.o
  .rodata.CSWTCH.213
-                0x00000000000278d0        0xc firmware.elf.lto.o
+                0x00000000000278d3        0xc firmware.elf.lto.o
+ *fill*         0x00000000000278df        0x1 
  .rodata.CSWTCH.5
-                0x00000000000278dc        0xc firmware.elf.lto.o
+                0x00000000000278e0        0xc firmware.elf.lto.o
  .rodata.CSWTCH.6
-                0x00000000000278e8        0xc firmware.elf.lto.o
- .rodata.ExCvt  0x00000000000278f4       0x80 firmware.elf.lto.o
+                0x00000000000278ec        0xc firmware.elf.lto.o
+ .rodata.ExCvt  0x00000000000278f8       0x80 firmware.elf.lto.o
  .rodata.LfnOfs
-                0x0000000000027974        0xd firmware.elf.lto.o
- *fill*         0x0000000000027981        0x3 
- .rodata.PIo2   0x0000000000027984       0x2c firmware.elf.lto.o
+                0x0000000000027978        0xd firmware.elf.lto.o
+ *fill*         0x0000000000027985        0x3 
+ .rodata.PIo2   0x0000000000027988       0x2c firmware.elf.lto.o
  .rodata.SERCOMx_GCLK_ID_CORE
-                0x00000000000279b0        0x4 firmware.elf.lto.o
- .rodata.SERCOMx_GCLK_ID_SLOW
                 0x00000000000279b4        0x4 firmware.elf.lto.o
- .rodata.Tbl    0x00000000000279b8      0x100 firmware.elf.lto.o
+ .rodata.SERCOMx_GCLK_ID_SLOW
+                0x00000000000279b8        0x4 firmware.elf.lto.o
+ .rodata.Tbl    0x00000000000279bc      0x100 firmware.elf.lto.o
  .rodata._usbd_driver
-                0x0000000000027ab8       0x80 firmware.elf.lto.o
+                0x0000000000027abc       0x80 firmware.elf.lto.o
  .rodata.allowed_args.12576
-                0x0000000000027b38       0x10 firmware.elf.lto.o
+                0x0000000000027b3c       0x10 firmware.elf.lto.o
  .rodata.allowed_args.12594.lto_priv.1
-                0x0000000000027b48       0x20 firmware.elf.lto.o
+                0x0000000000027b4c       0x20 firmware.elf.lto.o
  .rodata.allowed_args.12596
-                0x0000000000027b68       0x18 firmware.elf.lto.o
+                0x0000000000027b6c       0x18 firmware.elf.lto.o
  .rodata.allowed_args.12598
-                0x0000000000027b80        0x8 firmware.elf.lto.o
+                0x0000000000027b84        0x8 firmware.elf.lto.o
  .rodata.allowed_args.12625
-                0x0000000000027b88        0x8 firmware.elf.lto.o
+                0x0000000000027b8c        0x8 firmware.elf.lto.o
  .rodata.allowed_args.12805
-                0x0000000000027b90       0x10 firmware.elf.lto.o
+                0x0000000000027b94       0x10 firmware.elf.lto.o
  .rodata.allowed_args.12883
-                0x0000000000027ba0       0x20 firmware.elf.lto.o
+                0x0000000000027ba4       0x20 firmware.elf.lto.o
  .rodata.allowed_args.13005
-                0x0000000000027bc0       0x18 firmware.elf.lto.o
+                0x0000000000027bc4       0x18 firmware.elf.lto.o
  .rodata.allowed_args.13140
-                0x0000000000027bd8       0x10 firmware.elf.lto.o
+                0x0000000000027bdc       0x10 firmware.elf.lto.o
  .rodata.allowed_args.13152
-                0x0000000000027be8        0x8 firmware.elf.lto.o
+                0x0000000000027bec        0x8 firmware.elf.lto.o
  .rodata.allowed_args.13246
-                0x0000000000027bf0        0x8 firmware.elf.lto.o
+                0x0000000000027bf4        0x8 firmware.elf.lto.o
  .rodata.allowed_args.13264
-                0x0000000000027bf8       0x10 firmware.elf.lto.o
+                0x0000000000027bfc       0x10 firmware.elf.lto.o
  .rodata.allowed_args.13284
-                0x0000000000027c08       0x20 firmware.elf.lto.o
+                0x0000000000027c0c       0x20 firmware.elf.lto.o
  .rodata.allowed_args.14219
-                0x0000000000027c28       0x18 firmware.elf.lto.o
+                0x0000000000027c2c       0x18 firmware.elf.lto.o
  .rodata.allowed_args.14702
-                0x0000000000027c40       0x18 firmware.elf.lto.o
+                0x0000000000027c44       0x18 firmware.elf.lto.o
  .rodata.allowed_args.30024
-                0x0000000000027c58       0x20 firmware.elf.lto.o
+                0x0000000000027c5c       0x20 firmware.elf.lto.o
  .rodata.allowed_args.30073
-                0x0000000000027c78       0x18 firmware.elf.lto.o
+                0x0000000000027c7c       0x18 firmware.elf.lto.o
  .rodata.allowed_args.30085
-                0x0000000000027c90       0x20 firmware.elf.lto.o
+                0x0000000000027c94       0x20 firmware.elf.lto.o
  .rodata.allowed_args.30095
-                0x0000000000027cb0       0x60 firmware.elf.lto.o
+                0x0000000000027cb4       0x60 firmware.elf.lto.o
  .rodata.allowed_args.30104
-                0x0000000000027d10       0x20 firmware.elf.lto.o
+                0x0000000000027d14       0x20 firmware.elf.lto.o
  .rodata.allowed_args.30111
-                0x0000000000027d30       0x28 firmware.elf.lto.o
+                0x0000000000027d34       0x28 firmware.elf.lto.o
  .rodata.allowed_args.30128
-                0x0000000000027d58       0x38 firmware.elf.lto.o
+                0x0000000000027d5c       0x38 firmware.elf.lto.o
  .rodata.allowed_args.30130
-                0x0000000000027d90       0x18 firmware.elf.lto.o
+                0x0000000000027d94       0x18 firmware.elf.lto.o
  .rodata.allowed_args.30148
-                0x0000000000027da8       0x20 firmware.elf.lto.o
+                0x0000000000027dac       0x20 firmware.elf.lto.o
  .rodata.allowed_args.30168
-                0x0000000000027dc8       0x30 firmware.elf.lto.o
+                0x0000000000027dcc       0x30 firmware.elf.lto.o
  .rodata.analogio_analogin___exit___obj
-                0x0000000000027df8        0xc firmware.elf.lto.o
+                0x0000000000027dfc        0xc firmware.elf.lto.o
  .rodata.analogio_analogin_deinit_obj
-                0x0000000000027e04        0x8 firmware.elf.lto.o
+                0x0000000000027e08        0x8 firmware.elf.lto.o
  .rodata.analogio_analogin_get_reference_voltage_obj
-                0x0000000000027e0c        0x8 firmware.elf.lto.o
+                0x0000000000027e10        0x8 firmware.elf.lto.o
  .rodata.analogio_analogin_get_value_obj
-                0x0000000000027e14        0x8 firmware.elf.lto.o
+                0x0000000000027e18        0x8 firmware.elf.lto.o
  .rodata.analogio_analogin_locals_dict
-                0x0000000000027e1c       0x10 firmware.elf.lto.o
+                0x0000000000027e20       0x10 firmware.elf.lto.o
  .rodata.analogio_analogin_locals_dict_table
-                0x0000000000027e2c       0x28 firmware.elf.lto.o
+                0x0000000000027e30       0x28 firmware.elf.lto.o
  .rodata.analogio_analogin_reference_voltage_obj
-                0x0000000000027e54       0x10 firmware.elf.lto.o
+                0x0000000000027e58       0x10 firmware.elf.lto.o
  .rodata.analogio_analogin_type
-                0x0000000000027e64       0x3c firmware.elf.lto.o
+                0x0000000000027e68       0x3c firmware.elf.lto.o
  .rodata.analogio_analogin_value_obj
-                0x0000000000027ea0       0x10 firmware.elf.lto.o
+                0x0000000000027ea4       0x10 firmware.elf.lto.o
  .rodata.analogio_analogout___exit___obj
-                0x0000000000027eb0        0xc firmware.elf.lto.o
+                0x0000000000027eb4        0xc firmware.elf.lto.o
  .rodata.analogio_analogout_deinit_obj
-                0x0000000000027ebc        0x8 firmware.elf.lto.o
+                0x0000000000027ec0        0x8 firmware.elf.lto.o
  .rodata.analogio_analogout_locals_dict
-                0x0000000000027ec4       0x10 firmware.elf.lto.o
+                0x0000000000027ec8       0x10 firmware.elf.lto.o
  .rodata.analogio_analogout_locals_dict_table
-                0x0000000000027ed4       0x20 firmware.elf.lto.o
+                0x0000000000027ed8       0x20 firmware.elf.lto.o
  .rodata.analogio_analogout_set_value_obj
-                0x0000000000027ef4        0x8 firmware.elf.lto.o
+                0x0000000000027ef8        0x8 firmware.elf.lto.o
  .rodata.analogio_analogout_type
-                0x0000000000027efc       0x3c firmware.elf.lto.o
+                0x0000000000027f00       0x3c firmware.elf.lto.o
  .rodata.analogio_analogout_value_obj
-                0x0000000000027f38       0x10 firmware.elf.lto.o
+                0x0000000000027f3c       0x10 firmware.elf.lto.o
  .rodata.analogio_module
-                0x0000000000027f48        0x8 firmware.elf.lto.o
+                0x0000000000027f4c        0x8 firmware.elf.lto.o
  .rodata.analogio_module_globals
-                0x0000000000027f50       0x10 firmware.elf.lto.o
+                0x0000000000027f54       0x10 firmware.elf.lto.o
  .rodata.analogio_module_globals_table
-                0x0000000000027f60       0x18 firmware.elf.lto.o
+                0x0000000000027f64       0x18 firmware.elf.lto.o
  .rodata.array_append_obj
-                0x0000000000027f78        0x8 firmware.elf.lto.o
+                0x0000000000027f7c        0x8 firmware.elf.lto.o
  .rodata.array_extend_obj
-                0x0000000000027f80        0x8 firmware.elf.lto.o
+                0x0000000000027f84        0x8 firmware.elf.lto.o
  .rodata.array_it_type
-                0x0000000000027f88       0x3c firmware.elf.lto.o
+                0x0000000000027f8c       0x3c firmware.elf.lto.o
  .rodata.array_locals_dict
-                0x0000000000027fc4       0x10 firmware.elf.lto.o
+                0x0000000000027fc8       0x10 firmware.elf.lto.o
  .rodata.array_locals_dict_table
-                0x0000000000027fd4       0x10 firmware.elf.lto.o
+                0x0000000000027fd8       0x10 firmware.elf.lto.o
  .rodata.atanhi
-                0x0000000000027fe4       0x10 firmware.elf.lto.o
+                0x0000000000027fe8       0x10 firmware.elf.lto.o
  .rodata.atanlo
-                0x0000000000027ff4       0x10 firmware.elf.lto.o
- .rodata.attr   0x0000000000028004       0x80 firmware.elf.lto.o
+                0x0000000000027ff8       0x10 firmware.elf.lto.o
+ .rodata.attr   0x0000000000028008       0x80 firmware.elf.lto.o
  .rodata.badchr.11441
-                0x0000000000028084       0x10 firmware.elf.lto.o
+                0x0000000000028088       0x10 firmware.elf.lto.o
  .rodata.board_global_dict_table
-                0x0000000000028094       0xe8 firmware.elf.lto.o
+                0x0000000000028098       0xe8 firmware.elf.lto.o
  .rodata.board_i2c_obj
-                0x000000000002817c        0x8 firmware.elf.lto.o
+                0x0000000000028180        0x8 firmware.elf.lto.o
  .rodata.board_module
-                0x0000000000028184        0x8 firmware.elf.lto.o
+                0x0000000000028188        0x8 firmware.elf.lto.o
  .rodata.board_module_globals
-                0x000000000002818c       0x10 firmware.elf.lto.o
+                0x0000000000028190       0x10 firmware.elf.lto.o
  .rodata.board_spi_obj
-                0x000000000002819c        0x8 firmware.elf.lto.o
+                0x00000000000281a0        0x8 firmware.elf.lto.o
  .rodata.board_uart_obj
-                0x00000000000281a4        0x8 firmware.elf.lto.o
- .rodata.bp     0x00000000000281ac        0x8 firmware.elf.lto.o
+                0x00000000000281a8        0x8 firmware.elf.lto.o
+ .rodata.bp     0x00000000000281b0        0x8 firmware.elf.lto.o
  .rodata.busio_i2c___exit___obj
-                0x00000000000281b4        0xc firmware.elf.lto.o
+                0x00000000000281b8        0xc firmware.elf.lto.o
  .rodata.busio_i2c_deinit_obj
-                0x00000000000281c0        0x8 firmware.elf.lto.o
+                0x00000000000281c4        0x8 firmware.elf.lto.o
  .rodata.busio_i2c_locals_dict
-                0x00000000000281c8       0x10 firmware.elf.lto.o
+                0x00000000000281cc       0x10 firmware.elf.lto.o
  .rodata.busio_i2c_locals_dict_table
-                0x00000000000281d8       0x48 firmware.elf.lto.o
+                0x00000000000281dc       0x48 firmware.elf.lto.o
  .rodata.busio_i2c_readfrom_into_obj
-                0x0000000000028220        0xc firmware.elf.lto.o
+                0x0000000000028224        0xc firmware.elf.lto.o
  .rodata.busio_i2c_scan_obj
-                0x000000000002822c        0x8 firmware.elf.lto.o
+                0x0000000000028230        0x8 firmware.elf.lto.o
  .rodata.busio_i2c_try_lock_obj
-                0x0000000000028234        0x8 firmware.elf.lto.o
+                0x0000000000028238        0x8 firmware.elf.lto.o
  .rodata.busio_i2c_type
-                0x000000000002823c       0x3c firmware.elf.lto.o
+                0x0000000000028240       0x3c firmware.elf.lto.o
  .rodata.busio_i2c_unlock_obj
-                0x0000000000028278        0x8 firmware.elf.lto.o
+                0x000000000002827c        0x8 firmware.elf.lto.o
  .rodata.busio_i2c_writeto_obj
-                0x0000000000028280        0xc firmware.elf.lto.o
+                0x0000000000028284        0xc firmware.elf.lto.o
  .rodata.busio_i2c_writeto_then_readfrom_obj
-                0x000000000002828c        0xc firmware.elf.lto.o
+                0x0000000000028290        0xc firmware.elf.lto.o
  .rodata.busio_module
-                0x0000000000028298        0x8 firmware.elf.lto.o
+                0x000000000002829c        0x8 firmware.elf.lto.o
  .rodata.busio_module_globals
-                0x00000000000282a0       0x10 firmware.elf.lto.o
+                0x00000000000282a4       0x10 firmware.elf.lto.o
  .rodata.busio_module_globals_table
-                0x00000000000282b0       0x28 firmware.elf.lto.o
+                0x00000000000282b4       0x28 firmware.elf.lto.o
  .rodata.busio_onewire___exit___obj
-                0x00000000000282d8        0xc firmware.elf.lto.o
+                0x00000000000282dc        0xc firmware.elf.lto.o
  .rodata.busio_onewire_deinit_obj
-                0x00000000000282e4        0x8 firmware.elf.lto.o
+                0x00000000000282e8        0x8 firmware.elf.lto.o
  .rodata.busio_onewire_locals_dict
-                0x00000000000282ec       0x10 firmware.elf.lto.o
+                0x00000000000282f0       0x10 firmware.elf.lto.o
  .rodata.busio_onewire_locals_dict_table
-                0x00000000000282fc       0x30 firmware.elf.lto.o
+                0x0000000000028300       0x30 firmware.elf.lto.o
  .rodata.busio_onewire_read_bit_obj
-                0x000000000002832c        0x8 firmware.elf.lto.o
+                0x0000000000028330        0x8 firmware.elf.lto.o
  .rodata.busio_onewire_reset_obj
-                0x0000000000028334        0x8 firmware.elf.lto.o
+                0x0000000000028338        0x8 firmware.elf.lto.o
  .rodata.busio_onewire_type
-                0x000000000002833c       0x3c firmware.elf.lto.o
+                0x0000000000028340       0x3c firmware.elf.lto.o
  .rodata.busio_onewire_write_bit_obj
-                0x0000000000028378        0x8 firmware.elf.lto.o
+                0x000000000002837c        0x8 firmware.elf.lto.o
  .rodata.busio_spi_configure_obj
-                0x0000000000028380        0xc firmware.elf.lto.o
+                0x0000000000028384        0xc firmware.elf.lto.o
  .rodata.busio_spi_deinit_obj
-                0x000000000002838c        0x8 firmware.elf.lto.o
+                0x0000000000028390        0x8 firmware.elf.lto.o
  .rodata.busio_spi_frequency_obj
-                0x0000000000028394       0x10 firmware.elf.lto.o
+                0x0000000000028398       0x10 firmware.elf.lto.o
  .rodata.busio_spi_get_frequency_obj
-                0x00000000000283a4        0x8 firmware.elf.lto.o
+                0x00000000000283a8        0x8 firmware.elf.lto.o
  .rodata.busio_spi_locals_dict
-                0x00000000000283ac       0x10 firmware.elf.lto.o
+                0x00000000000283b0       0x10 firmware.elf.lto.o
  .rodata.busio_spi_locals_dict_table
-                0x00000000000283bc       0x50 firmware.elf.lto.o
+                0x00000000000283c0       0x50 firmware.elf.lto.o
  .rodata.busio_spi_obj___exit___obj
-                0x000000000002840c        0xc firmware.elf.lto.o
+                0x0000000000028410        0xc firmware.elf.lto.o
  .rodata.busio_spi_readinto_obj
-                0x0000000000028418        0xc firmware.elf.lto.o
+                0x000000000002841c        0xc firmware.elf.lto.o
  .rodata.busio_spi_try_lock_obj
-                0x0000000000028424        0x8 firmware.elf.lto.o
+                0x0000000000028428        0x8 firmware.elf.lto.o
  .rodata.busio_spi_type
-                0x000000000002842c       0x3c firmware.elf.lto.o
+                0x0000000000028430       0x3c firmware.elf.lto.o
  .rodata.busio_spi_unlock_obj
-                0x0000000000028468        0x8 firmware.elf.lto.o
+                0x000000000002846c        0x8 firmware.elf.lto.o
  .rodata.busio_spi_write_obj
-                0x0000000000028470        0xc firmware.elf.lto.o
+                0x0000000000028474        0xc firmware.elf.lto.o
  .rodata.busio_spi_write_readinto_obj
-                0x000000000002847c        0xc firmware.elf.lto.o
+                0x0000000000028480        0xc firmware.elf.lto.o
  .rodata.busio_uart___exit___obj
-                0x0000000000028488        0xc firmware.elf.lto.o
+                0x000000000002848c        0xc firmware.elf.lto.o
  .rodata.busio_uart_baudrate_obj
-                0x0000000000028494       0x10 firmware.elf.lto.o
+                0x0000000000028498       0x10 firmware.elf.lto.o
  .rodata.busio_uart_deinit_obj
-                0x00000000000284a4        0x8 firmware.elf.lto.o
+                0x00000000000284a8        0x8 firmware.elf.lto.o
  .rodata.busio_uart_get_baudrate_obj
-                0x00000000000284ac        0x8 firmware.elf.lto.o
+                0x00000000000284b0        0x8 firmware.elf.lto.o
  .rodata.busio_uart_get_in_waiting_obj
-                0x00000000000284b4        0x8 firmware.elf.lto.o
+                0x00000000000284b8        0x8 firmware.elf.lto.o
  .rodata.busio_uart_get_timeout_obj
-                0x00000000000284bc        0x8 firmware.elf.lto.o
+                0x00000000000284c0        0x8 firmware.elf.lto.o
  .rodata.busio_uart_in_waiting_obj
-                0x00000000000284c4       0x10 firmware.elf.lto.o
+                0x00000000000284c8       0x10 firmware.elf.lto.o
  .rodata.busio_uart_locals_dict
-                0x00000000000284d4       0x10 firmware.elf.lto.o
+                0x00000000000284d8       0x10 firmware.elf.lto.o
  .rodata.busio_uart_locals_dict_table
-                0x00000000000284e4       0x60 firmware.elf.lto.o
+                0x00000000000284e8       0x60 firmware.elf.lto.o
  .rodata.busio_uart_parity_even_obj
-                0x0000000000028544        0x4 firmware.elf.lto.o
+                0x0000000000028548        0x4 firmware.elf.lto.o
  .rodata.busio_uart_parity_locals_dict
-                0x0000000000028548       0x10 firmware.elf.lto.o
+                0x000000000002854c       0x10 firmware.elf.lto.o
  .rodata.busio_uart_parity_locals_dict_table
-                0x0000000000028558       0x10 firmware.elf.lto.o
+                0x000000000002855c       0x10 firmware.elf.lto.o
  .rodata.busio_uart_parity_odd_obj
-                0x0000000000028568        0x4 firmware.elf.lto.o
+                0x000000000002856c        0x4 firmware.elf.lto.o
  .rodata.busio_uart_parity_type
-                0x000000000002856c       0x3c firmware.elf.lto.o
+                0x0000000000028570       0x3c firmware.elf.lto.o
  .rodata.busio_uart_reset_input_buffer_obj
-                0x00000000000285a8        0x8 firmware.elf.lto.o
+                0x00000000000285ac        0x8 firmware.elf.lto.o
  .rodata.busio_uart_set_baudrate_obj
-                0x00000000000285b0        0x8 firmware.elf.lto.o
+                0x00000000000285b4        0x8 firmware.elf.lto.o
  .rodata.busio_uart_set_timeout_obj
-                0x00000000000285b8        0x8 firmware.elf.lto.o
+                0x00000000000285bc        0x8 firmware.elf.lto.o
  .rodata.busio_uart_timeout_obj
-                0x00000000000285c0       0x10 firmware.elf.lto.o
+                0x00000000000285c4       0x10 firmware.elf.lto.o
  .rodata.busio_uart_type
-                0x00000000000285d0       0x3c firmware.elf.lto.o
+                0x00000000000285d4       0x3c firmware.elf.lto.o
  .rodata.closure_type
-                0x000000000002860c       0x3c firmware.elf.lto.o
+                0x0000000000028610       0x3c firmware.elf.lto.o
  .rodata.common_hal_mcu_nvm_obj
-                0x0000000000028648        0xc firmware.elf.lto.o
+                0x000000000002864c        0xc firmware.elf.lto.o
  .rodata.common_hal_mcu_processor_obj
-                0x0000000000028654        0x4 firmware.elf.lto.o
- .rodata.common_hal_supervisor_runtime_obj
                 0x0000000000028658        0x4 firmware.elf.lto.o
+ .rodata.common_hal_supervisor_runtime_obj
+                0x000000000002865c        0x4 firmware.elf.lto.o
  .rodata.compile_function
-                0x000000000002865c       0xe0 firmware.elf.lto.o
+                0x0000000000028660       0xe0 firmware.elf.lto.o
  .rodata.cst.11462
-                0x000000000002873c        0xe firmware.elf.lto.o
+                0x0000000000028740        0xe firmware.elf.lto.o
  .rodata.cvt1.10620
-                0x000000000002874a      0x1f2 firmware.elf.lto.o
+                0x000000000002874e      0x1f2 firmware.elf.lto.o
  .rodata.cvt2.10621
-                0x000000000002893c       0xbc firmware.elf.lto.o
+                0x0000000000028940       0xbc firmware.elf.lto.o
  .rodata.days_in_month.12086
-                0x00000000000289f8        0xc firmware.elf.lto.o
+                0x00000000000289fc        0xc firmware.elf.lto.o
  .rodata.days_since_jan1
-                0x0000000000028a04       0x1a firmware.elf.lto.o
- *fill*         0x0000000000028a1e        0x2 
+                0x0000000000028a08       0x1a firmware.elf.lto.o
+ *fill*         0x0000000000028a22        0x2 
  .rodata.default___enter___obj
-                0x0000000000028a20        0x8 firmware.elf.lto.o
+                0x0000000000028a24        0x8 firmware.elf.lto.o
  .rodata.dict_clear_obj
-                0x0000000000028a28        0x8 firmware.elf.lto.o
+                0x0000000000028a2c        0x8 firmware.elf.lto.o
  .rodata.dict_copy_obj
-                0x0000000000028a30        0x8 firmware.elf.lto.o
+                0x0000000000028a34        0x8 firmware.elf.lto.o
  .rodata.dict_fromkeys_fun_obj
-                0x0000000000028a38        0xc firmware.elf.lto.o
+                0x0000000000028a3c        0xc firmware.elf.lto.o
  .rodata.dict_fromkeys_obj
-                0x0000000000028a44        0x8 firmware.elf.lto.o
+                0x0000000000028a48        0x8 firmware.elf.lto.o
  .rodata.dict_get_obj
-                0x0000000000028a4c        0xc firmware.elf.lto.o
+                0x0000000000028a50        0xc firmware.elf.lto.o
  .rodata.dict_items_obj
-                0x0000000000028a58        0x8 firmware.elf.lto.o
+                0x0000000000028a5c        0x8 firmware.elf.lto.o
  .rodata.dict_keys_obj
-                0x0000000000028a60        0x8 firmware.elf.lto.o
+                0x0000000000028a64        0x8 firmware.elf.lto.o
  .rodata.dict_locals_dict
-                0x0000000000028a68       0x10 firmware.elf.lto.o
+                0x0000000000028a6c       0x10 firmware.elf.lto.o
  .rodata.dict_locals_dict_table
-                0x0000000000028a78       0x70 firmware.elf.lto.o
+                0x0000000000028a7c       0x70 firmware.elf.lto.o
  .rodata.dict_pop_obj
-                0x0000000000028ae8        0xc firmware.elf.lto.o
+                0x0000000000028aec        0xc firmware.elf.lto.o
  .rodata.dict_popitem_obj
-                0x0000000000028af4        0x8 firmware.elf.lto.o
+                0x0000000000028af8        0x8 firmware.elf.lto.o
  .rodata.dict_setdefault_obj
-                0x0000000000028afc        0xc firmware.elf.lto.o
+                0x0000000000028b00        0xc firmware.elf.lto.o
  .rodata.dict_update_obj
-                0x0000000000028b08        0xc firmware.elf.lto.o
+                0x0000000000028b0c        0xc firmware.elf.lto.o
  .rodata.dict_values_obj
-                0x0000000000028b14        0x8 firmware.elf.lto.o
+                0x0000000000028b18        0x8 firmware.elf.lto.o
  .rodata.dict_view_it_type
-                0x0000000000028b1c       0x3c firmware.elf.lto.o
+                0x0000000000028b20       0x3c firmware.elf.lto.o
  .rodata.dict_view_type
-                0x0000000000028b58       0x3c firmware.elf.lto.o
+                0x0000000000028b5c       0x3c firmware.elf.lto.o
  .rodata.digitalio_digitalinout_deinit_obj
-                0x0000000000028b94        0x8 firmware.elf.lto.o
+                0x0000000000028b98        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_get_direction_obj
-                0x0000000000028b9c        0x8 firmware.elf.lto.o
+                0x0000000000028ba0        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_get_drive_mode_obj
-                0x0000000000028ba4        0x8 firmware.elf.lto.o
+                0x0000000000028ba8        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_get_pull_obj
-                0x0000000000028bac        0x8 firmware.elf.lto.o
+                0x0000000000028bb0        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_get_value_obj
-                0x0000000000028bb4        0x8 firmware.elf.lto.o
+                0x0000000000028bb8        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_locals_dict
-                0x0000000000028bbc       0x10 firmware.elf.lto.o
+                0x0000000000028bc0       0x10 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_locals_dict_table
-                0x0000000000028bcc       0x48 firmware.elf.lto.o
+                0x0000000000028bd0       0x48 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_obj___exit___obj
-                0x0000000000028c14        0xc firmware.elf.lto.o
+                0x0000000000028c18        0xc firmware.elf.lto.o
  .rodata.digitalio_digitalinout_set_direction_obj
-                0x0000000000028c20        0x8 firmware.elf.lto.o
+                0x0000000000028c24        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_set_drive_mode_obj
-                0x0000000000028c28        0x8 firmware.elf.lto.o
+                0x0000000000028c2c        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_set_pull_obj
-                0x0000000000028c30        0x8 firmware.elf.lto.o
+                0x0000000000028c34        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_set_value_obj
-                0x0000000000028c38        0x8 firmware.elf.lto.o
+                0x0000000000028c3c        0x8 firmware.elf.lto.o
  .rodata.digitalio_digitalinout_switch_to_input_obj
-                0x0000000000028c40        0xc firmware.elf.lto.o
+                0x0000000000028c44        0xc firmware.elf.lto.o
  .rodata.digitalio_digitalinout_switch_to_output_obj
-                0x0000000000028c4c        0xc firmware.elf.lto.o
+                0x0000000000028c50        0xc firmware.elf.lto.o
  .rodata.digitalio_digitalinout_type
-                0x0000000000028c58       0x3c firmware.elf.lto.o
+                0x0000000000028c5c       0x3c firmware.elf.lto.o
  .rodata.digitalio_digitalinout_value_obj
-                0x0000000000028c94       0x10 firmware.elf.lto.o
+                0x0000000000028c98       0x10 firmware.elf.lto.o
  .rodata.digitalio_digitalio_direction_obj
-                0x0000000000028ca4       0x10 firmware.elf.lto.o
+                0x0000000000028ca8       0x10 firmware.elf.lto.o
  .rodata.digitalio_digitalio_drive_mode_obj
-                0x0000000000028cb4       0x10 firmware.elf.lto.o
+                0x0000000000028cb8       0x10 firmware.elf.lto.o
  .rodata.digitalio_digitalio_pull_obj
-                0x0000000000028cc4       0x10 firmware.elf.lto.o
+                0x0000000000028cc8       0x10 firmware.elf.lto.o
  .rodata.digitalio_direction_input_obj
-                0x0000000000028cd4        0x4 firmware.elf.lto.o
+                0x0000000000028cd8        0x4 firmware.elf.lto.o
  .rodata.digitalio_direction_locals_dict
-                0x0000000000028cd8       0x10 firmware.elf.lto.o
+                0x0000000000028cdc       0x10 firmware.elf.lto.o
  .rodata.digitalio_direction_locals_dict_table
-                0x0000000000028ce8       0x10 firmware.elf.lto.o
+                0x0000000000028cec       0x10 firmware.elf.lto.o
  .rodata.digitalio_direction_output_obj
-                0x0000000000028cf8        0x4 firmware.elf.lto.o
+                0x0000000000028cfc        0x4 firmware.elf.lto.o
  .rodata.digitalio_direction_type
-                0x0000000000028cfc       0x3c firmware.elf.lto.o
+                0x0000000000028d00       0x3c firmware.elf.lto.o
  .rodata.digitalio_drive_mode_locals_dict
-                0x0000000000028d38       0x10 firmware.elf.lto.o
+                0x0000000000028d3c       0x10 firmware.elf.lto.o
  .rodata.digitalio_drive_mode_locals_dict_table
-                0x0000000000028d48       0x10 firmware.elf.lto.o
+                0x0000000000028d4c       0x10 firmware.elf.lto.o
  .rodata.digitalio_drive_mode_open_drain_obj
-                0x0000000000028d58        0x4 firmware.elf.lto.o
- .rodata.digitalio_drive_mode_push_pull_obj
                 0x0000000000028d5c        0x4 firmware.elf.lto.o
+ .rodata.digitalio_drive_mode_push_pull_obj
+                0x0000000000028d60        0x4 firmware.elf.lto.o
  .rodata.digitalio_drive_mode_type
-                0x0000000000028d60       0x3c firmware.elf.lto.o
+                0x0000000000028d64       0x3c firmware.elf.lto.o
  .rodata.digitalio_module
-                0x0000000000028d9c        0x8 firmware.elf.lto.o
+                0x0000000000028da0        0x8 firmware.elf.lto.o
  .rodata.digitalio_module_globals
-                0x0000000000028da4       0x10 firmware.elf.lto.o
+                0x0000000000028da8       0x10 firmware.elf.lto.o
  .rodata.digitalio_module_globals_table
-                0x0000000000028db4       0x28 firmware.elf.lto.o
+                0x0000000000028db8       0x28 firmware.elf.lto.o
  .rodata.digitalio_pull_down_obj
-                0x0000000000028ddc        0x4 firmware.elf.lto.o
+                0x0000000000028de0        0x4 firmware.elf.lto.o
  .rodata.digitalio_pull_locals_dict
-                0x0000000000028de0       0x10 firmware.elf.lto.o
+                0x0000000000028de4       0x10 firmware.elf.lto.o
  .rodata.digitalio_pull_locals_dict_table
-                0x0000000000028df0       0x10 firmware.elf.lto.o
+                0x0000000000028df4       0x10 firmware.elf.lto.o
  .rodata.digitalio_pull_type
-                0x0000000000028e00       0x3c firmware.elf.lto.o
+                0x0000000000028e04       0x3c firmware.elf.lto.o
  .rodata.digitalio_pull_up_obj
-                0x0000000000028e3c        0x4 firmware.elf.lto.o
- .rodata.dp_h   0x0000000000028e40        0x8 firmware.elf.lto.o
- .rodata.dp_l   0x0000000000028e48        0x8 firmware.elf.lto.o
+                0x0000000000028e40        0x4 firmware.elf.lto.o
+ .rodata.dp_h   0x0000000000028e44        0x8 firmware.elf.lto.o
+ .rodata.dp_l   0x0000000000028e4c        0x8 firmware.elf.lto.o
  .rodata.entry_table.13596
-                0x0000000000028e50      0x400 firmware.elf.lto.o
+                0x0000000000028e54      0x400 firmware.elf.lto.o
  .rodata.fat_vfs_chdir_obj
-                0x0000000000029250        0x8 firmware.elf.lto.o
+                0x0000000000029254        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_getcwd_obj
-                0x0000000000029258        0x8 firmware.elf.lto.o
+                0x000000000002925c        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_getlabel_obj
-                0x0000000000029260        0x8 firmware.elf.lto.o
+                0x0000000000029264        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_ilistdir_obj
-                0x0000000000029268        0xc firmware.elf.lto.o
+                0x000000000002926c        0xc firmware.elf.lto.o
  .rodata.fat_vfs_label_obj
-                0x0000000000029274       0x10 firmware.elf.lto.o
+                0x0000000000029278       0x10 firmware.elf.lto.o
  .rodata.fat_vfs_locals_dict
-                0x0000000000029284       0x10 firmware.elf.lto.o
+                0x0000000000029288       0x10 firmware.elf.lto.o
  .rodata.fat_vfs_locals_dict_table
-                0x0000000000029294       0x70 firmware.elf.lto.o
+                0x0000000000029298       0x70 firmware.elf.lto.o
  .rodata.fat_vfs_mkdir_obj
-                0x0000000000029304        0x8 firmware.elf.lto.o
+                0x0000000000029308        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_mkfs_fun_obj
-                0x000000000002930c        0x8 firmware.elf.lto.o
+                0x0000000000029310        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_mkfs_obj
-                0x0000000000029314        0x8 firmware.elf.lto.o
+                0x0000000000029318        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_open_obj
-                0x000000000002931c        0x8 firmware.elf.lto.o
+                0x0000000000029320        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_proto
-                0x0000000000029324        0x8 firmware.elf.lto.o
+                0x0000000000029328        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_remove_obj
-                0x000000000002932c        0x8 firmware.elf.lto.o
+                0x0000000000029330        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_rename_obj
-                0x0000000000029334        0x8 firmware.elf.lto.o
+                0x0000000000029338        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_rmdir_obj
-                0x000000000002933c        0x8 firmware.elf.lto.o
+                0x0000000000029340        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_setlabel_obj
-                0x0000000000029344        0x8 firmware.elf.lto.o
+                0x0000000000029348        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_stat_obj
-                0x000000000002934c        0x8 firmware.elf.lto.o
+                0x0000000000029350        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_statvfs_obj
-                0x0000000000029354        0x8 firmware.elf.lto.o
+                0x0000000000029358        0x8 firmware.elf.lto.o
  .rodata.fat_vfs_umount_obj
-                0x000000000002935c        0x8 firmware.elf.lto.o
+                0x0000000000029360        0x8 firmware.elf.lto.o
  .rodata.file_obj___exit___obj
-                0x0000000000029364        0xc firmware.elf.lto.o
+                0x0000000000029368        0xc firmware.elf.lto.o
  .rodata.file_open_args
-                0x0000000000029370       0x18 firmware.elf.lto.o
+                0x0000000000029374       0x18 firmware.elf.lto.o
  .rodata.fileio_stream_p
-                0x0000000000029388       0x14 firmware.elf.lto.o
+                0x000000000002938c       0x14 firmware.elf.lto.o
  .rodata.fresult_to_errno_table
-                0x000000000002939c       0x14 firmware.elf.lto.o
+                0x00000000000293a0       0x14 firmware.elf.lto.o
  .rodata.g_neg_pow
-                0x00000000000293b0       0x18 firmware.elf.lto.o
+                0x00000000000293b4       0x18 firmware.elf.lto.o
  .rodata.g_pos_pow
-                0x00000000000293c8       0x18 firmware.elf.lto.o
+                0x00000000000293cc       0x18 firmware.elf.lto.o
  .rodata.gc_collect_obj
-                0x00000000000293e0        0x8 firmware.elf.lto.o
+                0x00000000000293e4        0x8 firmware.elf.lto.o
  .rodata.gc_disable_obj
-                0x00000000000293e8        0x8 firmware.elf.lto.o
+                0x00000000000293ec        0x8 firmware.elf.lto.o
  .rodata.gc_enable_obj
-                0x00000000000293f0        0x8 firmware.elf.lto.o
+                0x00000000000293f4        0x8 firmware.elf.lto.o
  .rodata.gc_isenabled_obj
-                0x00000000000293f8        0x8 firmware.elf.lto.o
+                0x00000000000293fc        0x8 firmware.elf.lto.o
  .rodata.gc_mem_alloc_obj
-                0x0000000000029400        0x8 firmware.elf.lto.o
+                0x0000000000029404        0x8 firmware.elf.lto.o
  .rodata.gc_mem_free_obj
-                0x0000000000029408        0x8 firmware.elf.lto.o
+                0x000000000002940c        0x8 firmware.elf.lto.o
  .rodata.gen_instance_close_obj
-                0x0000000000029410        0x8 firmware.elf.lto.o
+                0x0000000000029414        0x8 firmware.elf.lto.o
  .rodata.gen_instance_locals_dict
-                0x0000000000029418       0x10 firmware.elf.lto.o
+                0x000000000002941c       0x10 firmware.elf.lto.o
  .rodata.gen_instance_locals_dict_table
-                0x0000000000029428       0x20 firmware.elf.lto.o
+                0x000000000002942c       0x20 firmware.elf.lto.o
  .rodata.gen_instance_pend_throw_obj
-                0x0000000000029448        0x8 firmware.elf.lto.o
+                0x000000000002944c        0x8 firmware.elf.lto.o
  .rodata.gen_instance_send_obj
-                0x0000000000029450        0x8 firmware.elf.lto.o
+                0x0000000000029454        0x8 firmware.elf.lto.o
  .rodata.gen_instance_throw_obj
-                0x0000000000029458        0xc firmware.elf.lto.o
- .rodata.half   0x0000000000029464        0x8 firmware.elf.lto.o
+                0x000000000002945c        0xc firmware.elf.lto.o
+ .rodata.half   0x0000000000029468        0x8 firmware.elf.lto.o
  .rodata.hash_allocation_sizes
-                0x000000000002946c       0x44 firmware.elf.lto.o
+                0x0000000000029470       0x44 firmware.elf.lto.o
  .rodata.hid_report_descriptor
-                0x00000000000294b0       0xc3 firmware.elf.lto.o
- *fill*         0x0000000000029573        0x1 
+                0x00000000000294b4       0xc3 firmware.elf.lto.o
+ *fill*         0x0000000000029577        0x1 
  .rodata.impl_fields
-                0x0000000000029574        0x8 firmware.elf.lto.o
+                0x0000000000029578        0x8 firmware.elf.lto.o
  .rodata.import_str.12807
-                0x000000000002957c        0x8 firmware.elf.lto.o
+                0x0000000000029580        0x8 firmware.elf.lto.o
  .rodata.int_from_bytes_fun_obj
-                0x0000000000029584        0xc firmware.elf.lto.o
+                0x0000000000029588        0xc firmware.elf.lto.o
  .rodata.int_from_bytes_obj
-                0x0000000000029590        0x8 firmware.elf.lto.o
+                0x0000000000029594        0x8 firmware.elf.lto.o
  .rodata.int_locals_dict
-                0x0000000000029598       0x10 firmware.elf.lto.o
+                0x000000000002959c       0x10 firmware.elf.lto.o
  .rodata.int_locals_dict_table
-                0x00000000000295a8       0x10 firmware.elf.lto.o
+                0x00000000000295ac       0x10 firmware.elf.lto.o
  .rodata.int_to_bytes_obj
-                0x00000000000295b8        0xc firmware.elf.lto.o
+                0x00000000000295bc        0xc firmware.elf.lto.o
  .rodata.it_type
-                0x00000000000295c4       0x3c firmware.elf.lto.o
+                0x00000000000295c8       0x3c firmware.elf.lto.o
  .rodata.language_id
-                0x0000000000029600        0x4 firmware.elf.lto.o
+                0x0000000000029604        0x4 firmware.elf.lto.o
  .rodata.lengths
-                0x0000000000029604        0xf firmware.elf.lto.o
- *fill*         0x0000000000029613        0x1 
+                0x0000000000029608        0xf firmware.elf.lto.o
+ *fill*         0x0000000000029617        0x1 
  .rodata.list_append_obj
-                0x0000000000029614        0x8 firmware.elf.lto.o
+                0x0000000000029618        0x8 firmware.elf.lto.o
  .rodata.list_clear_obj
-                0x000000000002961c        0x8 firmware.elf.lto.o
+                0x0000000000029620        0x8 firmware.elf.lto.o
  .rodata.list_copy_obj
-                0x0000000000029624        0x8 firmware.elf.lto.o
+                0x0000000000029628        0x8 firmware.elf.lto.o
  .rodata.list_count_obj
-                0x000000000002962c        0x8 firmware.elf.lto.o
+                0x0000000000029630        0x8 firmware.elf.lto.o
  .rodata.list_extend_obj
-                0x0000000000029634        0x8 firmware.elf.lto.o
+                0x0000000000029638        0x8 firmware.elf.lto.o
  .rodata.list_index_obj
-                0x000000000002963c        0xc firmware.elf.lto.o
+                0x0000000000029640        0xc firmware.elf.lto.o
  .rodata.list_insert_obj
-                0x0000000000029648        0x8 firmware.elf.lto.o
+                0x000000000002964c        0x8 firmware.elf.lto.o
  .rodata.list_locals_dict
-                0x0000000000029650       0x10 firmware.elf.lto.o
+                0x0000000000029654       0x10 firmware.elf.lto.o
  .rodata.list_locals_dict_table
-                0x0000000000029660       0x58 firmware.elf.lto.o
+                0x0000000000029664       0x58 firmware.elf.lto.o
  .rodata.list_pop_obj
-                0x00000000000296b8        0xc firmware.elf.lto.o
+                0x00000000000296bc        0xc firmware.elf.lto.o
  .rodata.list_remove_obj
-                0x00000000000296c4        0x8 firmware.elf.lto.o
+                0x00000000000296c8        0x8 firmware.elf.lto.o
  .rodata.list_reverse_obj
-                0x00000000000296cc        0x8 firmware.elf.lto.o
+                0x00000000000296d0        0x8 firmware.elf.lto.o
  .rodata.list_sort_obj
-                0x00000000000296d4        0xc firmware.elf.lto.o
+                0x00000000000296d8        0xc firmware.elf.lto.o
  .rodata.log_base2_floor
-                0x00000000000296e0       0x10 firmware.elf.lto.o
+                0x00000000000296e4       0x10 firmware.elf.lto.o
  .rodata.math_module
-                0x00000000000296f0        0x8 firmware.elf.lto.o
+                0x00000000000296f4        0x8 firmware.elf.lto.o
  .rodata.mcu_delay_us_obj
-                0x00000000000296f8        0x8 firmware.elf.lto.o
+                0x00000000000296fc        0x8 firmware.elf.lto.o
  .rodata.mcu_disable_interrupts_obj
-                0x0000000000029700        0x8 firmware.elf.lto.o
+                0x0000000000029704        0x8 firmware.elf.lto.o
  .rodata.mcu_enable_interrupts_obj
-                0x0000000000029708        0x8 firmware.elf.lto.o
+                0x000000000002970c        0x8 firmware.elf.lto.o
  .rodata.mcu_module_globals
-                0x0000000000029710       0x10 firmware.elf.lto.o
+                0x0000000000029714       0x10 firmware.elf.lto.o
  .rodata.mcu_module_globals_table
-                0x0000000000029720       0x60 firmware.elf.lto.o
+                0x0000000000029724       0x60 firmware.elf.lto.o
  .rodata.mcu_on_next_reset_obj
-                0x0000000000029780        0x8 firmware.elf.lto.o
+                0x0000000000029784        0x8 firmware.elf.lto.o
  .rodata.mcu_pin_global_dict_table
-                0x0000000000029788       0x48 firmware.elf.lto.o
+                0x000000000002978c       0x48 firmware.elf.lto.o
  .rodata.mcu_pin_globals
-                0x00000000000297d0       0x10 firmware.elf.lto.o
+                0x00000000000297d4       0x10 firmware.elf.lto.o
  .rodata.mcu_pin_module
-                0x00000000000297e0        0x8 firmware.elf.lto.o
+                0x00000000000297e4        0x8 firmware.elf.lto.o
  .rodata.mcu_pin_type
-                0x00000000000297e8       0x3c firmware.elf.lto.o
+                0x00000000000297ec       0x3c firmware.elf.lto.o
  .rodata.mcu_processor_frequency_obj
-                0x0000000000029824       0x10 firmware.elf.lto.o
+                0x0000000000029828       0x10 firmware.elf.lto.o
  .rodata.mcu_processor_get_frequency_obj
-                0x0000000000029834        0x8 firmware.elf.lto.o
+                0x0000000000029838        0x8 firmware.elf.lto.o
  .rodata.mcu_processor_get_temperature_obj
-                0x000000000002983c        0x8 firmware.elf.lto.o
+                0x0000000000029840        0x8 firmware.elf.lto.o
  .rodata.mcu_processor_get_uid_obj
-                0x0000000000029844        0x8 firmware.elf.lto.o
+                0x0000000000029848        0x8 firmware.elf.lto.o
  .rodata.mcu_processor_get_voltage_obj
-                0x000000000002984c        0x8 firmware.elf.lto.o
+                0x0000000000029850        0x8 firmware.elf.lto.o
  .rodata.mcu_processor_locals_dict
-                0x0000000000029854       0x10 firmware.elf.lto.o
+                0x0000000000029858       0x10 firmware.elf.lto.o
  .rodata.mcu_processor_locals_dict_table
-                0x0000000000029864       0x20 firmware.elf.lto.o
+                0x0000000000029868       0x20 firmware.elf.lto.o
  .rodata.mcu_processor_temperature_obj
-                0x0000000000029884       0x10 firmware.elf.lto.o
+                0x0000000000029888       0x10 firmware.elf.lto.o
  .rodata.mcu_processor_type
-                0x0000000000029894       0x3c firmware.elf.lto.o
+                0x0000000000029898       0x3c firmware.elf.lto.o
  .rodata.mcu_processor_uid_obj
-                0x00000000000298d0       0x10 firmware.elf.lto.o
+                0x00000000000298d4       0x10 firmware.elf.lto.o
  .rodata.mcu_processor_voltage_obj
-                0x00000000000298e0       0x10 firmware.elf.lto.o
+                0x00000000000298e4       0x10 firmware.elf.lto.o
  .rodata.mcu_reset_obj
-                0x00000000000298f0        0x8 firmware.elf.lto.o
+                0x00000000000298f4        0x8 firmware.elf.lto.o
  .rodata.mcu_runmode_bootloader_obj
-                0x00000000000298f8        0x4 firmware.elf.lto.o
+                0x00000000000298fc        0x4 firmware.elf.lto.o
  .rodata.mcu_runmode_locals_dict
-                0x00000000000298fc       0x10 firmware.elf.lto.o
+                0x0000000000029900       0x10 firmware.elf.lto.o
  .rodata.mcu_runmode_locals_dict_table
-                0x000000000002990c       0x18 firmware.elf.lto.o
+                0x0000000000029910       0x18 firmware.elf.lto.o
  .rodata.mcu_runmode_normal_obj
-                0x0000000000029924        0x4 firmware.elf.lto.o
- .rodata.mcu_runmode_safe_mode_obj
                 0x0000000000029928        0x4 firmware.elf.lto.o
+ .rodata.mcu_runmode_safe_mode_obj
+                0x000000000002992c        0x4 firmware.elf.lto.o
  .rodata.mcu_runmode_type
-                0x000000000002992c       0x3c firmware.elf.lto.o
+                0x0000000000029930       0x3c firmware.elf.lto.o
  .rodata.microcontroller_module
-                0x0000000000029968        0x8 firmware.elf.lto.o
+                0x000000000002996c        0x8 firmware.elf.lto.o
  .rodata.mp_binary_op_method_name
-                0x0000000000029970       0x23 firmware.elf.lto.o
- *fill*         0x0000000000029993        0x1 
+                0x0000000000029974       0x23 firmware.elf.lto.o
+ *fill*         0x0000000000029997        0x1 
  .rodata.mp_builtin___build_class___obj
-                0x0000000000029994        0xc firmware.elf.lto.o
+                0x0000000000029998        0xc firmware.elf.lto.o
  .rodata.mp_builtin___import___obj
-                0x00000000000299a0        0xc firmware.elf.lto.o
+                0x00000000000299a4        0xc firmware.elf.lto.o
  .rodata.mp_builtin___repl_print___obj
-                0x00000000000299ac        0x8 firmware.elf.lto.o
+                0x00000000000299b0        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_abs_obj
-                0x00000000000299b4        0x8 firmware.elf.lto.o
+                0x00000000000299b8        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_all_obj
-                0x00000000000299bc        0x8 firmware.elf.lto.o
+                0x00000000000299c0        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_any_obj
-                0x00000000000299c4        0x8 firmware.elf.lto.o
+                0x00000000000299c8        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_bin_obj
-                0x00000000000299cc        0x8 firmware.elf.lto.o
+                0x00000000000299d0        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_callable_obj
-                0x00000000000299d4        0x8 firmware.elf.lto.o
+                0x00000000000299d8        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_chr_obj
-                0x00000000000299dc        0x8 firmware.elf.lto.o
+                0x00000000000299e0        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_dir_obj
-                0x00000000000299e4        0xc firmware.elf.lto.o
+                0x00000000000299e8        0xc firmware.elf.lto.o
  .rodata.mp_builtin_divmod_obj
-                0x00000000000299f0        0x8 firmware.elf.lto.o
+                0x00000000000299f4        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_eval_obj
-                0x00000000000299f8        0xc firmware.elf.lto.o
+                0x00000000000299fc        0xc firmware.elf.lto.o
  .rodata.mp_builtin_exec_obj
-                0x0000000000029a04        0xc firmware.elf.lto.o
+                0x0000000000029a08        0xc firmware.elf.lto.o
  .rodata.mp_builtin_getattr_obj
-                0x0000000000029a10        0xc firmware.elf.lto.o
+                0x0000000000029a14        0xc firmware.elf.lto.o
  .rodata.mp_builtin_globals_obj
-                0x0000000000029a1c        0x8 firmware.elf.lto.o
+                0x0000000000029a20        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_hasattr_obj
-                0x0000000000029a24        0x8 firmware.elf.lto.o
+                0x0000000000029a28        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_hash_obj
-                0x0000000000029a2c        0x8 firmware.elf.lto.o
+                0x0000000000029a30        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_help_obj
-                0x0000000000029a34        0xc firmware.elf.lto.o
+                0x0000000000029a38        0xc firmware.elf.lto.o
  .rodata.mp_builtin_hex_obj
-                0x0000000000029a40        0x8 firmware.elf.lto.o
+                0x0000000000029a44        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_id_obj
-                0x0000000000029a48        0x8 firmware.elf.lto.o
+                0x0000000000029a4c        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_input_obj
-                0x0000000000029a50        0xc firmware.elf.lto.o
+                0x0000000000029a54        0xc firmware.elf.lto.o
  .rodata.mp_builtin_isinstance_obj
-                0x0000000000029a5c        0x8 firmware.elf.lto.o
+                0x0000000000029a60        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_issubclass_obj
-                0x0000000000029a64        0x8 firmware.elf.lto.o
+                0x0000000000029a68        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_iter_obj
-                0x0000000000029a6c        0x8 firmware.elf.lto.o
+                0x0000000000029a70        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_len_obj
-                0x0000000000029a74        0x8 firmware.elf.lto.o
+                0x0000000000029a78        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_locals_obj
-                0x0000000000029a7c        0x8 firmware.elf.lto.o
+                0x0000000000029a80        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_max_obj
-                0x0000000000029a84        0xc firmware.elf.lto.o
+                0x0000000000029a88        0xc firmware.elf.lto.o
  .rodata.mp_builtin_min_obj
-                0x0000000000029a90        0xc firmware.elf.lto.o
+                0x0000000000029a94        0xc firmware.elf.lto.o
  .rodata.mp_builtin_module_map
-                0x0000000000029a9c        0xc firmware.elf.lto.o
+                0x0000000000029aa0        0xc firmware.elf.lto.o
  .rodata.mp_builtin_module_table
-                0x0000000000029aa8       0xd0 firmware.elf.lto.o
+                0x0000000000029aac       0xd0 firmware.elf.lto.o
  .rodata.mp_builtin_next_obj
-                0x0000000000029b78        0x8 firmware.elf.lto.o
+                0x0000000000029b7c        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_oct_obj
-                0x0000000000029b80        0x8 firmware.elf.lto.o
+                0x0000000000029b84        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_ord_obj
-                0x0000000000029b88        0x8 firmware.elf.lto.o
+                0x0000000000029b8c        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_pow_obj
-                0x0000000000029b90        0xc firmware.elf.lto.o
+                0x0000000000029b94        0xc firmware.elf.lto.o
  .rodata.mp_builtin_print_obj
-                0x0000000000029b9c        0xc firmware.elf.lto.o
+                0x0000000000029ba0        0xc firmware.elf.lto.o
  .rodata.mp_builtin_repr_obj
-                0x0000000000029ba8        0x8 firmware.elf.lto.o
+                0x0000000000029bac        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_round_obj
-                0x0000000000029bb0        0xc firmware.elf.lto.o
+                0x0000000000029bb4        0xc firmware.elf.lto.o
  .rodata.mp_builtin_setattr_obj
-                0x0000000000029bbc        0x8 firmware.elf.lto.o
+                0x0000000000029bc0        0x8 firmware.elf.lto.o
  .rodata.mp_builtin_sorted_obj
-                0x0000000000029bc4        0xc firmware.elf.lto.o
+                0x0000000000029bc8        0xc firmware.elf.lto.o
  .rodata.mp_builtin_sum_obj
-                0x0000000000029bd0        0xc firmware.elf.lto.o
+                0x0000000000029bd4        0xc firmware.elf.lto.o
  .rodata.mp_const_GeneratorExit_obj
-                0x0000000000029bdc       0x10 firmware.elf.lto.o
+                0x0000000000029be0       0x10 firmware.elf.lto.o
  .rodata.mp_const_ellipsis_obj
-                0x0000000000029bec        0x8 firmware.elf.lto.o
+                0x0000000000029bf0        0x8 firmware.elf.lto.o
  .rodata.mp_const_empty_bytes_obj
-                0x0000000000029bf4       0x10 firmware.elf.lto.o
+                0x0000000000029bf8       0x10 firmware.elf.lto.o
  .rodata.mp_const_empty_map
-                0x0000000000029c04        0xc firmware.elf.lto.o
+                0x0000000000029c08        0xc firmware.elf.lto.o
  .rodata.mp_const_empty_tuple_obj
-                0x0000000000029c10        0x8 firmware.elf.lto.o
+                0x0000000000029c14        0x8 firmware.elf.lto.o
  .rodata.mp_const_false_obj
-                0x0000000000029c18        0x8 firmware.elf.lto.o
+                0x0000000000029c1c        0x8 firmware.elf.lto.o
  .rodata.mp_const_none_obj
-                0x0000000000029c20        0x4 firmware.elf.lto.o
+                0x0000000000029c24        0x4 firmware.elf.lto.o
  .rodata.mp_const_true_obj
-                0x0000000000029c24        0x8 firmware.elf.lto.o
+                0x0000000000029c28        0x8 firmware.elf.lto.o
  .rodata.mp_constants_map
-                0x0000000000029c2c        0xc firmware.elf.lto.o
+                0x0000000000029c30        0xc firmware.elf.lto.o
  .rodata.mp_constants_table
-                0x0000000000029c38        0x0 firmware.elf.lto.o
+                0x0000000000029c3c        0x0 firmware.elf.lto.o
  .rodata.mp_dict_view_names
-                0x0000000000029c38        0xc firmware.elf.lto.o
+                0x0000000000029c3c        0xc firmware.elf.lto.o
  .rodata.mp_emit_bc_method_table_delete_id_ops
-                0x0000000000029c44        0x8 firmware.elf.lto.o
+                0x0000000000029c48        0x8 firmware.elf.lto.o
  .rodata.mp_emit_bc_method_table_load_id_ops
-                0x0000000000029c4c        0x8 firmware.elf.lto.o
+                0x0000000000029c50        0x8 firmware.elf.lto.o
  .rodata.mp_emit_bc_method_table_store_id_ops
-                0x0000000000029c54        0x8 firmware.elf.lto.o
+                0x0000000000029c58        0x8 firmware.elf.lto.o
  .rodata.mp_fat_vfs_type
-                0x0000000000029c5c       0x3c firmware.elf.lto.o
+                0x0000000000029c60       0x3c firmware.elf.lto.o
  .rodata.mp_identity_obj
-                0x0000000000029c98        0x8 firmware.elf.lto.o
+                0x0000000000029c9c        0x8 firmware.elf.lto.o
  .rodata.mp_math_acos_obj
-                0x0000000000029ca0        0x8 firmware.elf.lto.o
+                0x0000000000029ca4        0x8 firmware.elf.lto.o
  .rodata.mp_math_asin_obj
-                0x0000000000029ca8        0x8 firmware.elf.lto.o
+                0x0000000000029cac        0x8 firmware.elf.lto.o
  .rodata.mp_math_atan2_obj
-                0x0000000000029cb0        0x8 firmware.elf.lto.o
+                0x0000000000029cb4        0x8 firmware.elf.lto.o
  .rodata.mp_math_atan_obj
-                0x0000000000029cb8        0x8 firmware.elf.lto.o
+                0x0000000000029cbc        0x8 firmware.elf.lto.o
  .rodata.mp_math_ceil_obj
-                0x0000000000029cc0        0x8 firmware.elf.lto.o
+                0x0000000000029cc4        0x8 firmware.elf.lto.o
  .rodata.mp_math_copysign_obj
-                0x0000000000029cc8        0x8 firmware.elf.lto.o
+                0x0000000000029ccc        0x8 firmware.elf.lto.o
  .rodata.mp_math_cos_obj
-                0x0000000000029cd0        0x8 firmware.elf.lto.o
+                0x0000000000029cd4        0x8 firmware.elf.lto.o
  .rodata.mp_math_degrees_obj
-                0x0000000000029cd8        0x8 firmware.elf.lto.o
+                0x0000000000029cdc        0x8 firmware.elf.lto.o
  .rodata.mp_math_exp_obj
-                0x0000000000029ce0        0x8 firmware.elf.lto.o
+                0x0000000000029ce4        0x8 firmware.elf.lto.o
  .rodata.mp_math_fabs_obj
-                0x0000000000029ce8        0x8 firmware.elf.lto.o
+                0x0000000000029cec        0x8 firmware.elf.lto.o
  .rodata.mp_math_floor_obj
-                0x0000000000029cf0        0x8 firmware.elf.lto.o
+                0x0000000000029cf4        0x8 firmware.elf.lto.o
  .rodata.mp_math_fmod_obj
-                0x0000000000029cf8        0x8 firmware.elf.lto.o
+                0x0000000000029cfc        0x8 firmware.elf.lto.o
  .rodata.mp_math_frexp_obj
-                0x0000000000029d00        0x8 firmware.elf.lto.o
+                0x0000000000029d04        0x8 firmware.elf.lto.o
  .rodata.mp_math_isfinite_obj
-                0x0000000000029d08        0x8 firmware.elf.lto.o
+                0x0000000000029d0c        0x8 firmware.elf.lto.o
  .rodata.mp_math_isinf_obj
-                0x0000000000029d10        0x8 firmware.elf.lto.o
+                0x0000000000029d14        0x8 firmware.elf.lto.o
  .rodata.mp_math_isnan_obj
-                0x0000000000029d18        0x8 firmware.elf.lto.o
+                0x0000000000029d1c        0x8 firmware.elf.lto.o
  .rodata.mp_math_ldexp_obj
-                0x0000000000029d20        0x8 firmware.elf.lto.o
+                0x0000000000029d24        0x8 firmware.elf.lto.o
  .rodata.mp_math_log_obj
-                0x0000000000029d28        0xc firmware.elf.lto.o
+                0x0000000000029d2c        0xc firmware.elf.lto.o
  .rodata.mp_math_modf_obj
-                0x0000000000029d34        0x8 firmware.elf.lto.o
+                0x0000000000029d38        0x8 firmware.elf.lto.o
  .rodata.mp_math_pow_obj
-                0x0000000000029d3c        0x8 firmware.elf.lto.o
+                0x0000000000029d40        0x8 firmware.elf.lto.o
  .rodata.mp_math_radians_obj
-                0x0000000000029d44        0x8 firmware.elf.lto.o
+                0x0000000000029d48        0x8 firmware.elf.lto.o
  .rodata.mp_math_sin_obj
-                0x0000000000029d4c        0x8 firmware.elf.lto.o
+                0x0000000000029d50        0x8 firmware.elf.lto.o
  .rodata.mp_math_sqrt_obj
-                0x0000000000029d54        0x8 firmware.elf.lto.o
+                0x0000000000029d58        0x8 firmware.elf.lto.o
  .rodata.mp_math_tan_obj
-                0x0000000000029d5c        0x8 firmware.elf.lto.o
+                0x0000000000029d60        0x8 firmware.elf.lto.o
  .rodata.mp_math_trunc_obj
-                0x0000000000029d64        0x8 firmware.elf.lto.o
+                0x0000000000029d68        0x8 firmware.elf.lto.o
  .rodata.mp_micropython_heap_lock_obj
-                0x0000000000029d6c        0x8 firmware.elf.lto.o
+                0x0000000000029d70        0x8 firmware.elf.lto.o
  .rodata.mp_micropython_heap_unlock_obj
-                0x0000000000029d74        0x8 firmware.elf.lto.o
+                0x0000000000029d78        0x8 firmware.elf.lto.o
  .rodata.mp_micropython_kbd_intr_obj
-                0x0000000000029d7c        0x8 firmware.elf.lto.o
+                0x0000000000029d80        0x8 firmware.elf.lto.o
  .rodata.mp_micropython_opt_level_obj
-                0x0000000000029d84        0xc firmware.elf.lto.o
+                0x0000000000029d88        0xc firmware.elf.lto.o
  .rodata.mp_module___main__
-                0x0000000000029d90        0x8 firmware.elf.lto.o
+                0x0000000000029d94        0x8 firmware.elf.lto.o
  .rodata.mp_module_array
-                0x0000000000029d98        0x8 firmware.elf.lto.o
+                0x0000000000029d9c        0x8 firmware.elf.lto.o
  .rodata.mp_module_array_globals
-                0x0000000000029da0       0x10 firmware.elf.lto.o
+                0x0000000000029da4       0x10 firmware.elf.lto.o
  .rodata.mp_module_array_globals_table
-                0x0000000000029db0       0x10 firmware.elf.lto.o
+                0x0000000000029db4       0x10 firmware.elf.lto.o
  .rodata.mp_module_builtins
-                0x0000000000029dc0        0x8 firmware.elf.lto.o
+                0x0000000000029dc4        0x8 firmware.elf.lto.o
  .rodata.mp_module_builtins_globals
-                0x0000000000029dc8       0x10 firmware.elf.lto.o
+                0x0000000000029dcc       0x10 firmware.elf.lto.o
  .rodata.mp_module_builtins_globals_table
-                0x0000000000029dd8      0x2f8 firmware.elf.lto.o
+                0x0000000000029ddc      0x2f8 firmware.elf.lto.o
  .rodata.mp_module_collections
-                0x000000000002a0d0        0x8 firmware.elf.lto.o
+                0x000000000002a0d4        0x8 firmware.elf.lto.o
  .rodata.mp_module_collections_globals
-                0x000000000002a0d8       0x10 firmware.elf.lto.o
+                0x000000000002a0dc       0x10 firmware.elf.lto.o
  .rodata.mp_module_collections_globals_table
-                0x000000000002a0e8       0x10 firmware.elf.lto.o
+                0x000000000002a0ec       0x10 firmware.elf.lto.o
  .rodata.mp_module_gc
-                0x000000000002a0f8        0x8 firmware.elf.lto.o
+                0x000000000002a0fc        0x8 firmware.elf.lto.o
  .rodata.mp_module_gc_globals
-                0x000000000002a100       0x10 firmware.elf.lto.o
+                0x000000000002a104       0x10 firmware.elf.lto.o
  .rodata.mp_module_gc_globals_table
-                0x000000000002a110       0x38 firmware.elf.lto.o
+                0x000000000002a114       0x38 firmware.elf.lto.o
  .rodata.mp_module_math_globals
-                0x000000000002a148       0x10 firmware.elf.lto.o
+                0x000000000002a14c       0x10 firmware.elf.lto.o
  .rodata.mp_module_math_globals_table
-                0x000000000002a158       0xe0 firmware.elf.lto.o
+                0x000000000002a15c       0xe0 firmware.elf.lto.o
  .rodata.mp_module_micropython
-                0x000000000002a238        0x8 firmware.elf.lto.o
+                0x000000000002a23c        0x8 firmware.elf.lto.o
  .rodata.mp_module_micropython_globals
-                0x000000000002a240       0x10 firmware.elf.lto.o
+                0x000000000002a244       0x10 firmware.elf.lto.o
  .rodata.mp_module_micropython_globals_table
-                0x000000000002a250       0x30 firmware.elf.lto.o
+                0x000000000002a254       0x30 firmware.elf.lto.o
  .rodata.mp_module_random_globals
-                0x000000000002a280       0x10 firmware.elf.lto.o
+                0x000000000002a284       0x10 firmware.elf.lto.o
  .rodata.mp_module_random_globals_table
-                0x000000000002a290       0x40 firmware.elf.lto.o
+                0x000000000002a294       0x40 firmware.elf.lto.o
  .rodata.mp_module_struct_globals
-                0x000000000002a2d0       0x10 firmware.elf.lto.o
+                0x000000000002a2d4       0x10 firmware.elf.lto.o
  .rodata.mp_module_struct_globals_table
-                0x000000000002a2e0       0x30 firmware.elf.lto.o
+                0x000000000002a2e4       0x30 firmware.elf.lto.o
  .rodata.mp_module_sys
-                0x000000000002a310        0x8 firmware.elf.lto.o
+                0x000000000002a314        0x8 firmware.elf.lto.o
  .rodata.mp_module_sys_globals
-                0x000000000002a318       0x10 firmware.elf.lto.o
+                0x000000000002a31c       0x10 firmware.elf.lto.o
  .rodata.mp_module_sys_globals_table
-                0x000000000002a328       0x78 firmware.elf.lto.o
+                0x000000000002a32c       0x78 firmware.elf.lto.o
  .rodata.mp_namedtuple_obj
-                0x000000000002a3a0        0x8 firmware.elf.lto.o
+                0x000000000002a3a4        0x8 firmware.elf.lto.o
  .rodata.mp_op_contains_obj
-                0x000000000002a3a8        0x8 firmware.elf.lto.o
+                0x000000000002a3ac        0x8 firmware.elf.lto.o
  .rodata.mp_op_delitem_obj
-                0x000000000002a3b0        0x8 firmware.elf.lto.o
+                0x000000000002a3b4        0x8 firmware.elf.lto.o
  .rodata.mp_op_getitem_obj
-                0x000000000002a3b8        0x8 firmware.elf.lto.o
+                0x000000000002a3bc        0x8 firmware.elf.lto.o
  .rodata.mp_op_setitem_obj
-                0x000000000002a3c0        0x8 firmware.elf.lto.o
+                0x000000000002a3c4        0x8 firmware.elf.lto.o
  .rodata.mp_plat_print
-                0x000000000002a3c8        0x8 firmware.elf.lto.o
+                0x000000000002a3cc        0x8 firmware.elf.lto.o
  .rodata.mp_qstr_const_pool
-                0x000000000002a3d0      0x8e8 firmware.elf.lto.o
+                0x000000000002a3d4      0x8e8 firmware.elf.lto.o
  .rodata.mp_stream_close_obj
-                0x000000000002acb8        0x8 firmware.elf.lto.o
+                0x000000000002acbc        0x8 firmware.elf.lto.o
  .rodata.mp_stream_flush_obj
-                0x000000000002acc0        0x8 firmware.elf.lto.o
+                0x000000000002acc4        0x8 firmware.elf.lto.o
  .rodata.mp_stream_read_obj
-                0x000000000002acc8        0xc firmware.elf.lto.o
+                0x000000000002accc        0xc firmware.elf.lto.o
  .rodata.mp_stream_readinto_obj
-                0x000000000002acd4        0xc firmware.elf.lto.o
+                0x000000000002acd8        0xc firmware.elf.lto.o
  .rodata.mp_stream_seek_obj
-                0x000000000002ace0        0xc firmware.elf.lto.o
+                0x000000000002ace4        0xc firmware.elf.lto.o
  .rodata.mp_stream_tell_obj
-                0x000000000002acec        0x8 firmware.elf.lto.o
+                0x000000000002acf0        0x8 firmware.elf.lto.o
  .rodata.mp_stream_unbuffered_readline_obj
-                0x000000000002acf4        0xc firmware.elf.lto.o
+                0x000000000002acf8        0xc firmware.elf.lto.o
  .rodata.mp_stream_unbuffered_readlines_obj
-                0x000000000002ad00        0x8 firmware.elf.lto.o
+                0x000000000002ad04        0x8 firmware.elf.lto.o
  .rodata.mp_stream_write_obj
-                0x000000000002ad08        0xc firmware.elf.lto.o
+                0x000000000002ad0c        0xc firmware.elf.lto.o
  .rodata.mp_sys_exit_obj
-                0x000000000002ad14        0xc firmware.elf.lto.o
+                0x000000000002ad18        0xc firmware.elf.lto.o
  .rodata.mp_sys_implementation_obj
-                0x000000000002ad20       0x14 firmware.elf.lto.o
+                0x000000000002ad24       0x14 firmware.elf.lto.o
  .rodata.mp_sys_implementation_version_info_obj
-                0x000000000002ad34       0x14 firmware.elf.lto.o
+                0x000000000002ad38       0x14 firmware.elf.lto.o
  .rodata.mp_sys_print_exception_obj
-                0x000000000002ad48        0xc firmware.elf.lto.o
+                0x000000000002ad4c        0xc firmware.elf.lto.o
  .rodata.mp_sys_stderr_obj
-                0x000000000002ad54        0x8 firmware.elf.lto.o
+                0x000000000002ad58        0x8 firmware.elf.lto.o
  .rodata.mp_sys_stdin_obj
-                0x000000000002ad5c        0x8 firmware.elf.lto.o
+                0x000000000002ad60        0x8 firmware.elf.lto.o
  .rodata.mp_sys_stdout_obj
-                0x000000000002ad64        0x8 firmware.elf.lto.o
+                0x000000000002ad68        0x8 firmware.elf.lto.o
  .rodata.mp_sys_version_info_obj
-                0x000000000002ad6c       0x14 firmware.elf.lto.o
+                0x000000000002ad70       0x14 firmware.elf.lto.o
  .rodata.mp_type_ArithmeticError
-                0x000000000002ad80       0x3c firmware.elf.lto.o
+                0x000000000002ad84       0x3c firmware.elf.lto.o
  .rodata.mp_type_AssertionError
-                0x000000000002adbc       0x3c firmware.elf.lto.o
+                0x000000000002adc0       0x3c firmware.elf.lto.o
  .rodata.mp_type_AttributeError
-                0x000000000002adf8       0x3c firmware.elf.lto.o
+                0x000000000002adfc       0x3c firmware.elf.lto.o
  .rodata.mp_type_BaseException
-                0x000000000002ae34       0x3c firmware.elf.lto.o
+                0x000000000002ae38       0x3c firmware.elf.lto.o
  .rodata.mp_type_EOFError
-                0x000000000002ae70       0x3c firmware.elf.lto.o
+                0x000000000002ae74       0x3c firmware.elf.lto.o
  .rodata.mp_type_Exception
-                0x000000000002aeac       0x3c firmware.elf.lto.o
+                0x000000000002aeb0       0x3c firmware.elf.lto.o
  .rodata.mp_type_GeneratorExit
-                0x000000000002aee8       0x3c firmware.elf.lto.o
+                0x000000000002aeec       0x3c firmware.elf.lto.o
  .rodata.mp_type_ImportError
-                0x000000000002af24       0x3c firmware.elf.lto.o
+                0x000000000002af28       0x3c firmware.elf.lto.o
  .rodata.mp_type_IndentationError
-                0x000000000002af60       0x3c firmware.elf.lto.o
+                0x000000000002af64       0x3c firmware.elf.lto.o
  .rodata.mp_type_IndexError
-                0x000000000002af9c       0x3c firmware.elf.lto.o
+                0x000000000002afa0       0x3c firmware.elf.lto.o
  .rodata.mp_type_KeyError
-                0x000000000002afd8       0x3c firmware.elf.lto.o
+                0x000000000002afdc       0x3c firmware.elf.lto.o
  .rodata.mp_type_KeyboardInterrupt
-                0x000000000002b014       0x3c firmware.elf.lto.o
+                0x000000000002b018       0x3c firmware.elf.lto.o
  .rodata.mp_type_LookupError
-                0x000000000002b050       0x3c firmware.elf.lto.o
+                0x000000000002b054       0x3c firmware.elf.lto.o
  .rodata.mp_type_MemoryError
-                0x000000000002b08c       0x3c firmware.elf.lto.o
+                0x000000000002b090       0x3c firmware.elf.lto.o
  .rodata.mp_type_MpyError
-                0x000000000002b0c8       0x3c firmware.elf.lto.o
+                0x000000000002b0cc       0x3c firmware.elf.lto.o
  .rodata.mp_type_NameError
-                0x000000000002b104       0x3c firmware.elf.lto.o
+                0x000000000002b108       0x3c firmware.elf.lto.o
  .rodata.mp_type_NoneType
-                0x000000000002b140       0x3c firmware.elf.lto.o
+                0x000000000002b144       0x3c firmware.elf.lto.o
  .rodata.mp_type_NotImplementedError
-                0x000000000002b17c       0x3c firmware.elf.lto.o
+                0x000000000002b180       0x3c firmware.elf.lto.o
  .rodata.mp_type_OSError
-                0x000000000002b1b8       0x3c firmware.elf.lto.o
+                0x000000000002b1bc       0x3c firmware.elf.lto.o
  .rodata.mp_type_OverflowError
-                0x000000000002b1f4       0x3c firmware.elf.lto.o
+                0x000000000002b1f8       0x3c firmware.elf.lto.o
  .rodata.mp_type_ReloadException
-                0x000000000002b230       0x3c firmware.elf.lto.o
+                0x000000000002b234       0x3c firmware.elf.lto.o
  .rodata.mp_type_RuntimeError
-                0x000000000002b26c       0x3c firmware.elf.lto.o
+                0x000000000002b270       0x3c firmware.elf.lto.o
  .rodata.mp_type_StopIteration
-                0x000000000002b2a8       0x3c firmware.elf.lto.o
+                0x000000000002b2ac       0x3c firmware.elf.lto.o
  .rodata.mp_type_SyntaxError
-                0x000000000002b2e4       0x3c firmware.elf.lto.o
+                0x000000000002b2e8       0x3c firmware.elf.lto.o
  .rodata.mp_type_SystemExit
-                0x000000000002b320       0x3c firmware.elf.lto.o
+                0x000000000002b324       0x3c firmware.elf.lto.o
  .rodata.mp_type_TypeError
-                0x000000000002b35c       0x3c firmware.elf.lto.o
+                0x000000000002b360       0x3c firmware.elf.lto.o
  .rodata.mp_type_UnicodeError
-                0x000000000002b398       0x3c firmware.elf.lto.o
+                0x000000000002b39c       0x3c firmware.elf.lto.o
  .rodata.mp_type_ValueError
-                0x000000000002b3d4       0x3c firmware.elf.lto.o
+                0x000000000002b3d8       0x3c firmware.elf.lto.o
  .rodata.mp_type_ZeroDivisionError
-                0x000000000002b410       0x3c firmware.elf.lto.o
+                0x000000000002b414       0x3c firmware.elf.lto.o
  .rodata.mp_type_array
-                0x000000000002b44c       0x3c firmware.elf.lto.o
+                0x000000000002b450       0x3c firmware.elf.lto.o
  .rodata.mp_type_attrtuple
-                0x000000000002b488       0x3c firmware.elf.lto.o
+                0x000000000002b48c       0x3c firmware.elf.lto.o
  .rodata.mp_type_bool
-                0x000000000002b4c4       0x3c firmware.elf.lto.o
+                0x000000000002b4c8       0x3c firmware.elf.lto.o
  .rodata.mp_type_bound_meth
-                0x000000000002b500       0x3c firmware.elf.lto.o
+                0x000000000002b504       0x3c firmware.elf.lto.o
  .rodata.mp_type_bytearray
-                0x000000000002b53c       0x3c firmware.elf.lto.o
+                0x000000000002b540       0x3c firmware.elf.lto.o
  .rodata.mp_type_bytes
-                0x000000000002b578       0x3c firmware.elf.lto.o
+                0x000000000002b57c       0x3c firmware.elf.lto.o
  .rodata.mp_type_cell
-                0x000000000002b5b4       0x3c firmware.elf.lto.o
+                0x000000000002b5b8       0x3c firmware.elf.lto.o
  .rodata.mp_type_classmethod
-                0x000000000002b5f0       0x3c firmware.elf.lto.o
+                0x000000000002b5f4       0x3c firmware.elf.lto.o
  .rodata.mp_type_dict
-                0x000000000002b62c       0x3c firmware.elf.lto.o
+                0x000000000002b630       0x3c firmware.elf.lto.o
  .rodata.mp_type_enumerate
-                0x000000000002b668       0x3c firmware.elf.lto.o
+                0x000000000002b66c       0x3c firmware.elf.lto.o
  .rodata.mp_type_filter
-                0x000000000002b6a4       0x3c firmware.elf.lto.o
+                0x000000000002b6a8       0x3c firmware.elf.lto.o
  .rodata.mp_type_float
-                0x000000000002b6e0       0x3c firmware.elf.lto.o
+                0x000000000002b6e4       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_bc
-                0x000000000002b71c       0x3c firmware.elf.lto.o
+                0x000000000002b720       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_builtin_0
-                0x000000000002b758       0x3c firmware.elf.lto.o
+                0x000000000002b75c       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_builtin_1
-                0x000000000002b794       0x3c firmware.elf.lto.o
+                0x000000000002b798       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_builtin_2
-                0x000000000002b7d0       0x3c firmware.elf.lto.o
+                0x000000000002b7d4       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_builtin_3
-                0x000000000002b80c       0x3c firmware.elf.lto.o
+                0x000000000002b810       0x3c firmware.elf.lto.o
  .rodata.mp_type_fun_builtin_var
-                0x000000000002b848       0x3c firmware.elf.lto.o
+                0x000000000002b84c       0x3c firmware.elf.lto.o
  .rodata.mp_type_gen_instance
-                0x000000000002b884       0x3c firmware.elf.lto.o
+                0x000000000002b888       0x3c firmware.elf.lto.o
  .rodata.mp_type_gen_wrap
-                0x000000000002b8c0       0x3c firmware.elf.lto.o
+                0x000000000002b8c4       0x3c firmware.elf.lto.o
  .rodata.mp_type_int
-                0x000000000002b8fc       0x3c firmware.elf.lto.o
+                0x000000000002b900       0x3c firmware.elf.lto.o
  .rodata.mp_type_list
-                0x000000000002b938       0x3c firmware.elf.lto.o
+                0x000000000002b93c       0x3c firmware.elf.lto.o
  .rodata.mp_type_map
-                0x000000000002b974       0x3c firmware.elf.lto.o
+                0x000000000002b978       0x3c firmware.elf.lto.o
  .rodata.mp_type_memoryview
-                0x000000000002b9b0       0x3c firmware.elf.lto.o
+                0x000000000002b9b4       0x3c firmware.elf.lto.o
  .rodata.mp_type_module
-                0x000000000002b9ec       0x3c firmware.elf.lto.o
+                0x000000000002b9f0       0x3c firmware.elf.lto.o
  .rodata.mp_type_object
-                0x000000000002ba28       0x3c firmware.elf.lto.o
+                0x000000000002ba2c       0x3c firmware.elf.lto.o
  .rodata.mp_type_polymorph_iter
-                0x000000000002ba64       0x3c firmware.elf.lto.o
+                0x000000000002ba68       0x3c firmware.elf.lto.o
  .rodata.mp_type_property
-                0x000000000002baa0       0x3c firmware.elf.lto.o
+                0x000000000002baa4       0x3c firmware.elf.lto.o
  .rodata.mp_type_range
-                0x000000000002badc       0x3c firmware.elf.lto.o
+                0x000000000002bae0       0x3c firmware.elf.lto.o
  .rodata.mp_type_reversed
-                0x000000000002bb18       0x3c firmware.elf.lto.o
+                0x000000000002bb1c       0x3c firmware.elf.lto.o
  .rodata.mp_type_set
-                0x000000000002bb54       0x3c firmware.elf.lto.o
+                0x000000000002bb58       0x3c firmware.elf.lto.o
  .rodata.mp_type_singleton
-                0x000000000002bb90       0x3c firmware.elf.lto.o
+                0x000000000002bb94       0x3c firmware.elf.lto.o
  .rodata.mp_type_slice
-                0x000000000002bbcc       0x3c firmware.elf.lto.o
+                0x000000000002bbd0       0x3c firmware.elf.lto.o
  .rodata.mp_type_staticmethod
-                0x000000000002bc08       0x3c firmware.elf.lto.o
+                0x000000000002bc0c       0x3c firmware.elf.lto.o
  .rodata.mp_type_str
-                0x000000000002bc44       0x3c firmware.elf.lto.o
+                0x000000000002bc48       0x3c firmware.elf.lto.o
  .rodata.mp_type_super
-                0x000000000002bc80       0x3c firmware.elf.lto.o
+                0x000000000002bc84       0x3c firmware.elf.lto.o
  .rodata.mp_type_tuple
-                0x000000000002bcbc       0x3c firmware.elf.lto.o
+                0x000000000002bcc0       0x3c firmware.elf.lto.o
  .rodata.mp_type_type
-                0x000000000002bcf8       0x3c firmware.elf.lto.o
+                0x000000000002bcfc       0x3c firmware.elf.lto.o
  .rodata.mp_type_vfs_fat_fileio
-                0x000000000002bd34       0x3c firmware.elf.lto.o
+                0x000000000002bd38       0x3c firmware.elf.lto.o
  .rodata.mp_type_vfs_fat_textio
-                0x000000000002bd70       0x3c firmware.elf.lto.o
+                0x000000000002bd74       0x3c firmware.elf.lto.o
  .rodata.mp_type_zip
-                0x000000000002bdac       0x3c firmware.elf.lto.o
+                0x000000000002bdb0       0x3c firmware.elf.lto.o
  .rodata.mp_unary_op_method_name
-                0x000000000002bde8        0x9 firmware.elf.lto.o
- *fill*         0x000000000002bdf1        0x3 
+                0x000000000002bdec        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002bdf5        0x3 
  .rodata.mp_vfs_open_obj
-                0x000000000002bdf4        0xc firmware.elf.lto.o
+                0x000000000002bdf8        0xc firmware.elf.lto.o
  .rodata.native_base_init_wrapper_obj
-                0x000000000002be00        0xc firmware.elf.lto.o
+                0x000000000002be04        0xc firmware.elf.lto.o
  .rodata.neopixel_write_module
-                0x000000000002be0c        0x8 firmware.elf.lto.o
+                0x000000000002be10        0x8 firmware.elf.lto.o
  .rodata.neopixel_write_module_globals
-                0x000000000002be14       0x10 firmware.elf.lto.o
+                0x000000000002be18       0x10 firmware.elf.lto.o
  .rodata.neopixel_write_module_globals_table
-                0x000000000002be24       0x10 firmware.elf.lto.o
+                0x000000000002be28       0x10 firmware.elf.lto.o
  .rodata.neopixel_write_neopixel_write_obj
-                0x000000000002be34        0x8 firmware.elf.lto.o
+                0x000000000002be38        0x8 firmware.elf.lto.o
  .rodata.nibble_to_hex_upper
-                0x000000000002be3c       0x10 firmware.elf.lto.o
+                0x000000000002be40       0x10 firmware.elf.lto.o
  .rodata.npio2_hw
-                0x000000000002be4c       0x80 firmware.elf.lto.o
+                0x000000000002be50       0x80 firmware.elf.lto.o
  .rodata.nvm_bytearray_locals_dict
-                0x000000000002becc       0x10 firmware.elf.lto.o
+                0x000000000002bed0       0x10 firmware.elf.lto.o
  .rodata.nvm_bytearray_locals_dict_table
-                0x000000000002bedc        0x0 firmware.elf.lto.o
+                0x000000000002bee0        0x0 firmware.elf.lto.o
  .rodata.nvm_bytearray_type
-                0x000000000002bedc       0x3c firmware.elf.lto.o
+                0x000000000002bee0       0x3c firmware.elf.lto.o
  .rodata.op_map.13892
-                0x000000000002bf18        0x8 firmware.elf.lto.o
+                0x000000000002bf1c        0x8 firmware.elf.lto.o
  .rodata.opcode_format_table
-                0x000000000002bf20       0x40 firmware.elf.lto.o
+                0x000000000002bf24       0x40 firmware.elf.lto.o
  .rodata.os_chdir_obj
-                0x000000000002bf60        0x8 firmware.elf.lto.o
+                0x000000000002bf64        0x8 firmware.elf.lto.o
  .rodata.os_getcwd_obj
-                0x000000000002bf68        0x8 firmware.elf.lto.o
+                0x000000000002bf6c        0x8 firmware.elf.lto.o
  .rodata.os_listdir_obj
-                0x000000000002bf70        0xc firmware.elf.lto.o
+                0x000000000002bf74        0xc firmware.elf.lto.o
  .rodata.os_mkdir_obj
-                0x000000000002bf7c        0x8 firmware.elf.lto.o
+                0x000000000002bf80        0x8 firmware.elf.lto.o
  .rodata.os_module
-                0x000000000002bf84        0x8 firmware.elf.lto.o
+                0x000000000002bf88        0x8 firmware.elf.lto.o
  .rodata.os_module_globals
-                0x000000000002bf8c       0x10 firmware.elf.lto.o
+                0x000000000002bf90       0x10 firmware.elf.lto.o
  .rodata.os_module_globals_table
-                0x000000000002bf9c       0x78 firmware.elf.lto.o
+                0x000000000002bfa0       0x78 firmware.elf.lto.o
  .rodata.os_remove_obj
-                0x000000000002c014        0x8 firmware.elf.lto.o
+                0x000000000002c018        0x8 firmware.elf.lto.o
  .rodata.os_rename_obj
-                0x000000000002c01c        0x8 firmware.elf.lto.o
+                0x000000000002c020        0x8 firmware.elf.lto.o
  .rodata.os_rmdir_obj
-                0x000000000002c024        0x8 firmware.elf.lto.o
+                0x000000000002c028        0x8 firmware.elf.lto.o
  .rodata.os_stat_obj
-                0x000000000002c02c        0x8 firmware.elf.lto.o
+                0x000000000002c030        0x8 firmware.elf.lto.o
  .rodata.os_statvfs_obj
-                0x000000000002c034        0x8 firmware.elf.lto.o
+                0x000000000002c038        0x8 firmware.elf.lto.o
  .rodata.os_sync_obj
-                0x000000000002c03c        0x8 firmware.elf.lto.o
+                0x000000000002c040        0x8 firmware.elf.lto.o
  .rodata.os_uname_info_fields
-                0x000000000002c044       0x14 firmware.elf.lto.o
+                0x000000000002c048       0x14 firmware.elf.lto.o
  .rodata.os_uname_info_machine_obj
-                0x000000000002c058       0x10 firmware.elf.lto.o
+                0x000000000002c05c       0x10 firmware.elf.lto.o
  .rodata.os_uname_info_nodename_obj
-                0x000000000002c068       0x10 firmware.elf.lto.o
+                0x000000000002c06c       0x10 firmware.elf.lto.o
  .rodata.os_uname_info_obj
-                0x000000000002c078       0x20 firmware.elf.lto.o
+                0x000000000002c07c       0x20 firmware.elf.lto.o
  .rodata.os_uname_info_release_obj
-                0x000000000002c098       0x10 firmware.elf.lto.o
+                0x000000000002c09c       0x10 firmware.elf.lto.o
  .rodata.os_uname_info_sysname_obj
-                0x000000000002c0a8       0x10 firmware.elf.lto.o
+                0x000000000002c0ac       0x10 firmware.elf.lto.o
  .rodata.os_uname_info_version_obj
-                0x000000000002c0b8       0x10 firmware.elf.lto.o
+                0x000000000002c0bc       0x10 firmware.elf.lto.o
  .rodata.os_uname_obj
-                0x000000000002c0c8        0x8 firmware.elf.lto.o
+                0x000000000002c0cc        0x8 firmware.elf.lto.o
  .rodata.os_urandom_obj
-                0x000000000002c0d0        0x8 firmware.elf.lto.o
+                0x000000000002c0d4        0x8 firmware.elf.lto.o
  .rodata.pad_spaces
-                0x000000000002c0d8       0x11 firmware.elf.lto.o
+                0x000000000002c0dc       0x11 firmware.elf.lto.o
  .rodata.pad_zeroes
-                0x000000000002c0e9       0x11 firmware.elf.lto.o
- *fill*         0x000000000002c0fa        0x2 
+                0x000000000002c0ed       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002c0fe        0x2 
  .rodata.pin_PA00
-                0x000000000002c0fc        0xc firmware.elf.lto.o
+                0x000000000002c100        0xc firmware.elf.lto.o
  .rodata.pin_PA01
-                0x000000000002c108        0xc firmware.elf.lto.o
+                0x000000000002c10c        0xc firmware.elf.lto.o
  .rodata.pin_PA02
-                0x000000000002c114        0xc firmware.elf.lto.o
+                0x000000000002c118        0xc firmware.elf.lto.o
  .rodata.pin_PA05
-                0x000000000002c120        0xc firmware.elf.lto.o
+                0x000000000002c124        0xc firmware.elf.lto.o
  .rodata.pin_PA06
-                0x000000000002c12c        0xc firmware.elf.lto.o
+                0x000000000002c130        0xc firmware.elf.lto.o
  .rodata.pin_PA07
-                0x000000000002c138        0xc firmware.elf.lto.o
+                0x000000000002c13c        0xc firmware.elf.lto.o
  .rodata.pin_PA08
-                0x000000000002c144        0xc firmware.elf.lto.o
+                0x000000000002c148        0xc firmware.elf.lto.o
  .rodata.pin_PA09
-                0x000000000002c150        0xc firmware.elf.lto.o
+                0x000000000002c154        0xc firmware.elf.lto.o
  .rodata.pin_PA10
-                0x000000000002c15c        0xc firmware.elf.lto.o
+                0x000000000002c160        0xc firmware.elf.lto.o
  .rodata.platform_obj
-                0x000000000002c168       0x10 firmware.elf.lto.o
+                0x000000000002c16c       0x10 firmware.elf.lto.o
  .rodata.prescaler
-                0x000000000002c178       0x10 firmware.elf.lto.o
+                0x000000000002c17c       0x10 firmware.elf.lto.o
  .rodata.property_deleter_obj
-                0x000000000002c188        0x8 firmware.elf.lto.o
+                0x000000000002c18c        0x8 firmware.elf.lto.o
  .rodata.property_getter_obj
-                0x000000000002c190        0x8 firmware.elf.lto.o
+                0x000000000002c194        0x8 firmware.elf.lto.o
  .rodata.property_locals_dict
-                0x000000000002c198       0x10 firmware.elf.lto.o
+                0x000000000002c19c       0x10 firmware.elf.lto.o
  .rodata.property_locals_dict_table
-                0x000000000002c1a8       0x18 firmware.elf.lto.o
+                0x000000000002c1ac       0x18 firmware.elf.lto.o
  .rodata.property_setter_obj
-                0x000000000002c1c0        0x8 firmware.elf.lto.o
+                0x000000000002c1c4        0x8 firmware.elf.lto.o
  .rodata.pulseio_module
-                0x000000000002c1c8        0x8 firmware.elf.lto.o
+                0x000000000002c1cc        0x8 firmware.elf.lto.o
  .rodata.pulseio_module_globals
-                0x000000000002c1d0       0x10 firmware.elf.lto.o
+                0x000000000002c1d4       0x10 firmware.elf.lto.o
  .rodata.pulseio_module_globals_table
-                0x000000000002c1e0       0x20 firmware.elf.lto.o
+                0x000000000002c1e4       0x20 firmware.elf.lto.o
  .rodata.pulseio_pulsein___exit___obj
-                0x000000000002c200        0xc firmware.elf.lto.o
+                0x000000000002c204        0xc firmware.elf.lto.o
  .rodata.pulseio_pulsein_clear_obj
-                0x000000000002c20c        0x8 firmware.elf.lto.o
+                0x000000000002c210        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_deinit_obj
-                0x000000000002c214        0x8 firmware.elf.lto.o
+                0x000000000002c218        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_get_maxlen_obj
-                0x000000000002c21c        0x8 firmware.elf.lto.o
+                0x000000000002c220        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_get_paused_obj
-                0x000000000002c224        0x8 firmware.elf.lto.o
+                0x000000000002c228        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_locals_dict
-                0x000000000002c22c       0x10 firmware.elf.lto.o
+                0x000000000002c230       0x10 firmware.elf.lto.o
  .rodata.pulseio_pulsein_locals_dict_table
-                0x000000000002c23c       0x48 firmware.elf.lto.o
+                0x000000000002c240       0x48 firmware.elf.lto.o
  .rodata.pulseio_pulsein_maxlen_obj
-                0x000000000002c284       0x10 firmware.elf.lto.o
+                0x000000000002c288       0x10 firmware.elf.lto.o
  .rodata.pulseio_pulsein_pause_obj
-                0x000000000002c294        0x8 firmware.elf.lto.o
+                0x000000000002c298        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_paused_obj
-                0x000000000002c29c       0x10 firmware.elf.lto.o
+                0x000000000002c2a0       0x10 firmware.elf.lto.o
  .rodata.pulseio_pulsein_popleft_obj
-                0x000000000002c2ac        0x8 firmware.elf.lto.o
+                0x000000000002c2b0        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulsein_resume_obj
-                0x000000000002c2b4        0xc firmware.elf.lto.o
+                0x000000000002c2b8        0xc firmware.elf.lto.o
  .rodata.pulseio_pulsein_type
-                0x000000000002c2c0       0x3c firmware.elf.lto.o
+                0x000000000002c2c4       0x3c firmware.elf.lto.o
  .rodata.pulseio_pulseout___exit___obj
-                0x000000000002c2fc        0xc firmware.elf.lto.o
+                0x000000000002c300        0xc firmware.elf.lto.o
  .rodata.pulseio_pulseout_deinit_obj
-                0x000000000002c308        0x8 firmware.elf.lto.o
+                0x000000000002c30c        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulseout_locals_dict
-                0x000000000002c310       0x10 firmware.elf.lto.o
+                0x000000000002c314       0x10 firmware.elf.lto.o
  .rodata.pulseio_pulseout_locals_dict_table
-                0x000000000002c320       0x20 firmware.elf.lto.o
+                0x000000000002c324       0x20 firmware.elf.lto.o
  .rodata.pulseio_pulseout_send_obj
-                0x000000000002c340        0x8 firmware.elf.lto.o
+                0x000000000002c344        0x8 firmware.elf.lto.o
  .rodata.pulseio_pulseout_type
-                0x000000000002c348       0x3c firmware.elf.lto.o
+                0x000000000002c34c       0x3c firmware.elf.lto.o
  .rodata.pulseio_pwmout___exit___obj
-                0x000000000002c384        0xc firmware.elf.lto.o
+                0x000000000002c388        0xc firmware.elf.lto.o
  .rodata.pulseio_pwmout_deinit_obj
-                0x000000000002c390        0x8 firmware.elf.lto.o
+                0x000000000002c394        0x8 firmware.elf.lto.o
  .rodata.pulseio_pwmout_duty_cycle_obj
-                0x000000000002c398       0x10 firmware.elf.lto.o
+                0x000000000002c39c       0x10 firmware.elf.lto.o
  .rodata.pulseio_pwmout_frequency_obj
-                0x000000000002c3a8       0x10 firmware.elf.lto.o
+                0x000000000002c3ac       0x10 firmware.elf.lto.o
  .rodata.pulseio_pwmout_get_duty_cycle_obj
-                0x000000000002c3b8        0x8 firmware.elf.lto.o
+                0x000000000002c3bc        0x8 firmware.elf.lto.o
  .rodata.pulseio_pwmout_get_frequency_obj
-                0x000000000002c3c0        0x8 firmware.elf.lto.o
+                0x000000000002c3c4        0x8 firmware.elf.lto.o
  .rodata.pulseio_pwmout_locals_dict
-                0x000000000002c3c8       0x10 firmware.elf.lto.o
+                0x000000000002c3cc       0x10 firmware.elf.lto.o
  .rodata.pulseio_pwmout_locals_dict_table
-                0x000000000002c3d8       0x28 firmware.elf.lto.o
+                0x000000000002c3dc       0x28 firmware.elf.lto.o
  .rodata.pulseio_pwmout_set_duty_cycle_obj
-                0x000000000002c400        0x8 firmware.elf.lto.o
+                0x000000000002c404        0x8 firmware.elf.lto.o
  .rodata.pulseio_pwmout_set_frequency_obj
-                0x000000000002c408        0x8 firmware.elf.lto.o
+                0x000000000002c40c        0x8 firmware.elf.lto.o
  .rodata.pulseio_pwmout_type
-                0x000000000002c410       0x3c firmware.elf.lto.o
+                0x000000000002c414       0x3c firmware.elf.lto.o
  .rodata.random_choice_obj
-                0x000000000002c44c        0x8 firmware.elf.lto.o
+                0x000000000002c450        0x8 firmware.elf.lto.o
  .rodata.random_getrandbits_obj
-                0x000000000002c454        0x8 firmware.elf.lto.o
+                0x000000000002c458        0x8 firmware.elf.lto.o
  .rodata.random_module
-                0x000000000002c45c        0x8 firmware.elf.lto.o
+                0x000000000002c460        0x8 firmware.elf.lto.o
  .rodata.random_randint_obj
-                0x000000000002c464        0x8 firmware.elf.lto.o
+                0x000000000002c468        0x8 firmware.elf.lto.o
  .rodata.random_random_obj
-                0x000000000002c46c        0x8 firmware.elf.lto.o
+                0x000000000002c470        0x8 firmware.elf.lto.o
  .rodata.random_randrange_obj
-                0x000000000002c474        0xc firmware.elf.lto.o
+                0x000000000002c478        0xc firmware.elf.lto.o
  .rodata.random_seed_obj
-                0x000000000002c480        0x8 firmware.elf.lto.o
+                0x000000000002c484        0x8 firmware.elf.lto.o
  .rodata.random_uniform_obj
-                0x000000000002c488        0x8 firmware.elf.lto.o
+                0x000000000002c48c        0x8 firmware.elf.lto.o
  .rodata.range_it_type
-                0x000000000002c490       0x3c firmware.elf.lto.o
+                0x000000000002c494       0x3c firmware.elf.lto.o
  .rodata.rawfile_locals_dict
-                0x000000000002c4cc       0x10 firmware.elf.lto.o
+                0x000000000002c4d0       0x10 firmware.elf.lto.o
  .rodata.rawfile_locals_dict_table
-                0x000000000002c4dc       0x60 firmware.elf.lto.o
+                0x000000000002c4e0       0x60 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder___exit___obj
-                0x000000000002c53c        0xc firmware.elf.lto.o
+                0x000000000002c540        0xc firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_deinit_obj
-                0x000000000002c548        0x8 firmware.elf.lto.o
+                0x000000000002c54c        0x8 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_get_position_obj
-                0x000000000002c550        0x8 firmware.elf.lto.o
+                0x000000000002c554        0x8 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_locals_dict
-                0x000000000002c558       0x10 firmware.elf.lto.o
+                0x000000000002c55c       0x10 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_locals_dict_table
-                0x000000000002c568       0x20 firmware.elf.lto.o
+                0x000000000002c56c       0x20 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_position_obj
-                0x000000000002c588       0x10 firmware.elf.lto.o
+                0x000000000002c58c       0x10 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_set_position_obj
-                0x000000000002c598        0x8 firmware.elf.lto.o
+                0x000000000002c59c        0x8 firmware.elf.lto.o
  .rodata.rotaryio_incrementalencoder_type
-                0x000000000002c5a0       0x3c firmware.elf.lto.o
+                0x000000000002c5a4       0x3c firmware.elf.lto.o
  .rodata.rotaryio_module
-                0x000000000002c5dc        0x8 firmware.elf.lto.o
+                0x000000000002c5e0        0x8 firmware.elf.lto.o
  .rodata.rotaryio_module_globals
-                0x000000000002c5e4       0x10 firmware.elf.lto.o
+                0x000000000002c5e8       0x10 firmware.elf.lto.o
  .rodata.rotaryio_module_globals_table
-                0x000000000002c5f4       0x10 firmware.elf.lto.o
+                0x000000000002c5f8       0x10 firmware.elf.lto.o
  .rodata.rtc_module
-                0x000000000002c604        0x8 firmware.elf.lto.o
+                0x000000000002c608        0x8 firmware.elf.lto.o
  .rodata.rtc_module_globals
-                0x000000000002c60c       0x10 firmware.elf.lto.o
+                0x000000000002c610       0x10 firmware.elf.lto.o
  .rodata.rtc_module_globals_table
-                0x000000000002c61c       0x18 firmware.elf.lto.o
+                0x000000000002c620       0x18 firmware.elf.lto.o
  .rodata.rtc_rtc_calibration_obj
-                0x000000000002c634       0x10 firmware.elf.lto.o
+                0x000000000002c638       0x10 firmware.elf.lto.o
  .rodata.rtc_rtc_datetime_obj
-                0x000000000002c644       0x10 firmware.elf.lto.o
+                0x000000000002c648       0x10 firmware.elf.lto.o
  .rodata.rtc_rtc_get_calibration_obj
-                0x000000000002c654        0x8 firmware.elf.lto.o
+                0x000000000002c658        0x8 firmware.elf.lto.o
  .rodata.rtc_rtc_get_datetime_obj
-                0x000000000002c65c        0x8 firmware.elf.lto.o
+                0x000000000002c660        0x8 firmware.elf.lto.o
  .rodata.rtc_rtc_locals_dict
-                0x000000000002c664       0x10 firmware.elf.lto.o
+                0x000000000002c668       0x10 firmware.elf.lto.o
  .rodata.rtc_rtc_locals_dict_table
-                0x000000000002c674       0x10 firmware.elf.lto.o
+                0x000000000002c678       0x10 firmware.elf.lto.o
  .rodata.rtc_rtc_obj
-                0x000000000002c684        0x4 firmware.elf.lto.o
+                0x000000000002c688        0x4 firmware.elf.lto.o
  .rodata.rtc_rtc_set_calibration_obj
-                0x000000000002c688        0x8 firmware.elf.lto.o
+                0x000000000002c68c        0x8 firmware.elf.lto.o
  .rodata.rtc_rtc_set_datetime_obj
-                0x000000000002c690        0x8 firmware.elf.lto.o
+                0x000000000002c694        0x8 firmware.elf.lto.o
  .rodata.rtc_rtc_type
-                0x000000000002c698       0x3c firmware.elf.lto.o
+                0x000000000002c69c       0x3c firmware.elf.lto.o
  .rodata.rtc_set_time_source_obj
-                0x000000000002c6d4        0x8 firmware.elf.lto.o
+                0x000000000002c6d8        0x8 firmware.elf.lto.o
  .rodata.rule_act_table
-                0x000000000002c6dc       0xab firmware.elf.lto.o
- *fill*         0x000000000002c787        0x1 
+                0x000000000002c6e0       0xab firmware.elf.lto.o
+ *fill*         0x000000000002c78b        0x1 
  .rodata.rule_arg_combined_table
-                0x000000000002c788      0x360 firmware.elf.lto.o
+                0x000000000002c78c      0x360 firmware.elf.lto.o
  .rodata.rule_arg_offset_table
-                0x000000000002cae8       0xab firmware.elf.lto.o
+                0x000000000002caec       0xab firmware.elf.lto.o
  .rodata.scope_simple_name_table
-                0x000000000002cb93        0x7 firmware.elf.lto.o
- *fill*         0x000000000002cb9a        0x2 
+                0x000000000002cb97        0x7 firmware.elf.lto.o
+ *fill*         0x000000000002cb9e        0x2 
  .rodata.sercom_insts
-                0x000000000002cb9c       0x10 firmware.elf.lto.o
+                0x000000000002cba0       0x10 firmware.elf.lto.o
  .rodata.sercom_to_sercom_dev
-                0x000000000002cbac       0x20 firmware.elf.lto.o
+                0x000000000002cbb0       0x20 firmware.elf.lto.o
  .rodata.set_add_obj
-                0x000000000002cbcc        0x8 firmware.elf.lto.o
+                0x000000000002cbd0        0x8 firmware.elf.lto.o
  .rodata.set_clear_obj
-                0x000000000002cbd4        0x8 firmware.elf.lto.o
+                0x000000000002cbd8        0x8 firmware.elf.lto.o
  .rodata.set_copy_obj
-                0x000000000002cbdc        0x8 firmware.elf.lto.o
+                0x000000000002cbe0        0x8 firmware.elf.lto.o
  .rodata.set_diff_obj
-                0x000000000002cbe4        0xc firmware.elf.lto.o
+                0x000000000002cbe8        0xc firmware.elf.lto.o
  .rodata.set_diff_update_obj
-                0x000000000002cbf0        0xc firmware.elf.lto.o
+                0x000000000002cbf4        0xc firmware.elf.lto.o
  .rodata.set_discard_obj
-                0x000000000002cbfc        0x8 firmware.elf.lto.o
+                0x000000000002cc00        0x8 firmware.elf.lto.o
  .rodata.set_intersect_obj
-                0x000000000002cc04        0x8 firmware.elf.lto.o
+                0x000000000002cc08        0x8 firmware.elf.lto.o
  .rodata.set_intersect_update_obj
-                0x000000000002cc0c        0x8 firmware.elf.lto.o
+                0x000000000002cc10        0x8 firmware.elf.lto.o
  .rodata.set_isdisjoint_obj
-                0x000000000002cc14        0x8 firmware.elf.lto.o
+                0x000000000002cc18        0x8 firmware.elf.lto.o
  .rodata.set_issubset_obj
-                0x000000000002cc1c        0x8 firmware.elf.lto.o
+                0x000000000002cc20        0x8 firmware.elf.lto.o
  .rodata.set_issuperset_obj
-                0x000000000002cc24        0x8 firmware.elf.lto.o
+                0x000000000002cc28        0x8 firmware.elf.lto.o
  .rodata.set_locals_dict
-                0x000000000002cc2c       0x10 firmware.elf.lto.o
+                0x000000000002cc30       0x10 firmware.elf.lto.o
  .rodata.set_locals_dict_table
-                0x000000000002cc3c       0x90 firmware.elf.lto.o
+                0x000000000002cc40       0x90 firmware.elf.lto.o
  .rodata.set_pop_obj
-                0x000000000002cccc        0x8 firmware.elf.lto.o
+                0x000000000002ccd0        0x8 firmware.elf.lto.o
  .rodata.set_remove_obj
-                0x000000000002ccd4        0x8 firmware.elf.lto.o
+                0x000000000002ccd8        0x8 firmware.elf.lto.o
  .rodata.set_symmetric_difference_obj
-                0x000000000002ccdc        0x8 firmware.elf.lto.o
+                0x000000000002cce0        0x8 firmware.elf.lto.o
  .rodata.set_symmetric_difference_update_obj
-                0x000000000002cce4        0x8 firmware.elf.lto.o
+                0x000000000002cce8        0x8 firmware.elf.lto.o
  .rodata.set_union_obj
-                0x000000000002ccec        0x8 firmware.elf.lto.o
+                0x000000000002ccf0        0x8 firmware.elf.lto.o
  .rodata.set_update_obj
-                0x000000000002ccf4        0xc firmware.elf.lto.o
+                0x000000000002ccf8        0xc firmware.elf.lto.o
  .rodata.slice_indices_obj
-                0x000000000002cd00        0x8 firmware.elf.lto.o
+                0x000000000002cd04        0x8 firmware.elf.lto.o
  .rodata.stdio_locals_dict
-                0x000000000002cd08       0x10 firmware.elf.lto.o
+                0x000000000002cd0c       0x10 firmware.elf.lto.o
  .rodata.stdio_locals_dict_table
-                0x000000000002cd18       0x48 firmware.elf.lto.o
+                0x000000000002cd1c       0x48 firmware.elf.lto.o
  .rodata.stdio_obj___exit___obj
-                0x000000000002cd60        0xc firmware.elf.lto.o
+                0x000000000002cd64        0xc firmware.elf.lto.o
  .rodata.stdio_obj_stream_p
-                0x000000000002cd6c       0x14 firmware.elf.lto.o
+                0x000000000002cd70       0x14 firmware.elf.lto.o
  .rodata.stdio_obj_type
-                0x000000000002cd80       0x3c firmware.elf.lto.o
+                0x000000000002cd84       0x3c firmware.elf.lto.o
  .rodata.storage_erase_filesystem_obj
-                0x000000000002cdbc        0x8 firmware.elf.lto.o
+                0x000000000002cdc0        0x8 firmware.elf.lto.o
  .rodata.storage_getmount_obj
-                0x000000000002cdc4        0x8 firmware.elf.lto.o
+                0x000000000002cdc8        0x8 firmware.elf.lto.o
  .rodata.storage_module
-                0x000000000002cdcc        0x8 firmware.elf.lto.o
+                0x000000000002cdd0        0x8 firmware.elf.lto.o
  .rodata.storage_module_globals
-                0x000000000002cdd4       0x10 firmware.elf.lto.o
+                0x000000000002cdd8       0x10 firmware.elf.lto.o
  .rodata.storage_module_globals_table
-                0x000000000002cde4       0x38 firmware.elf.lto.o
+                0x000000000002cde8       0x38 firmware.elf.lto.o
  .rodata.storage_mount_obj
-                0x000000000002ce1c        0xc firmware.elf.lto.o
+                0x000000000002ce20        0xc firmware.elf.lto.o
  .rodata.storage_remount_obj
-                0x000000000002ce28        0xc firmware.elf.lto.o
+                0x000000000002ce2c        0xc firmware.elf.lto.o
  .rodata.storage_umount_obj
-                0x000000000002ce34        0x8 firmware.elf.lto.o
+                0x000000000002ce38        0x8 firmware.elf.lto.o
  .rodata.str8_locals_dict
-                0x000000000002ce3c       0x10 firmware.elf.lto.o
+                0x000000000002ce40       0x10 firmware.elf.lto.o
  .rodata.str8_locals_dict_table
-                0x000000000002ce4c       0xb0 firmware.elf.lto.o
+                0x000000000002ce50       0xb0 firmware.elf.lto.o
  .rodata.str_count_obj
-                0x000000000002cefc        0xc firmware.elf.lto.o
+                0x000000000002cf00        0xc firmware.elf.lto.o
  .rodata.str_endswith_obj
-                0x000000000002cf08        0xc firmware.elf.lto.o
+                0x000000000002cf0c        0xc firmware.elf.lto.o
  .rodata.str_find_obj
-                0x000000000002cf14        0xc firmware.elf.lto.o
+                0x000000000002cf18        0xc firmware.elf.lto.o
  .rodata.str_format_obj
-                0x000000000002cf20        0xc firmware.elf.lto.o
+                0x000000000002cf24        0xc firmware.elf.lto.o
  .rodata.str_index_obj
-                0x000000000002cf2c        0xc firmware.elf.lto.o
+                0x000000000002cf30        0xc firmware.elf.lto.o
  .rodata.str_isalpha_obj
-                0x000000000002cf38        0x8 firmware.elf.lto.o
+                0x000000000002cf3c        0x8 firmware.elf.lto.o
  .rodata.str_isdigit_obj
-                0x000000000002cf40        0x8 firmware.elf.lto.o
+                0x000000000002cf44        0x8 firmware.elf.lto.o
  .rodata.str_islower_obj
-                0x000000000002cf48        0x8 firmware.elf.lto.o
+                0x000000000002cf4c        0x8 firmware.elf.lto.o
  .rodata.str_isspace_obj
-                0x000000000002cf50        0x8 firmware.elf.lto.o
+                0x000000000002cf54        0x8 firmware.elf.lto.o
  .rodata.str_isupper_obj
-                0x000000000002cf58        0x8 firmware.elf.lto.o
+                0x000000000002cf5c        0x8 firmware.elf.lto.o
  .rodata.str_join_obj
-                0x000000000002cf60        0x8 firmware.elf.lto.o
+                0x000000000002cf64        0x8 firmware.elf.lto.o
  .rodata.str_lower_obj
-                0x000000000002cf68        0x8 firmware.elf.lto.o
+                0x000000000002cf6c        0x8 firmware.elf.lto.o
  .rodata.str_lstrip_obj
-                0x000000000002cf70        0xc firmware.elf.lto.o
+                0x000000000002cf74        0xc firmware.elf.lto.o
  .rodata.str_replace_obj
-                0x000000000002cf7c        0xc firmware.elf.lto.o
+                0x000000000002cf80        0xc firmware.elf.lto.o
  .rodata.str_rfind_obj
-                0x000000000002cf88        0xc firmware.elf.lto.o
+                0x000000000002cf8c        0xc firmware.elf.lto.o
  .rodata.str_rindex_obj
-                0x000000000002cf94        0xc firmware.elf.lto.o
+                0x000000000002cf98        0xc firmware.elf.lto.o
  .rodata.str_rsplit_obj
-                0x000000000002cfa0        0xc firmware.elf.lto.o
+                0x000000000002cfa4        0xc firmware.elf.lto.o
  .rodata.str_rstrip_obj
-                0x000000000002cfac        0xc firmware.elf.lto.o
+                0x000000000002cfb0        0xc firmware.elf.lto.o
  .rodata.str_split_obj
-                0x000000000002cfb8        0xc firmware.elf.lto.o
+                0x000000000002cfbc        0xc firmware.elf.lto.o
  .rodata.str_startswith_obj
-                0x000000000002cfc4        0xc firmware.elf.lto.o
+                0x000000000002cfc8        0xc firmware.elf.lto.o
  .rodata.str_strip_obj
-                0x000000000002cfd0        0xc firmware.elf.lto.o
+                0x000000000002cfd4        0xc firmware.elf.lto.o
  .rodata.str_upper_obj
-                0x000000000002cfdc        0x8 firmware.elf.lto.o
+                0x000000000002cfe0        0x8 firmware.elf.lto.o
  .rodata.string_desc_arr
-                0x000000000002cfe4       0x30 firmware.elf.lto.o
+                0x000000000002cfe8       0x30 firmware.elf.lto.o
  .rodata.string_descriptor10
-                0x000000000002d014       0x26 firmware.elf.lto.o
+                0x000000000002d018       0x26 firmware.elf.lto.o
  .rodata.string_descriptor11
-                0x000000000002d03a       0x28 firmware.elf.lto.o
+                0x000000000002d03e       0x28 firmware.elf.lto.o
  .rodata.string_descriptor2
-                0x000000000002d062       0x12 firmware.elf.lto.o
+                0x000000000002d066       0x12 firmware.elf.lto.o
  .rodata.string_descriptor3
-                0x000000000002d074       0x26 firmware.elf.lto.o
+                0x000000000002d078       0x26 firmware.elf.lto.o
  .rodata.string_descriptor4
-                0x000000000002d09a       0x34 firmware.elf.lto.o
+                0x000000000002d09e       0x34 firmware.elf.lto.o
  .rodata.string_descriptor5
-                0x000000000002d0ce       0x2e firmware.elf.lto.o
+                0x000000000002d0d2       0x2e firmware.elf.lto.o
  .rodata.string_descriptor6
-                0x000000000002d0fc       0x36 firmware.elf.lto.o
+                0x000000000002d100       0x36 firmware.elf.lto.o
  .rodata.string_descriptor7
-                0x000000000002d132       0x24 firmware.elf.lto.o
+                0x000000000002d136       0x24 firmware.elf.lto.o
  .rodata.string_descriptor8
-                0x000000000002d156       0x40 firmware.elf.lto.o
+                0x000000000002d15a       0x40 firmware.elf.lto.o
  .rodata.string_descriptor9
-                0x000000000002d196       0x40 firmware.elf.lto.o
- *fill*         0x000000000002d1d6        0x2 
+                0x000000000002d19a       0x40 firmware.elf.lto.o
+ *fill*         0x000000000002d1da        0x2 
  .rodata.struct_calcsize_obj
-                0x000000000002d1d8        0x8 firmware.elf.lto.o
+                0x000000000002d1dc        0x8 firmware.elf.lto.o
  .rodata.struct_module
-                0x000000000002d1e0        0x8 firmware.elf.lto.o
+                0x000000000002d1e4        0x8 firmware.elf.lto.o
  .rodata.struct_pack_into_obj
-                0x000000000002d1e8        0xc firmware.elf.lto.o
+                0x000000000002d1ec        0xc firmware.elf.lto.o
  .rodata.struct_pack_obj
-                0x000000000002d1f4        0xc firmware.elf.lto.o
+                0x000000000002d1f8        0xc firmware.elf.lto.o
  .rodata.struct_time_type_obj
-                0x000000000002d200       0x64 firmware.elf.lto.o
+                0x000000000002d204       0x64 firmware.elf.lto.o
  .rodata.struct_unpack_from_obj
-                0x000000000002d264        0xc firmware.elf.lto.o
+                0x000000000002d268        0xc firmware.elf.lto.o
  .rodata.struct_unpack_obj
-                0x000000000002d270        0xc firmware.elf.lto.o
+                0x000000000002d274        0xc firmware.elf.lto.o
  .rodata.struni_locals_dict
-                0x000000000002d27c       0x10 firmware.elf.lto.o
+                0x000000000002d280       0x10 firmware.elf.lto.o
  .rodata.struni_locals_dict_table
-                0x000000000002d28c       0xb0 firmware.elf.lto.o
+                0x000000000002d290       0xb0 firmware.elf.lto.o
  .rodata.supervisor_disable_autoreload_obj
-                0x000000000002d33c        0x8 firmware.elf.lto.o
+                0x000000000002d340        0x8 firmware.elf.lto.o
  .rodata.supervisor_enable_autoreload_obj
-                0x000000000002d344        0x8 firmware.elf.lto.o
+                0x000000000002d348        0x8 firmware.elf.lto.o
  .rodata.supervisor_flash_obj
-                0x000000000002d34c        0x4 firmware.elf.lto.o
+                0x000000000002d350        0x4 firmware.elf.lto.o
  .rodata.supervisor_flash_obj_ioctl_obj
-                0x000000000002d350        0x8 firmware.elf.lto.o
+                0x000000000002d354        0x8 firmware.elf.lto.o
  .rodata.supervisor_flash_obj_locals_dict
-                0x000000000002d358       0x10 firmware.elf.lto.o
+                0x000000000002d35c       0x10 firmware.elf.lto.o
  .rodata.supervisor_flash_obj_locals_dict_table
-                0x000000000002d368       0x18 firmware.elf.lto.o
+                0x000000000002d36c       0x18 firmware.elf.lto.o
  .rodata.supervisor_flash_obj_readblocks_obj
-                0x000000000002d380        0x8 firmware.elf.lto.o
+                0x000000000002d384        0x8 firmware.elf.lto.o
  .rodata.supervisor_flash_obj_writeblocks_obj
-                0x000000000002d388        0x8 firmware.elf.lto.o
+                0x000000000002d38c        0x8 firmware.elf.lto.o
  .rodata.supervisor_flash_type
-                0x000000000002d390       0x3c firmware.elf.lto.o
+                0x000000000002d394       0x3c firmware.elf.lto.o
  .rodata.supervisor_get_serial_bytes_available_obj
-                0x000000000002d3cc        0x8 firmware.elf.lto.o
+                0x000000000002d3d0        0x8 firmware.elf.lto.o
  .rodata.supervisor_get_serial_connected_obj
-                0x000000000002d3d4        0x8 firmware.elf.lto.o
+                0x000000000002d3d8        0x8 firmware.elf.lto.o
  .rodata.supervisor_module
-                0x000000000002d3dc        0x8 firmware.elf.lto.o
+                0x000000000002d3e0        0x8 firmware.elf.lto.o
  .rodata.supervisor_module_globals
-                0x000000000002d3e4       0x10 firmware.elf.lto.o
+                0x000000000002d3e8       0x10 firmware.elf.lto.o
  .rodata.supervisor_module_globals_table
-                0x000000000002d3f4       0x38 firmware.elf.lto.o
+                0x000000000002d3f8       0x38 firmware.elf.lto.o
  .rodata.supervisor_reload_obj
-                0x000000000002d42c        0x8 firmware.elf.lto.o
+                0x000000000002d430        0x8 firmware.elf.lto.o
  .rodata.supervisor_runtime_locals_dict
-                0x000000000002d434       0x10 firmware.elf.lto.o
+                0x000000000002d438       0x10 firmware.elf.lto.o
  .rodata.supervisor_runtime_locals_dict_table
-                0x000000000002d444       0x10 firmware.elf.lto.o
+                0x000000000002d448       0x10 firmware.elf.lto.o
  .rodata.supervisor_runtime_type
-                0x000000000002d454       0x3c firmware.elf.lto.o
+                0x000000000002d458       0x3c firmware.elf.lto.o
  .rodata.supervisor_serial_bytes_available_obj
-                0x000000000002d490       0x10 firmware.elf.lto.o
+                0x000000000002d494       0x10 firmware.elf.lto.o
  .rodata.supervisor_serial_connected_obj
-                0x000000000002d4a0       0x10 firmware.elf.lto.o
+                0x000000000002d4a4       0x10 firmware.elf.lto.o
  .rodata.supervisor_set_next_stack_limit_obj
-                0x000000000002d4b0        0x8 firmware.elf.lto.o
+                0x000000000002d4b4        0x8 firmware.elf.lto.o
  .rodata.supervisor_set_rgb_status_brightness_obj
-                0x000000000002d4b8        0x8 firmware.elf.lto.o
+                0x000000000002d4bc        0x8 firmware.elf.lto.o
  .rodata.tc_gclk_ids
-                0x000000000002d4c0        0x3 firmware.elf.lto.o
- *fill*         0x000000000002d4c3        0x1 
+                0x000000000002d4c4        0x3 firmware.elf.lto.o
+ *fill*         0x000000000002d4c7        0x1 
  .rodata.tc_insts
-                0x000000000002d4c4        0xc firmware.elf.lto.o
+                0x000000000002d4c8        0xc firmware.elf.lto.o
  .rodata.tc_irq
-                0x000000000002d4d0        0x3 firmware.elf.lto.o
+                0x000000000002d4d4        0x3 firmware.elf.lto.o
  .rodata.tcc_cc_num
-                0x000000000002d4d3        0x3 firmware.elf.lto.o
+                0x000000000002d4d7        0x3 firmware.elf.lto.o
  .rodata.tcc_gclk_ids
-                0x000000000002d4d6        0x3 firmware.elf.lto.o
- *fill*         0x000000000002d4d9        0x3 
+                0x000000000002d4da        0x3 firmware.elf.lto.o
+ *fill*         0x000000000002d4dd        0x3 
  .rodata.tcc_insts
-                0x000000000002d4dc        0xc firmware.elf.lto.o
+                0x000000000002d4e0        0xc firmware.elf.lto.o
  .rodata.textio_stream_p
-                0x000000000002d4e8       0x14 firmware.elf.lto.o
+                0x000000000002d4ec       0x14 firmware.elf.lto.o
  .rodata.time_module
-                0x000000000002d4fc        0x8 firmware.elf.lto.o
+                0x000000000002d500        0x8 firmware.elf.lto.o
  .rodata.time_module_globals
-                0x000000000002d504       0x10 firmware.elf.lto.o
+                0x000000000002d508       0x10 firmware.elf.lto.o
  .rodata.time_module_globals_table
-                0x000000000002d514       0x20 firmware.elf.lto.o
+                0x000000000002d518       0x20 firmware.elf.lto.o
  .rodata.time_monotonic_obj
-                0x000000000002d534        0x8 firmware.elf.lto.o
+                0x000000000002d538        0x8 firmware.elf.lto.o
  .rodata.time_sleep_obj
-                0x000000000002d53c        0x8 firmware.elf.lto.o
+                0x000000000002d540        0x8 firmware.elf.lto.o
  .rodata.to_check.13822
-                0x000000000002d544        0x3 firmware.elf.lto.o
+                0x000000000002d548        0x3 firmware.elf.lto.o
  .rodata.tok_enc_kind
-                0x000000000002d547       0x2a firmware.elf.lto.o
- *fill*         0x000000000002d571        0x3 
+                0x000000000002d54b       0x2a firmware.elf.lto.o
+ *fill*         0x000000000002d575        0x3 
  .rodata.tok_kw
-                0x000000000002d574       0x88 firmware.elf.lto.o
+                0x000000000002d578       0x88 firmware.elf.lto.o
  .rodata.token_to_op.15124
-                0x000000000002d5fc        0xb firmware.elf.lto.o
- *fill*         0x000000000002d607        0x1 
+                0x000000000002d600        0xb firmware.elf.lto.o
+ *fill*         0x000000000002d60b        0x1 
  .rodata.touchio_module
-                0x000000000002d608        0x8 firmware.elf.lto.o
+                0x000000000002d60c        0x8 firmware.elf.lto.o
  .rodata.touchio_module_globals
-                0x000000000002d610       0x10 firmware.elf.lto.o
+                0x000000000002d614       0x10 firmware.elf.lto.o
  .rodata.touchio_module_globals_table
-                0x000000000002d620       0x10 firmware.elf.lto.o
+                0x000000000002d624       0x10 firmware.elf.lto.o
  .rodata.touchio_touchin___exit___obj
-                0x000000000002d630        0xc firmware.elf.lto.o
+                0x000000000002d634        0xc firmware.elf.lto.o
  .rodata.touchio_touchin_deinit_obj
-                0x000000000002d63c        0x8 firmware.elf.lto.o
+                0x000000000002d640        0x8 firmware.elf.lto.o
  .rodata.touchio_touchin_get_raw_value_obj
-                0x000000000002d644        0x8 firmware.elf.lto.o
+                0x000000000002d648        0x8 firmware.elf.lto.o
  .rodata.touchio_touchin_get_threshold_obj
-                0x000000000002d64c        0x8 firmware.elf.lto.o
+                0x000000000002d650        0x8 firmware.elf.lto.o
  .rodata.touchio_touchin_get_value_obj
-                0x000000000002d654        0x8 firmware.elf.lto.o
+                0x000000000002d658        0x8 firmware.elf.lto.o
  .rodata.touchio_touchin_locals_dict
-                0x000000000002d65c       0x10 firmware.elf.lto.o
+                0x000000000002d660       0x10 firmware.elf.lto.o
  .rodata.touchio_touchin_locals_dict_table
-                0x000000000002d66c       0x30 firmware.elf.lto.o
+                0x000000000002d670       0x30 firmware.elf.lto.o
  .rodata.touchio_touchin_raw_value_obj
-                0x000000000002d69c       0x10 firmware.elf.lto.o
+                0x000000000002d6a0       0x10 firmware.elf.lto.o
  .rodata.touchio_touchin_set_threshold_obj
-                0x000000000002d6ac        0x8 firmware.elf.lto.o
+                0x000000000002d6b0        0x8 firmware.elf.lto.o
  .rodata.touchio_touchin_threshold_obj
-                0x000000000002d6b4       0x10 firmware.elf.lto.o
+                0x000000000002d6b8       0x10 firmware.elf.lto.o
  .rodata.touchio_touchin_type
-                0x000000000002d6c4       0x3c firmware.elf.lto.o
+                0x000000000002d6c8       0x3c firmware.elf.lto.o
  .rodata.touchio_touchin_value_obj
-                0x000000000002d700       0x10 firmware.elf.lto.o
+                0x000000000002d704       0x10 firmware.elf.lto.o
  .rodata.transitions.29843
-                0x000000000002d710       0x10 firmware.elf.lto.o
+                0x000000000002d714       0x10 firmware.elf.lto.o
  .rodata.tuple_count_obj
-                0x000000000002d720        0x8 firmware.elf.lto.o
+                0x000000000002d724        0x8 firmware.elf.lto.o
  .rodata.tuple_index_obj
-                0x000000000002d728        0xc firmware.elf.lto.o
+                0x000000000002d72c        0xc firmware.elf.lto.o
  .rodata.tuple_locals_dict
-                0x000000000002d734       0x10 firmware.elf.lto.o
+                0x000000000002d738       0x10 firmware.elf.lto.o
  .rodata.tuple_locals_dict_table
-                0x000000000002d744       0x10 firmware.elf.lto.o
+                0x000000000002d748       0x10 firmware.elf.lto.o
  .rodata.two_over_pi
-                0x000000000002d754      0x318 firmware.elf.lto.o
+                0x000000000002d758      0x318 firmware.elf.lto.o
  .rodata.uart_stream_p
-                0x000000000002da6c       0x14 firmware.elf.lto.o
+                0x000000000002da70       0x14 firmware.elf.lto.o
  .rodata.usb_desc_cfg
-                0x000000000002da80       0xda firmware.elf.lto.o
+                0x000000000002da84       0xda firmware.elf.lto.o
  .rodata.usb_desc_dev
-                0x000000000002db5a       0x12 firmware.elf.lto.o
+                0x000000000002db5e       0x12 firmware.elf.lto.o
  .rodata.usb_hid_device_get_usage_obj
-                0x000000000002db6c        0x8 firmware.elf.lto.o
+                0x000000000002db70        0x8 firmware.elf.lto.o
  .rodata.usb_hid_device_get_usage_page_obj
-                0x000000000002db74        0x8 firmware.elf.lto.o
+                0x000000000002db78        0x8 firmware.elf.lto.o
  .rodata.usb_hid_device_locals_dict
-                0x000000000002db7c       0x10 firmware.elf.lto.o
+                0x000000000002db80       0x10 firmware.elf.lto.o
  .rodata.usb_hid_device_locals_dict_table
-                0x000000000002db8c       0x18 firmware.elf.lto.o
+                0x000000000002db90       0x18 firmware.elf.lto.o
  .rodata.usb_hid_device_send_report_obj
-                0x000000000002dba4        0x8 firmware.elf.lto.o
+                0x000000000002dba8        0x8 firmware.elf.lto.o
  .rodata.usb_hid_device_type
-                0x000000000002dbac       0x3c firmware.elf.lto.o
+                0x000000000002dbb0       0x3c firmware.elf.lto.o
  .rodata.usb_hid_device_usage_obj
-                0x000000000002dbe8       0x10 firmware.elf.lto.o
+                0x000000000002dbec       0x10 firmware.elf.lto.o
  .rodata.usb_hid_device_usage_page_obj
-                0x000000000002dbf8       0x10 firmware.elf.lto.o
+                0x000000000002dbfc       0x10 firmware.elf.lto.o
  .rodata.usb_hid_module
-                0x000000000002dc08        0x8 firmware.elf.lto.o
+                0x000000000002dc0c        0x8 firmware.elf.lto.o
  .rodata.usb_hid_module_globals
-                0x000000000002dc10       0x10 firmware.elf.lto.o
+                0x000000000002dc14       0x10 firmware.elf.lto.o
  .rodata.usb_hid_module_globals_table
-                0x000000000002dc20       0x18 firmware.elf.lto.o
+                0x000000000002dc24       0x18 firmware.elf.lto.o
  .rodata.usb_midi_module
-                0x000000000002dc38        0x8 firmware.elf.lto.o
+                0x000000000002dc3c        0x8 firmware.elf.lto.o
  .rodata.usb_midi_portin_locals_dict
-                0x000000000002dc40       0x10 firmware.elf.lto.o
+                0x000000000002dc44       0x10 firmware.elf.lto.o
  .rodata.usb_midi_portin_locals_dict_table
-                0x000000000002dc50       0x10 firmware.elf.lto.o
+                0x000000000002dc54       0x10 firmware.elf.lto.o
  .rodata.usb_midi_portin_stream_p
-                0x000000000002dc60       0x14 firmware.elf.lto.o
+                0x000000000002dc64       0x14 firmware.elf.lto.o
  .rodata.usb_midi_portin_type
-                0x000000000002dc74       0x3c firmware.elf.lto.o
+                0x000000000002dc78       0x3c firmware.elf.lto.o
  .rodata.usb_midi_portout_locals_dict
-                0x000000000002dcb0       0x10 firmware.elf.lto.o
+                0x000000000002dcb4       0x10 firmware.elf.lto.o
  .rodata.usb_midi_portout_locals_dict_table
-                0x000000000002dcc0        0x8 firmware.elf.lto.o
+                0x000000000002dcc4        0x8 firmware.elf.lto.o
  .rodata.usb_midi_portout_stream_p
-                0x000000000002dcc8       0x14 firmware.elf.lto.o
+                0x000000000002dccc       0x14 firmware.elf.lto.o
  .rodata.usb_midi_portout_type
-                0x000000000002dcdc       0x3c firmware.elf.lto.o
+                0x000000000002dce0       0x3c firmware.elf.lto.o
  .rodata.v.10866
-                0x000000000002dd18       0x1b firmware.elf.lto.o
- *fill*         0x000000000002dd33        0x1 
+                0x000000000002dd1c       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002dd39        0x1 
  .rodata.v.10867
-                0x000000000002dd34       0x17 firmware.elf.lto.o
- *fill*         0x000000000002dd4b        0x1 
+                0x000000000002dd3a       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002dd4d        0x1 
  .rodata.v.10868
-                0x000000000002dd4c       0x21 firmware.elf.lto.o
- *fill*         0x000000000002dd6d        0x1 
+                0x000000000002dd4e       0x10 firmware.elf.lto.o
+ .rodata.v.10869
+                0x000000000002dd5e       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002dd6f        0x1 
  .rodata.v.10870
-                0x000000000002dd6e       0x11 firmware.elf.lto.o
- *fill*         0x000000000002dd7f        0x1 
+                0x000000000002dd70       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002dd83        0x1 
  .rodata.v.10871
-                0x000000000002dd80       0x62 firmware.elf.lto.o
+                0x000000000002dd84       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002dd9f        0x1 
  .rodata.v.10872
-                0x000000000002dde2       0x1a firmware.elf.lto.o
+                0x000000000002dda0        0xc firmware.elf.lto.o
  .rodata.v.10873
-                0x000000000002ddfc        0xf firmware.elf.lto.o
- *fill*         0x000000000002de0b        0x1 
- .rodata.v.10874
-                0x000000000002de0c       0x12 firmware.elf.lto.o
+                0x000000000002ddac        0xe firmware.elf.lto.o
  .rodata.v.10875
-                0x000000000002de1e       0x1a firmware.elf.lto.o
+                0x000000000002ddba        0xf firmware.elf.lto.o
+ *fill*         0x000000000002ddc9        0x1 
  .rodata.v.10876
-                0x000000000002de38       0x15 firmware.elf.lto.o
- *fill*         0x000000000002de4d        0x1 
+                0x000000000002ddca       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002dddd        0x3 
  .rodata.v.10877
-                0x000000000002de4e       0x1d firmware.elf.lto.o
- *fill*         0x000000000002de6b        0x1 
- .rodata.v.10879
-                0x000000000002de6c        0xd firmware.elf.lto.o
- *fill*         0x000000000002de79        0x1 
+                0x000000000002dde0       0x1a firmware.elf.lto.o
  .rodata.v.10880
-                0x000000000002de7a       0x52 firmware.elf.lto.o
+                0x000000000002ddfa       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002de0b        0x1 
+ .rodata.v.10881
+                0x000000000002de0c       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002de23        0x1 
  .rodata.v.10882
-                0x000000000002decc        0xa firmware.elf.lto.o
+                0x000000000002de24        0xf firmware.elf.lto.o
+ *fill*         0x000000000002de33        0x1 
  .rodata.v.10883
-                0x000000000002ded6        0xf firmware.elf.lto.o
- *fill*         0x000000000002dee5        0x1 
+                0x000000000002de34       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002de4b        0x1 
  .rodata.v.10884
-                0x000000000002dee6       0x1d firmware.elf.lto.o
- *fill*         0x000000000002df03        0x1 
+                0x000000000002de4c       0x1c firmware.elf.lto.o
  .rodata.v.10885
-                0x000000000002df04       0x16 firmware.elf.lto.o
+                0x000000000002de68        0xe firmware.elf.lto.o
  .rodata.v.10886
-                0x000000000002df1a        0xc firmware.elf.lto.o
+                0x000000000002de76        0xf firmware.elf.lto.o
+ *fill*         0x000000000002de85        0x1 
+ .rodata.v.10887
+                0x000000000002de86       0x10 firmware.elf.lto.o
  .rodata.v.10888
-                0x000000000002df26        0x9 firmware.elf.lto.o
- *fill*         0x000000000002df2f        0x1 
+                0x000000000002de96       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002dea9        0x1 
  .rodata.v.10889
-                0x000000000002df30        0xc firmware.elf.lto.o
+                0x000000000002deaa       0x23 firmware.elf.lto.o
+ *fill*         0x000000000002decd        0x1 
  .rodata.v.10890
-                0x000000000002df3c       0x13 firmware.elf.lto.o
- *fill*         0x000000000002df4f        0x1 
+                0x000000000002dece       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002dee9        0x1 
  .rodata.v.10891
-                0x000000000002df50        0xa firmware.elf.lto.o
+                0x000000000002deea       0x10 firmware.elf.lto.o
  .rodata.v.10892
-                0x000000000002df5a       0x1d firmware.elf.lto.o
- *fill*         0x000000000002df77        0x1 
+                0x000000000002defa       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002df11        0x1 
+ .rodata.v.10893
+                0x000000000002df12       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002df2b        0x1 
  .rodata.v.10894
-                0x000000000002df78       0x13 firmware.elf.lto.o
- *fill*         0x000000000002df8b        0x1 
+                0x000000000002df2c       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002df41        0x1 
  .rodata.v.10895
-                0x000000000002df8c        0xc firmware.elf.lto.o
+                0x000000000002df42        0xb firmware.elf.lto.o
+ *fill*         0x000000000002df4d        0x1 
  .rodata.v.10896
-                0x000000000002df98       0x1f firmware.elf.lto.o
- *fill*         0x000000000002dfb7        0x1 
- .rodata.v.10897
-                0x000000000002dfb8       0x10 firmware.elf.lto.o
+                0x000000000002df4e        0xa firmware.elf.lto.o
  .rodata.v.10898
-                0x000000000002dfc8        0x9 firmware.elf.lto.o
- *fill*         0x000000000002dfd1        0x1 
+                0x000000000002df58        0x8 firmware.elf.lto.o
+ .rodata.v.10899
+                0x000000000002df60       0x2a firmware.elf.lto.o
  .rodata.v.10900
-                0x000000000002dfd2        0xe firmware.elf.lto.o
+                0x000000000002df8a        0xc firmware.elf.lto.o
  .rodata.v.10901
-                0x000000000002dfe0       0x11 firmware.elf.lto.o
- *fill*         0x000000000002dff1        0x1 
+                0x000000000002df96       0x1a firmware.elf.lto.o
  .rodata.v.10902
-                0x000000000002dff2       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e005        0x1 
+                0x000000000002dfb0       0x10 firmware.elf.lto.o
  .rodata.v.10903
-                0x000000000002e006       0x20 firmware.elf.lto.o
+                0x000000000002dfc0       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002dfd1        0x1 
  .rodata.v.10904
-                0x000000000002e026        0xa firmware.elf.lto.o
- .rodata.v.10905
-                0x000000000002e030       0x17 firmware.elf.lto.o
- *fill*         0x000000000002e047        0x1 
+                0x000000000002dfd2       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002dfed        0x1 
  .rodata.v.10906
-                0x000000000002e048        0xd firmware.elf.lto.o
- *fill*         0x000000000002e055        0x1 
+                0x000000000002dfee       0x22 firmware.elf.lto.o
  .rodata.v.10907
-                0x000000000002e056       0x17 firmware.elf.lto.o
- *fill*         0x000000000002e06d        0x1 
+                0x000000000002e010       0x1e firmware.elf.lto.o
  .rodata.v.10908
-                0x000000000002e06e       0x10 firmware.elf.lto.o
+                0x000000000002e02e       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e047        0x1 
  .rodata.v.10909
+                0x000000000002e048       0x12 firmware.elf.lto.o
+ .rodata.v.10911
+                0x000000000002e05a        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e069        0x1 
+ .rodata.v.10912
+                0x000000000002e06a       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002e07d        0x1 
+ .rodata.v.10913
                 0x000000000002e07e       0x13 firmware.elf.lto.o
  *fill*         0x000000000002e091        0x1 
- .rodata.v.10910
-                0x000000000002e092       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e0a5        0x1 
- .rodata.v.10912
-                0x000000000002e0a6       0x12 firmware.elf.lto.o
- .rodata.v.10913
-                0x000000000002e0b8        0xf firmware.elf.lto.o
- *fill*         0x000000000002e0c7        0x1 
  .rodata.v.10914
-                0x000000000002e0c8        0xf firmware.elf.lto.o
- *fill*         0x000000000002e0d7        0x1 
+                0x000000000002e092       0x10 firmware.elf.lto.o
+ .rodata.v.10915
+                0x000000000002e0a2       0x1a firmware.elf.lto.o
  .rodata.v.10916
-                0x000000000002e0d8        0xc firmware.elf.lto.o
+                0x000000000002e0bc       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e0d5        0x1 
  .rodata.v.10917
-                0x000000000002e0e4       0x2c firmware.elf.lto.o
+                0x000000000002e0d6       0x18 firmware.elf.lto.o
  .rodata.v.10918
-                0x000000000002e110        0x9 firmware.elf.lto.o
- *fill*         0x000000000002e119        0x1 
+                0x000000000002e0ee       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e0ff        0x1 
  .rodata.v.10919
-                0x000000000002e11a       0x1b firmware.elf.lto.o
- *fill*         0x000000000002e135        0x1 
- .rodata.v.10920
-                0x000000000002e136       0x10 firmware.elf.lto.o
+                0x000000000002e100        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002e109        0x1 
  .rodata.v.10921
-                0x000000000002e146        0xf firmware.elf.lto.o
- *fill*         0x000000000002e155        0x1 
+                0x000000000002e10a        0xe firmware.elf.lto.o
  .rodata.v.10922
-                0x000000000002e156       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e169        0x1 
+                0x000000000002e118        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e127        0x1 
  .rodata.v.10923
-                0x000000000002e16a        0xd firmware.elf.lto.o
- *fill*         0x000000000002e177        0x1 
+                0x000000000002e128       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e13f        0x1 
  .rodata.v.10924
-                0x000000000002e178        0xf firmware.elf.lto.o
- *fill*         0x000000000002e187        0x1 
+                0x000000000002e140        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e14f        0x1 
+ .rodata.v.10925
+                0x000000000002e150       0x24 firmware.elf.lto.o
  .rodata.v.10926
-                0x000000000002e188       0x33 firmware.elf.lto.o
- *fill*         0x000000000002e1bb        0x1 
+                0x000000000002e174       0x18 firmware.elf.lto.o
  .rodata.v.10927
-                0x000000000002e1bc       0x18 firmware.elf.lto.o
+                0x000000000002e18c        0xe firmware.elf.lto.o
  .rodata.v.10928
-                0x000000000002e1d4       0x11 firmware.elf.lto.o
- *fill*         0x000000000002e1e5        0x1 
+                0x000000000002e19a        0xc firmware.elf.lto.o
  .rodata.v.10929
-                0x000000000002e1e6       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e1f9        0x1 
+                0x000000000002e1a6       0x33 firmware.elf.lto.o
+ *fill*         0x000000000002e1d9        0x1 
  .rodata.v.10930
-                0x000000000002e1fa        0xc firmware.elf.lto.o
+                0x000000000002e1da       0x18 firmware.elf.lto.o
  .rodata.v.10931
-                0x000000000002e206       0x12 firmware.elf.lto.o
+                0x000000000002e1f2       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e203        0x1 
  .rodata.v.10932
-                0x000000000002e218       0x12 firmware.elf.lto.o
+                0x000000000002e204       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e21d        0x1 
  .rodata.v.10933
-                0x000000000002e22a       0x20 firmware.elf.lto.o
+                0x000000000002e21e        0xc firmware.elf.lto.o
  .rodata.v.10934
-                0x000000000002e24a       0x12 firmware.elf.lto.o
+                0x000000000002e22a       0x20 firmware.elf.lto.o
  .rodata.v.10935
-                0x000000000002e25c       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e26f        0x1 
- .rodata.v.10936
-                0x000000000002e270       0x24 firmware.elf.lto.o
+                0x000000000002e24a       0x18 firmware.elf.lto.o
  .rodata.v.10937
-                0x000000000002e294       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e2a7        0x1 
+                0x000000000002e262        0xc firmware.elf.lto.o
  .rodata.v.10938
-                0x000000000002e2a8       0x1a firmware.elf.lto.o
- .rodata.v.10939
-                0x000000000002e2c2       0x1d firmware.elf.lto.o
- *fill*         0x000000000002e2df        0x1 
+                0x000000000002e26e       0x1f firmware.elf.lto.o
+ *fill*         0x000000000002e28d        0x1 
  .rodata.v.10940
-                0x000000000002e2e0        0xb firmware.elf.lto.o
- *fill*         0x000000000002e2eb        0x1 
- .rodata.v.10941
-                0x000000000002e2ec       0x1a firmware.elf.lto.o
+                0x000000000002e28e        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002e297        0x1 
  .rodata.v.10942
-                0x000000000002e306        0xf firmware.elf.lto.o
- *fill*         0x000000000002e315        0x1 
+                0x000000000002e298       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e2a9        0x1 
  .rodata.v.10943
-                0x000000000002e316       0x26 firmware.elf.lto.o
+                0x000000000002e2aa        0xd firmware.elf.lto.o
+ *fill*         0x000000000002e2b7        0x1 
  .rodata.v.10944
-                0x000000000002e33c        0xd firmware.elf.lto.o
- *fill*         0x000000000002e349        0x1 
- .rodata.v.10945
-                0x000000000002e34a        0xd firmware.elf.lto.o
- *fill*         0x000000000002e357        0x1 
+                0x000000000002e2b8       0x1a firmware.elf.lto.o
  .rodata.v.10946
-                0x000000000002e358       0x16 firmware.elf.lto.o
+                0x000000000002e2d2       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e2e9        0x1 
  .rodata.v.10947
-                0x000000000002e36e       0x12 firmware.elf.lto.o
+                0x000000000002e2ea       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002e305        0x1 
  .rodata.v.10948
-                0x000000000002e380       0x18 firmware.elf.lto.o
+                0x000000000002e306       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e317        0x1 
+ .rodata.v.10949
+                0x000000000002e318       0x16 firmware.elf.lto.o
+ .rodata.v.10950
+                0x000000000002e32e        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002e337        0x1 
  .rodata.v.10951
-                0x000000000002e398       0x2a firmware.elf.lto.o
+                0x000000000002e338       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002e353        0x1 
  .rodata.v.10952
-                0x000000000002e3c2       0x10 firmware.elf.lto.o
+                0x000000000002e354       0x2c firmware.elf.lto.o
  .rodata.v.10953
-                0x000000000002e3d2        0xd firmware.elf.lto.o
- *fill*         0x000000000002e3df        0x1 
- .rodata.v.10954
-                0x000000000002e3e0       0x10 firmware.elf.lto.o
- .rodata.v.10955
-                0x000000000002e3f0       0x17 firmware.elf.lto.o
- *fill*         0x000000000002e407        0x1 
- .rodata.v.10956
-                0x000000000002e408       0x10 firmware.elf.lto.o
+                0x000000000002e380       0x75 firmware.elf.lto.o
+ *fill*         0x000000000002e3f5        0x1 
  .rodata.v.10957
-                0x000000000002e418       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e42b        0x1 
+                0x000000000002e3f6       0x26 firmware.elf.lto.o
  .rodata.v.10958
-                0x000000000002e42c        0xe firmware.elf.lto.o
+                0x000000000002e41c       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e433        0x1 
+ .rodata.v.10959
+                0x000000000002e434        0xa firmware.elf.lto.o
  .rodata.v.10960
-                0x000000000002e43a       0x11 firmware.elf.lto.o
- *fill*         0x000000000002e44b        0x1 
- .rodata.v.10961
-                0x000000000002e44c       0x14 firmware.elf.lto.o
+                0x000000000002e43e       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e44f        0x1 
  .rodata.v.10962
-                0x000000000002e460       0x1b firmware.elf.lto.o
- *fill*         0x000000000002e47b        0x1 
+                0x000000000002e450        0xe firmware.elf.lto.o
  .rodata.v.10963
-                0x000000000002e47c        0xa firmware.elf.lto.o
+                0x000000000002e45e       0x1a firmware.elf.lto.o
  .rodata.v.10964
-                0x000000000002e486       0x1a firmware.elf.lto.o
+                0x000000000002e478       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e48f        0x1 
+ .rodata.v.10965
+                0x000000000002e490       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e4a7        0x1 
  .rodata.v.10966
-                0x000000000002e4a0       0x1f firmware.elf.lto.o
- *fill*         0x000000000002e4bf        0x1 
+                0x000000000002e4a8        0xd firmware.elf.lto.o
+ *fill*         0x000000000002e4b5        0x3 
+ .rodata.v.10967
+                0x000000000002e4b8       0x1a firmware.elf.lto.o
  .rodata.v.10968
-                0x000000000002e4c0       0x41 firmware.elf.lto.o
- *fill*         0x000000000002e501        0x1 
+                0x000000000002e4d2        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e4e1        0x1 
  .rodata.v.10969
-                0x000000000002e502       0x24 firmware.elf.lto.o
+                0x000000000002e4e2       0x41 firmware.elf.lto.o
+ *fill*         0x000000000002e523        0x1 
  .rodata.v.10970
-                0x000000000002e526       0x23 firmware.elf.lto.o
- *fill*         0x000000000002e549        0x1 
- .rodata.v.10971
-                0x000000000002e54a        0x9 firmware.elf.lto.o
- *fill*         0x000000000002e553        0x1 
- .rodata.v.10972
-                0x000000000002e554        0xe firmware.elf.lto.o
+                0x000000000002e524        0xa firmware.elf.lto.o
  .rodata.v.10973
-                0x000000000002e562       0x11 firmware.elf.lto.o
- *fill*         0x000000000002e573        0x1 
+                0x000000000002e52e       0x38 firmware.elf.lto.o
  .rodata.v.10974
-                0x000000000002e574       0x20 firmware.elf.lto.o
+                0x000000000002e566       0x10 firmware.elf.lto.o
  .rodata.v.10975
-                0x000000000002e594        0xd firmware.elf.lto.o
- *fill*         0x000000000002e5a1        0x1 
+                0x000000000002e576       0x18 firmware.elf.lto.o
  .rodata.v.10976
-                0x000000000002e5a2        0x9 firmware.elf.lto.o
- *fill*         0x000000000002e5ab        0x1 
+                0x000000000002e58e       0x10 firmware.elf.lto.o
  .rodata.v.10978
-                0x000000000002e5ac        0xe firmware.elf.lto.o
+                0x000000000002e59e       0x10 firmware.elf.lto.o
  .rodata.v.10979
-                0x000000000002e5ba       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e5cd        0x1 
+                0x000000000002e5ae       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002e5cb        0x1 
  .rodata.v.10980
-                0x000000000002e5ce       0x10 firmware.elf.lto.o
+                0x000000000002e5cc       0x14 firmware.elf.lto.o
+ .rodata.v.10981
+                0x000000000002e5e0        0xa firmware.elf.lto.o
  .rodata.v.10982
-                0x000000000002e5de        0x9 firmware.elf.lto.o
- *fill*         0x000000000002e5e7        0x1 
+                0x000000000002e5ea        0xe firmware.elf.lto.o
  .rodata.v.10983
-                0x000000000002e5e8       0x10 firmware.elf.lto.o
+                0x000000000002e5f8       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e611        0x1 
  .rodata.v.10984
-                0x000000000002e5f8       0x18 firmware.elf.lto.o
+                0x000000000002e612       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e629        0x1 
  .rodata.v.10985
-                0x000000000002e610       0x10 firmware.elf.lto.o
+                0x000000000002e62a        0xc firmware.elf.lto.o
  .rodata.v.10986
-                0x000000000002e620        0xc firmware.elf.lto.o
+                0x000000000002e636        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e645        0x1 
  .rodata.v.10987
-                0x000000000002e62c       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e63f        0x1 
+                0x000000000002e646       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002e659        0x1 
  .rodata.v.10988
-                0x000000000002e640        0xe firmware.elf.lto.o
+                0x000000000002e65a        0xf firmware.elf.lto.o
+ *fill*         0x000000000002e669        0x1 
  .rodata.v.10989
-                0x000000000002e64e       0x14 firmware.elf.lto.o
+                0x000000000002e66a       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e681        0x1 
  .rodata.v.10990
-                0x000000000002e662       0x1a firmware.elf.lto.o
+                0x000000000002e682        0xe firmware.elf.lto.o
  .rodata.v.10991
-                0x000000000002e67c       0x15 firmware.elf.lto.o
- *fill*         0x000000000002e691        0x1 
+                0x000000000002e690       0x1e firmware.elf.lto.o
  .rodata.v.10992
-                0x000000000002e692       0x11 firmware.elf.lto.o
- *fill*         0x000000000002e6a3        0x1 
+                0x000000000002e6ae        0xc firmware.elf.lto.o
  .rodata.v.10993
-                0x000000000002e6a4       0x13 firmware.elf.lto.o
- *fill*         0x000000000002e6b7        0x1 
+                0x000000000002e6ba       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002e6d5        0x1 
  .rodata.v.10994
-                0x000000000002e6b8       0x10 firmware.elf.lto.o
+                0x000000000002e6d6       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002e6eb        0x1 
  .rodata.v.10995
-                0x000000000002e6c8        0xc firmware.elf.lto.o
- .rodata.v.10996
-                0x000000000002e6d4        0xa firmware.elf.lto.o
- .rodata.v.11000
-                0x000000000002e6de        0xe firmware.elf.lto.o
- .rodata.v.11001
                 0x000000000002e6ec        0xb firmware.elf.lto.o
  *fill*         0x000000000002e6f7        0x1 
+ .rodata.v.10996
+                0x000000000002e6f8       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002e715        0x1 
+ .rodata.v.10998
+                0x000000000002e716       0x52 firmware.elf.lto.o
+ .rodata.v.11000
+                0x000000000002e768        0xa firmware.elf.lto.o
+ .rodata.v.11001
+                0x000000000002e772       0x2c firmware.elf.lto.o
+ .rodata.v.11002
+                0x000000000002e79e       0x62 firmware.elf.lto.o
  .rodata.v.11003
-                0x000000000002e6f8       0x1b firmware.elf.lto.o
- *fill*         0x000000000002e713        0x1 
+                0x000000000002e800       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002e815        0x3 
  .rodata.v.11004
-                0x000000000002e714        0xc firmware.elf.lto.o
+                0x000000000002e818       0x12 firmware.elf.lto.o
  .rodata.v.11005
-                0x000000000002e720       0x19 firmware.elf.lto.o
- *fill*         0x000000000002e739        0x1 
+                0x000000000002e82a        0xd firmware.elf.lto.o
+ *fill*         0x000000000002e837        0x1 
  .rodata.v.11006
-                0x000000000002e73a       0x15 firmware.elf.lto.o
- *fill*         0x000000000002e74f        0x1 
+                0x000000000002e838        0xa firmware.elf.lto.o
  .rodata.v.11007
-                0x000000000002e750        0xf firmware.elf.lto.o
- *fill*         0x000000000002e75f        0x1 
+                0x000000000002e842        0xe firmware.elf.lto.o
  .rodata.v.11008
-                0x000000000002e760       0x14 firmware.elf.lto.o
- .rodata.v.11009
-                0x000000000002e774       0x18 firmware.elf.lto.o
- .rodata.v.11010
-                0x000000000002e78c        0xa firmware.elf.lto.o
+                0x000000000002e850       0x20 firmware.elf.lto.o
  .rodata.v.11011
-                0x000000000002e796        0xf firmware.elf.lto.o
- *fill*         0x000000000002e7a5        0x3 
+                0x000000000002e870       0x1a firmware.elf.lto.o
  .rodata.v.11012
-                0x000000000002e7a8       0x1a firmware.elf.lto.o
+                0x000000000002e88a       0x10 firmware.elf.lto.o
  .rodata.v.11013
-                0x000000000002e7c2       0x19 firmware.elf.lto.o
- *fill*         0x000000000002e7db        0x1 
- .rodata.v.11014
-                0x000000000002e7dc        0xf firmware.elf.lto.o
- *fill*         0x000000000002e7eb        0x1 
+                0x000000000002e89a       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e8ab        0x1 
  .rodata.v.11015
-                0x000000000002e7ec        0xc firmware.elf.lto.o
- .rodata.v.11016
-                0x000000000002e7f8        0x8 firmware.elf.lto.o
+                0x000000000002e8ac       0x12 firmware.elf.lto.o
  .rodata.v.11017
-                0x000000000002e800       0x1e firmware.elf.lto.o
+                0x000000000002e8be       0x10 firmware.elf.lto.o
  .rodata.v.11018
-                0x000000000002e81e       0x14 firmware.elf.lto.o
+                0x000000000002e8ce       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002e8df        0x1 
  .rodata.v.11019
-                0x000000000002e832       0x17 firmware.elf.lto.o
- *fill*         0x000000000002e849        0x1 
- .rodata.v.11020
-                0x000000000002e84a       0x1a firmware.elf.lto.o
+                0x000000000002e8e0       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e8f9        0x1 
  .rodata.v.11021
-                0x000000000002e864       0x14 firmware.elf.lto.o
+                0x000000000002e8fa       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002e911        0x1 
  .rodata.v.11022
-                0x000000000002e878       0x10 firmware.elf.lto.o
+                0x000000000002e912       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002e92b        0x1 
  .rodata.v.11023
-                0x000000000002e888       0x18 firmware.elf.lto.o
+                0x000000000002e92c       0x24 firmware.elf.lto.o
  .rodata.v.11024
-                0x000000000002e8a0       0x10 firmware.elf.lto.o
+                0x000000000002e950       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002e96b        0x1 
  .rodata.v.11025
-                0x000000000002e8b0       0x19 firmware.elf.lto.o
- *fill*         0x000000000002e8c9        0x1 
+                0x000000000002e96c       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002e987        0x1 
  .rodata.v.11026
-                0x000000000002e8ca        0xd firmware.elf.lto.o
- *fill*         0x000000000002e8d7        0x1 
+                0x000000000002e988       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002e9a5        0x1 
  .rodata.v.11027
-                0x000000000002e8d8       0x1a firmware.elf.lto.o
+                0x000000000002e9a6        0xc firmware.elf.lto.o
  .rodata.v.11028
-                0x000000000002e8f2       0x2a firmware.elf.lto.o
+                0x000000000002e9b2       0x26 firmware.elf.lto.o
  .rodata.v.11029
-                0x000000000002e91c       0x23 firmware.elf.lto.o
- *fill*         0x000000000002e93f        0x1 
+                0x000000000002e9d8       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002e9eb        0x1 
+ .rodata.v.11030
+                0x000000000002e9ec       0x14 firmware.elf.lto.o
  .rodata.v.11031
-                0x000000000002e940        0xa firmware.elf.lto.o
+                0x000000000002ea00        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002ea09        0x1 
  .rodata.v.11032
-                0x000000000002e94a       0x3a firmware.elf.lto.o
+                0x000000000002ea0a       0x2a firmware.elf.lto.o
  .rodata.v.11033
-                0x000000000002e984       0x11 firmware.elf.lto.o
- *fill*         0x000000000002e995        0x1 
+                0x000000000002ea34        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002ea3d        0x1 
  .rodata.v.11034
-                0x000000000002e996        0x9 firmware.elf.lto.o
- *fill*         0x000000000002e99f        0x1 
+                0x000000000002ea3e       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002ea4f        0x1 
  .rodata.v.11035
-                0x000000000002e9a0       0x1c firmware.elf.lto.o
+                0x000000000002ea50       0x1a firmware.elf.lto.o
  .rodata.v.11036
-                0x000000000002e9bc       0x16 firmware.elf.lto.o
+                0x000000000002ea6a        0xb firmware.elf.lto.o
+ *fill*         0x000000000002ea75        0x1 
  .rodata.v.11037
-                0x000000000002e9d2       0x15 firmware.elf.lto.o
- *fill*         0x000000000002e9e7        0x1 
+                0x000000000002ea76       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002ea8b        0x1 
  .rodata.v.11038
-                0x000000000002e9e8       0x1d firmware.elf.lto.o
- *fill*         0x000000000002ea05        0x1 
+                0x000000000002ea8c       0x26 firmware.elf.lto.o
  .rodata.v.11039
-                0x000000000002ea06        0xe firmware.elf.lto.o
+                0x000000000002eab2       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002eac5        0x1 
  .rodata.v.11040
-                0x000000000002ea14       0x16 firmware.elf.lto.o
+                0x000000000002eac6       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002eae3        0x1 
  .rodata.v.11041
-                0x000000000002ea2a       0x75 firmware.elf.lto.o
- *fill*         0x000000000002ea9f        0x1 
+                0x000000000002eae4       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002eaf9        0x1 
  .rodata.v.11042
-                0x000000000002eaa0       0x10 firmware.elf.lto.o
+                0x000000000002eafa       0x14 firmware.elf.lto.o
  .rodata.v.11043
-                0x000000000002eab0       0x17 firmware.elf.lto.o
- *fill*         0x000000000002eac7        0x1 
+                0x000000000002eb0e       0x21 firmware.elf.lto.o
+ *fill*         0x000000000002eb2f        0x1 
  .rodata.v.11044
-                0x000000000002eac8       0x14 firmware.elf.lto.o
- .rodata.v.11045
-                0x000000000002eadc       0x14 firmware.elf.lto.o
+                0x000000000002eb30       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002eb4b        0x1 
  .rodata.v.11046
-                0x000000000002eaf0        0x8 firmware.elf.lto.o
+                0x000000000002eb4c        0xe firmware.elf.lto.o
  .rodata.v.11047
-                0x000000000002eaf8       0x10 firmware.elf.lto.o
+                0x000000000002eb5a        0xf firmware.elf.lto.o
+ *fill*         0x000000000002eb69        0x1 
  .rodata.v.11048
-                0x000000000002eb08       0x26 firmware.elf.lto.o
+                0x000000000002eb6a        0xa firmware.elf.lto.o
  .rodata.v.11049
-                0x000000000002eb2e        0xf firmware.elf.lto.o
- *fill*         0x000000000002eb3d        0x1 
+                0x000000000002eb74       0x50 firmware.elf.lto.o
  .rodata.v.11050
-                0x000000000002eb3e       0x38 firmware.elf.lto.o
+                0x000000000002ebc4       0x14 firmware.elf.lto.o
  .rodata.v.11051
-                0x000000000002eb76        0xf firmware.elf.lto.o
- *fill*         0x000000000002eb85        0x1 
+                0x000000000002ebd8       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002ebeb        0x1 
  .rodata.v.11052
-                0x000000000002eb86       0x17 firmware.elf.lto.o
- *fill*         0x000000000002eb9d        0x1 
- .rodata.v.11054
-                0x000000000002eb9e       0x10 firmware.elf.lto.o
+                0x000000000002ebec       0x12 firmware.elf.lto.o
+ .rodata.v.11053
+                0x000000000002ebfe        0xc firmware.elf.lto.o
  .rodata.v.11055
-                0x000000000002ebae       0x1c firmware.elf.lto.o
+                0x000000000002ec0a       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002ec1b        0x1 
  .rodata.v.11056
-                0x000000000002ebca       0x1b firmware.elf.lto.o
- *fill*         0x000000000002ebe5        0x1 
+                0x000000000002ec1c       0x10 firmware.elf.lto.o
  .rodata.v.11057
-                0x000000000002ebe6        0xd firmware.elf.lto.o
- *fill*         0x000000000002ebf3        0x1 
+                0x000000000002ec2c       0x14 firmware.elf.lto.o
  .rodata.v.11058
-                0x000000000002ebf4       0x1c firmware.elf.lto.o
+                0x000000000002ec40       0x18 firmware.elf.lto.o
  .rodata.v.11059
-                0x000000000002ec10       0x20 firmware.elf.lto.o
- .rodata.v.11060
-                0x000000000002ec30       0x16 firmware.elf.lto.o
+                0x000000000002ec58       0x3a firmware.elf.lto.o
  .rodata.v.11061
-                0x000000000002ec46        0xd firmware.elf.lto.o
- *fill*         0x000000000002ec53        0x1 
+                0x000000000002ec92       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002ecaf        0x1 
  .rodata.v.11062
-                0x000000000002ec54       0x12 firmware.elf.lto.o
+                0x000000000002ecb0       0x24 firmware.elf.lto.o
  .rodata.v.11063
-                0x000000000002ec66       0x11 firmware.elf.lto.o
- *fill*         0x000000000002ec77        0x1 
- .rodata.v.11065
-                0x000000000002ec78       0x17 firmware.elf.lto.o
- *fill*         0x000000000002ec8f        0x1 
- .rodata.v.11066
-                0x000000000002ec90       0x1e firmware.elf.lto.o
- .rodata.v.11067
-                0x000000000002ecae        0xb firmware.elf.lto.o
- *fill*         0x000000000002ecb9        0x1 
- .rodata.v.11068
-                0x000000000002ecba       0x18 firmware.elf.lto.o
- .rodata.v.11069
-                0x000000000002ecd2        0xa firmware.elf.lto.o
- .rodata.v.11070
+                0x000000000002ecd4        0x8 firmware.elf.lto.o
+ .rodata.v.11064
                 0x000000000002ecdc       0x13 firmware.elf.lto.o
  *fill*         0x000000000002ecef        0x1 
+ .rodata.v.11066
+                0x000000000002ecf0       0x20 firmware.elf.lto.o
+ .rodata.v.11067
+                0x000000000002ed10        0xd firmware.elf.lto.o
+ *fill*         0x000000000002ed1d        0x1 
+ .rodata.v.11069
+                0x000000000002ed1e       0x42 firmware.elf.lto.o
+ .rodata.v.11070
+                0x000000000002ed60       0x1f firmware.elf.lto.o
+ *fill*         0x000000000002ed7f        0x1 
  .rodata.v.11071
-                0x000000000002ecf0       0x11 firmware.elf.lto.o
- *fill*         0x000000000002ed01        0x1 
+                0x000000000002ed80       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002ed91        0x1 
  .rodata.v.11072
-                0x000000000002ed02       0x23 firmware.elf.lto.o
- *fill*         0x000000000002ed25        0x1 
+                0x000000000002ed92       0x12 firmware.elf.lto.o
  .rodata.v.11073
-                0x000000000002ed26        0xf firmware.elf.lto.o
- *fill*         0x000000000002ed35        0x1 
- .rodata.v.11074
-                0x000000000002ed36       0x50 firmware.elf.lto.o
- .rodata.v.11075
-                0x000000000002ed86       0x12 firmware.elf.lto.o
- .rodata.v.11077
-                0x000000000002ed98       0x15 firmware.elf.lto.o
+                0x000000000002eda4        0x9 firmware.elf.lto.o
  *fill*         0x000000000002edad        0x1 
+ .rodata.v.11075
+                0x000000000002edae       0x24 firmware.elf.lto.o
+ .rodata.v.11076
+                0x000000000002edd2       0x2f firmware.elf.lto.o
+ *fill*         0x000000000002ee01        0x1 
+ .rodata.v.11077
+                0x000000000002ee02        0xf firmware.elf.lto.o
+ *fill*         0x000000000002ee11        0x3 
  .rodata.v.11078
-                0x000000000002edae       0x10 firmware.elf.lto.o
+                0x000000000002ee14       0x16 firmware.elf.lto.o
  .rodata.v.11079
-                0x000000000002edbe       0x1b firmware.elf.lto.o
- *fill*         0x000000000002edd9        0x1 
+                0x000000000002ee2a       0x20 firmware.elf.lto.o
  .rodata.v.11080
-                0x000000000002edda       0x18 firmware.elf.lto.o
+                0x000000000002ee4a        0xf firmware.elf.lto.o
+ *fill*         0x000000000002ee59        0x1 
  .rodata.v.11081
-                0x000000000002edf2       0x12 firmware.elf.lto.o
+                0x000000000002ee5a        0xd firmware.elf.lto.o
+ *fill*         0x000000000002ee67        0x1 
  .rodata.v.11082
-                0x000000000002ee04       0x13 firmware.elf.lto.o
- *fill*         0x000000000002ee17        0x1 
+                0x000000000002ee68       0x10 firmware.elf.lto.o
  .rodata.v.11083
-                0x000000000002ee18       0x17 firmware.elf.lto.o
- *fill*         0x000000000002ee2f        0x1 
+                0x000000000002ee78       0x16 firmware.elf.lto.o
  .rodata.v.11084
-                0x000000000002ee30        0xf firmware.elf.lto.o
- *fill*         0x000000000002ee3f        0x1 
+                0x000000000002ee8e       0x1e firmware.elf.lto.o
  .rodata.v.11085
-                0x000000000002ee40       0x11 firmware.elf.lto.o
- *fill*         0x000000000002ee51        0x1 
+                0x000000000002eeac        0xd firmware.elf.lto.o
+ *fill*         0x000000000002eeb9        0x1 
  .rodata.v.11086
-                0x000000000002ee52       0x19 firmware.elf.lto.o
- *fill*         0x000000000002ee6b        0x1 
+                0x000000000002eeba       0x16 firmware.elf.lto.o
  .rodata.v.11087
-                0x000000000002ee6c       0x2f firmware.elf.lto.o
- *fill*         0x000000000002ee9b        0x1 
+                0x000000000002eed0       0x20 firmware.elf.lto.o
  .rodata.v.11088
-                0x000000000002ee9c       0x17 firmware.elf.lto.o
- *fill*         0x000000000002eeb3        0x1 
+                0x000000000002eef0       0x12 firmware.elf.lto.o
  .rodata.v.11089
-                0x000000000002eeb4       0x20 firmware.elf.lto.o
+                0x000000000002ef02       0x23 firmware.elf.lto.o
+ *fill*         0x000000000002ef25        0x1 
  .rodata.v.11090
-                0x000000000002eed4       0x1e firmware.elf.lto.o
+                0x000000000002ef26       0x16 firmware.elf.lto.o
  .rodata.v.11091
-                0x000000000002eef2       0x10 firmware.elf.lto.o
+                0x000000000002ef3c       0x14 firmware.elf.lto.o
  .rodata.v.11092
-                0x000000000002ef02       0x15 firmware.elf.lto.o
- *fill*         0x000000000002ef17        0x1 
+                0x000000000002ef50        0xa firmware.elf.lto.o
  .rodata.v.11093
-                0x000000000002ef18       0x19 firmware.elf.lto.o
- *fill*         0x000000000002ef31        0x1 
+                0x000000000002ef5a        0xa firmware.elf.lto.o
+ .rodata.v.11094
+                0x000000000002ef64       0x1c firmware.elf.lto.o
+ .rodata.v.11095
+                0x000000000002ef80       0x1f firmware.elf.lto.o
+ *fill*         0x000000000002ef9f        0x1 
  .rodata.v.11097
-                0x000000000002ef32       0x1a firmware.elf.lto.o
+                0x000000000002efa0       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002efb3        0x1 
  .rodata.v.11098
-                0x000000000002ef4c       0x1d firmware.elf.lto.o
- *fill*         0x000000000002ef69        0x1 
+                0x000000000002efb4        0xc firmware.elf.lto.o
  .rodata.v.11099
-                0x000000000002ef6a       0x2c firmware.elf.lto.o
+                0x000000000002efc0       0x10 firmware.elf.lto.o
  .rodata.v.11100
-                0x000000000002ef96       0x18 firmware.elf.lto.o
+                0x000000000002efd0        0xc firmware.elf.lto.o
  .rodata.v.11101
-                0x000000000002efae        0xe firmware.elf.lto.o
+                0x000000000002efdc       0x12 firmware.elf.lto.o
  .rodata.v.11102
-                0x000000000002efbc       0x1d firmware.elf.lto.o
- *fill*         0x000000000002efd9        0x1 
+                0x000000000002efee       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f003        0x1 
  .rodata.v.11103
-                0x000000000002efda       0x11 firmware.elf.lto.o
- *fill*         0x000000000002efeb        0x1 
+                0x000000000002f004        0xf firmware.elf.lto.o
+ *fill*         0x000000000002f013        0x1 
  .rodata.v.11104
-                0x000000000002efec       0x19 firmware.elf.lto.o
- *fill*         0x000000000002f005        0x1 
+                0x000000000002f014        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002f01d        0x1 
  .rodata.v.11105
-                0x000000000002f006        0x9 firmware.elf.lto.o
- *fill*         0x000000000002f00f        0x1 
+                0x000000000002f01e       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002f031        0x1 
  .rodata.v.11106
-                0x000000000002f010       0x19 firmware.elf.lto.o
- *fill*         0x000000000002f029        0x1 
+                0x000000000002f032       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002f043        0x1 
  .rodata.v.11107
-                0x000000000002f02a        0xc firmware.elf.lto.o
+                0x000000000002f044       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002f05b        0x1 
  .rodata.v.11108
-                0x000000000002f036       0x24 firmware.elf.lto.o
+                0x000000000002f05c        0xd firmware.elf.lto.o
+ *fill*         0x000000000002f069        0x1 
  .rodata.v.11109
-                0x000000000002f05a       0x18 firmware.elf.lto.o
+                0x000000000002f06a       0x1a firmware.elf.lto.o
  .rodata.v.11110
-                0x000000000002f072       0x13 firmware.elf.lto.o
- *fill*         0x000000000002f085        0x3 
+                0x000000000002f084       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f099        0x1 
  .rodata.v.11111
-                0x000000000002f088       0x16 firmware.elf.lto.o
+                0x000000000002f09a       0x18 firmware.elf.lto.o
  .rodata.v.11112
-                0x000000000002f09e       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f0b9        0x1 
+                0x000000000002f0b2        0x9 firmware.elf.lto.o
+ *fill*         0x000000000002f0bb        0x1 
  .rodata.v.11113
-                0x000000000002f0ba        0xc firmware.elf.lto.o
+                0x000000000002f0bc       0x18 firmware.elf.lto.o
+ .rodata.v.11114
+                0x000000000002f0d4        0xd firmware.elf.lto.o
+ *fill*         0x000000000002f0e1        0x1 
  .rodata.v.11115
-                0x000000000002f0c6        0xc firmware.elf.lto.o
+                0x000000000002f0e2       0x12 firmware.elf.lto.o
  .rodata.v.11116
-                0x000000000002f0d2       0x15 firmware.elf.lto.o
- *fill*         0x000000000002f0e7        0x1 
- .rodata.v.11117
-                0x000000000002f0e8        0xe firmware.elf.lto.o
+                0x000000000002f0f4       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002f105        0x1 
  .rodata.v.11118
-                0x000000000002f0f6       0x15 firmware.elf.lto.o
- *fill*         0x000000000002f10b        0x1 
+                0x000000000002f106       0x10 firmware.elf.lto.o
+ .rodata.v.11119
+                0x000000000002f116       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002f129        0x1 
  .rodata.v.11120
-                0x000000000002f10c       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f127        0x1 
- .rodata.v.11121
-                0x000000000002f128       0x19 firmware.elf.lto.o
- *fill*         0x000000000002f141        0x1 
+                0x000000000002f12a       0x1a firmware.elf.lto.o
  .rodata.v.11122
-                0x000000000002f142       0x20 firmware.elf.lto.o
+                0x000000000002f144       0x10 firmware.elf.lto.o
  .rodata.v.11123
-                0x000000000002f162       0x18 firmware.elf.lto.o
+                0x000000000002f154        0xc firmware.elf.lto.o
  .rodata.v.11124
-                0x000000000002f17a        0xc firmware.elf.lto.o
+                0x000000000002f160       0x18 firmware.elf.lto.o
  .rodata.v.11125
-                0x000000000002f186       0x24 firmware.elf.lto.o
+                0x000000000002f178       0x10 firmware.elf.lto.o
  .rodata.v.11126
-                0x000000000002f1aa       0x11 firmware.elf.lto.o
- *fill*         0x000000000002f1bb        0x1 
+                0x000000000002f188       0x1c firmware.elf.lto.o
  .rodata.v.11127
-                0x000000000002f1bc       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f1d7        0x1 
+                0x000000000002f1a4       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f1b9        0x1 
  .rodata.v.11128
-                0x000000000002f1d8       0x16 firmware.elf.lto.o
+                0x000000000002f1ba       0x1d firmware.elf.lto.o
+ *fill*         0x000000000002f1d7        0x1 
+ .rodata.v.11129
+                0x000000000002f1d8       0x11 firmware.elf.lto.o
+ *fill*         0x000000000002f1e9        0x1 
  .rodata.v.11130
-                0x000000000002f1ee       0x1f firmware.elf.lto.o
- *fill*         0x000000000002f20d        0x1 
+                0x000000000002f1ea       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002f203        0x1 
  .rodata.v.11131
-                0x000000000002f20e        0xa firmware.elf.lto.o
+                0x000000000002f204       0x19 firmware.elf.lto.o
+ *fill*         0x000000000002f21d        0x1 
  .rodata.v.11132
-                0x000000000002f218       0x1e firmware.elf.lto.o
+                0x000000000002f21e       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f233        0x1 
  .rodata.v.11133
-                0x000000000002f236       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f251        0x1 
+                0x000000000002f234       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f249        0x1 
  .rodata.v.11134
-                0x000000000002f252       0x42 firmware.elf.lto.o
+                0x000000000002f24a        0xd firmware.elf.lto.o
+ *fill*         0x000000000002f257        0x1 
  .rodata.v.11135
-                0x000000000002f294       0x11 firmware.elf.lto.o
- *fill*         0x000000000002f2a5        0x1 
+                0x000000000002f258       0x1e firmware.elf.lto.o
+ *fill*         0x000000000002f276        0x2 
  .rodata.v.11136
-                0x000000000002f2a6        0xe firmware.elf.lto.o
+                0x000000000002f278       0x10 firmware.elf.lto.o
+ .rodata.v.11137
+                0x000000000002f288       0x10 firmware.elf.lto.o
  .rodata.v.11138
-                0x000000000002f2b4       0x10 firmware.elf.lto.o
+                0x000000000002f298       0x14 firmware.elf.lto.o
  .rodata.v.11139
-                0x000000000002f2c4       0x1f firmware.elf.lto.o
- *fill*         0x000000000002f2e3        0x1 
+                0x000000000002f2ac       0x20 firmware.elf.lto.o
  .rodata.v.11140
-                0x000000000002f2e4       0x15 firmware.elf.lto.o
- *fill*         0x000000000002f2f9        0x1 
+                0x000000000002f2cc        0xb firmware.elf.lto.o
+ *fill*         0x000000000002f2d7        0x1 
  .rodata.v.11141
-                0x000000000002f2fa       0x19 firmware.elf.lto.o
- *fill*         0x000000000002f313        0x1 
+                0x000000000002f2d8       0x14 firmware.elf.lto.o
  .rodata.v.11142
-                0x000000000002f314       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f32f        0x1 
+                0x000000000002f2ec       0x10 firmware.elf.lto.o
+ .rodata.v.11143
+                0x000000000002f2fc       0x1a firmware.elf.lto.o
  .rodata.v.11144
-                0x000000000002f330       0x13 firmware.elf.lto.o
- *fill*         0x000000000002f343        0x1 
+                0x000000000002f316       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002f331        0x1 
+ .rodata.v.11145
+                0x000000000002f332       0x15 firmware.elf.lto.o
+ *fill*         0x000000000002f347        0x1 
  .rodata.v.11146
-                0x000000000002f344       0x17 firmware.elf.lto.o
- *fill*         0x000000000002f35b        0x1 
+                0x000000000002f348       0x18 firmware.elf.lto.o
+ .rodata.v.11147
+                0x000000000002f360       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002f37b        0x1 
  .rodata.v.11148
-                0x000000000002f35c       0x15 firmware.elf.lto.o
- *fill*         0x000000000002f371        0x1 
- .rodata.v.11149
-                0x000000000002f372       0x17 firmware.elf.lto.o
- *fill*         0x000000000002f389        0x1 
+                0x000000000002f37c       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002f38f        0x1 
  .rodata.v.11150
-                0x000000000002f38a       0x16 firmware.elf.lto.o
+                0x000000000002f390       0x10 firmware.elf.lto.o
  .rodata.v.11151
-                0x000000000002f3a0       0x1a firmware.elf.lto.o
+                0x000000000002f3a0       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002f3b3        0x1 
  .rodata.v.11152
-                0x000000000002f3ba       0x17 firmware.elf.lto.o
- *fill*         0x000000000002f3d1        0x3 
+                0x000000000002f3b4        0xf firmware.elf.lto.o
+ *fill*         0x000000000002f3c3        0x1 
  .rodata.v.11153
-                0x000000000002f3d4       0x10 firmware.elf.lto.o
+                0x000000000002f3c4        0xd firmware.elf.lto.o
+ *fill*         0x000000000002f3d1        0x1 
  .rodata.v.11154
-                0x000000000002f3e4       0x1b firmware.elf.lto.o
- *fill*         0x000000000002f3ff        0x1 
+                0x000000000002f3d2       0x23 firmware.elf.lto.o
+ *fill*         0x000000000002f3f5        0x1 
  .rodata.v.11155
-                0x000000000002f400       0x1c firmware.elf.lto.o
- .rodata.v.11156
-                0x000000000002f41c       0x26 firmware.elf.lto.o
+                0x000000000002f3f6        0xd firmware.elf.lto.o
+ *fill*         0x000000000002f403        0x1 
  .rodata.v.11157
-                0x000000000002f442       0x10 firmware.elf.lto.o
+                0x000000000002f404       0x13 firmware.elf.lto.o
+ *fill*         0x000000000002f417        0x1 
  .rodata.v.11158
-                0x000000000002f452       0x15 firmware.elf.lto.o
- *fill*         0x000000000002f467        0x1 
+                0x000000000002f418        0xc firmware.elf.lto.o
  .rodata.v.11159
-                0x000000000002f468       0x18 firmware.elf.lto.o
+                0x000000000002f424       0x18 firmware.elf.lto.o
  .rodata.v.11160
-                0x000000000002f480       0x14 firmware.elf.lto.o
- .rodata.v.11162
-                0x000000000002f494        0xb firmware.elf.lto.o
- *fill*         0x000000000002f49f        0x1 
+                0x000000000002f43c       0x16 firmware.elf.lto.o
+ .rodata.v.11161
+                0x000000000002f452        0xc firmware.elf.lto.o
  .rodata.v.11163
-                0x000000000002f4a0        0xd firmware.elf.lto.o
- *fill*         0x000000000002f4ad        0x1 
+                0x000000000002f45e       0x12 firmware.elf.lto.o
  .rodata.v.11164
-                0x000000000002f4ae       0x11 firmware.elf.lto.o
- *fill*         0x000000000002f4bf        0x1 
+                0x000000000002f470       0x10 firmware.elf.lto.o
  .rodata.v.11165
-                0x000000000002f4c0        0xc firmware.elf.lto.o
+                0x000000000002f480       0x16 firmware.elf.lto.o
+ .rodata.v.11166
+                0x000000000002f496       0x16 firmware.elf.lto.o
  .rodata.v.11167
-                0x000000000002f4cc        0xd firmware.elf.lto.o
- *fill*         0x000000000002f4d9        0x1 
+                0x000000000002f4ac       0x1f firmware.elf.lto.o
+ *fill*         0x000000000002f4cb        0x1 
  .rodata.v.11168
-                0x000000000002f4da       0x11 firmware.elf.lto.o
- *fill*         0x000000000002f4eb        0x1 
+                0x000000000002f4cc       0x1c firmware.elf.lto.o
+ .rodata.v.11169
+                0x000000000002f4e8       0x17 firmware.elf.lto.o
+ *fill*         0x000000000002f4ff        0x1 
  .rodata.v.11170
-                0x000000000002f4ec       0x10 firmware.elf.lto.o
+                0x000000000002f500        0xe firmware.elf.lto.o
  .rodata.v.11171
-                0x000000000002f4fc       0x22 firmware.elf.lto.o
+                0x000000000002f50e       0x1b firmware.elf.lto.o
+ *fill*         0x000000000002f529        0x1 
  .rodata.v.11172
-                0x000000000002f51e       0x11 firmware.elf.lto.o
+                0x000000000002f52a        0xd firmware.elf.lto.o
  .rodata.values
-                0x000000000002f52f       0x55 firmware.elf.lto.o
+                0x000000000002f537       0x55 firmware.elf.lto.o
  .rodata.version_obj
-                0x000000000002f584       0x10 firmware.elf.lto.o
+                0x000000000002f58c       0x10 firmware.elf.lto.o
  .rodata.vfs_fat_mount_obj
-                0x000000000002f594        0x8 firmware.elf.lto.o
+                0x000000000002f59c        0x8 firmware.elf.lto.o
  .rodata.whitespace.13050
-                0x000000000002f59c        0x7 firmware.elf.lto.o
-                0x000000000002f5a4                . = ALIGN (0x4)
- *fill*         0x000000000002f5a3        0x1 
+                0x000000000002f5a4        0x7 firmware.elf.lto.o
+                0x000000000002f5ac                . = ALIGN (0x4)
+ *fill*         0x000000000002f5ab        0x1 
 
-.glue_7         0x000000000002f5a4        0x0
- .glue_7        0x000000000002f5a4        0x0 linker stubs
+.glue_7         0x000000000002f5ac        0x0
+ .glue_7        0x000000000002f5ac        0x0 linker stubs
 
-.glue_7t        0x000000000002f5a4        0x0
- .glue_7t       0x000000000002f5a4        0x0 linker stubs
+.glue_7t        0x000000000002f5ac        0x0
+ .glue_7t       0x000000000002f5ac        0x0 linker stubs
 
-.vfp11_veneer   0x000000000002f5a4        0x0
- .vfp11_veneer  0x000000000002f5a4        0x0 linker stubs
+.vfp11_veneer   0x000000000002f5ac        0x0
+ .vfp11_veneer  0x000000000002f5ac        0x0 linker stubs
 
-.v4_bx          0x000000000002f5a4        0x0
- .v4_bx         0x000000000002f5a4        0x0 linker stubs
+.v4_bx          0x000000000002f5ac        0x0
+ .v4_bx         0x000000000002f5ac        0x0 linker stubs
 
-.iplt           0x000000000002f5a4        0x0
- .iplt          0x000000000002f5a4        0x0 firmware.elf.lto.o
+.iplt           0x000000000002f5ac        0x0
+ .iplt          0x000000000002f5ac        0x0 firmware.elf.lto.o
 
-.ARM.exidx      0x000000000002f5a4        0x8
+.ARM.exidx      0x000000000002f5ac        0x8
  *(.ARM.exidx*)
- .ARM.exidx     0x000000000002f5a4        0x8 /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000000000002f5ac        0x8 /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
  *(.gnu.linkonce.armexidx.*)
-                0x000000000002f5ac                _etext = .
-                0x000000000002f5ac                _sidata = .
+                0x000000000002f5b4                _etext = .
+                0x000000000002f5b4                _sidata = .
 
-.rel.dyn        0x000000000002f5ac        0x0
- .rel.iplt      0x000000000002f5ac        0x0 firmware.elf.lto.o
+.rel.dyn        0x000000000002f5b4        0x0
+ .rel.iplt      0x000000000002f5b4        0x0 firmware.elf.lto.o
 
-.data           0x0000000020000000      0x164 load address 0x000000000002f5ac
+.data           0x0000000020000000      0x164 load address 0x000000000002f5b4
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _srelocate = .
  *(.ramfunc)
@@ -5244,10 +5246,10 @@ Linker script and memory map
                 0x0000000020000164                . = ALIGN (0x4)
                 0x0000000020000164                _erelocate = .
 
-.igot.plt       0x0000000020000164        0x0 load address 0x000000000002f710
+.igot.plt       0x0000000020000164        0x0 load address 0x000000000002f718
  .igot.plt      0x0000000020000164        0x0 firmware.elf.lto.o
 
-.bss            0x0000000020000170     0x11a4 load address 0x000000000002f720
+.bss            0x0000000020000170     0x11a4 load address 0x000000000002f730
                 0x0000000020000170                . = ALIGN (0x4)
                 0x0000000020000170                _sbss = .
                 0x0000000020000170                _szero = .
@@ -5424,7 +5426,7 @@ Linker script and memory map
                 0x0000000020001314                _ezero = .
                 0x0000000020001314                _ebss = .
 
-.stack          0x0000000020001314     0x1000 load address 0x00000000000308c4
+.stack          0x0000000020001314     0x1000 load address 0x00000000000308d4
                 0x0000000020001314                . = ALIGN (0x4)
                 0x0000000020002314                . = (. + 0x1000)
  *fill*         0x0000000020001314     0x1000 

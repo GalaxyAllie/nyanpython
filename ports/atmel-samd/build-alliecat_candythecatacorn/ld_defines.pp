@@ -22337,6 +22337,9 @@ typedef long mp_off_t;
 
 #define MICROPY_CPYTHON_COMPAT (CIRCUITPY_FULL_BUILD)
 
+
+#define MICROPY_COMP_FSTRING_LITERAL (MICROPY_CPYTHON_COMPAT)
+
 #define MICROPY_MODULE_WEAK_LINKS (CIRCUITPY_FULL_BUILD)
 #define MICROPY_PY_ALL_SPECIAL_METHODS (CIRCUITPY_FULL_BUILD)
 #define MICROPY_PY_BUILTINS_COMPLEX (CIRCUITPY_FULL_BUILD)
@@ -22358,14 +22361,14 @@ typedef long mp_off_t;
 //
 
 #define MICROPY_LONGINT_IMPL (MICROPY_LONGINT_IMPL_NONE)
-# 227 "../../py/circuitpy_mpconfig.h"
+# 230 "../../py/circuitpy_mpconfig.h"
 // These CIRCUITPY_xxx values should all be defined in the *.mk files as being on or off.
 // So if any are not defined in *.mk, they'll throw an error here.
 
 
 #define ANALOGIO_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_analogio), (mp_obj_t)&analogio_module },
 extern const struct _mp_obj_module_t analogio_module;
-# 241 "../../py/circuitpy_mpconfig.h"
+# 244 "../../py/circuitpy_mpconfig.h"
 #define AUDIOBUSIO_MODULE 
 
 
@@ -22430,7 +22433,7 @@ extern const struct _mp_obj_module_t board_module;
 
 
 #define BOARD_UART_ROOT_POINTER mp_obj_t shared_uart_bus;
-# 315 "../../py/circuitpy_mpconfig.h"
+# 318 "../../py/circuitpy_mpconfig.h"
 extern const struct _mp_obj_module_t busio_module;
 #define BUSIO_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_busio), (mp_obj_t)&busio_module },
 
@@ -22440,7 +22443,7 @@ extern const struct _mp_obj_module_t busio_module;
 
 extern const struct _mp_obj_module_t digitalio_module;
 #define DIGITALIO_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_digitalio), (mp_obj_t)&digitalio_module },
-# 339 "../../py/circuitpy_mpconfig.h"
+# 342 "../../py/circuitpy_mpconfig.h"
 #define DISPLAYIO_MODULE 
 #define FONTIO_MODULE 
 #define TERMINALIO_MODULE 
@@ -22486,7 +22489,7 @@ extern const struct _mp_obj_module_t digitalio_module;
 
 extern const struct _mp_obj_module_t math_module;
 #define MATH_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_math), (mp_obj_t)&math_module },
-# 392 "../../py/circuitpy_mpconfig.h"
+# 395 "../../py/circuitpy_mpconfig.h"
 #define _EVE_MODULE 
 
 
@@ -22500,7 +22503,7 @@ extern const struct _mp_obj_module_t microcontroller_module;
 
 extern const struct _mp_obj_module_t neopixel_write_module;
 #define NEOPIXEL_WRITE_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_neopixel_write),(mp_obj_t)&neopixel_write_module },
-# 420 "../../py/circuitpy_mpconfig.h"
+# 423 "../../py/circuitpy_mpconfig.h"
 #define NETWORK_MODULE 
 #define SOCKET_MODULE 
 #define WIZNET_MODULE 
@@ -22516,7 +22519,7 @@ extern const struct _mp_obj_module_t nvm_module;
 extern const struct _mp_obj_module_t os_module;
 #define OS_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_os), (mp_obj_t)&os_module },
 #define OS_MODULE_ALT_NAME { MP_OBJ_NEW_QSTR(MP_QSTR__os), (mp_obj_t)&os_module },
-# 444 "../../py/circuitpy_mpconfig.h"
+# 447 "../../py/circuitpy_mpconfig.h"
 #define PEW_MODULE 
 
 
@@ -22530,7 +22533,7 @@ extern const struct _mp_obj_module_t os_module;
 
 extern const struct _mp_obj_module_t pulseio_module;
 #define PULSEIO_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_pulseio), (mp_obj_t)&pulseio_module },
-# 465 "../../py/circuitpy_mpconfig.h"
+# 468 "../../py/circuitpy_mpconfig.h"
 #define PS2IO_MODULE 
 
 
@@ -22551,7 +22554,7 @@ extern const struct _mp_obj_module_t rotaryio_module;
 
 extern const struct _mp_obj_module_t rtc_module;
 #define RTC_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_rtc), (mp_obj_t)&rtc_module },
-# 493 "../../py/circuitpy_mpconfig.h"
+# 496 "../../py/circuitpy_mpconfig.h"
 #define SAMD_MODULE 
 
 
@@ -22595,7 +22598,7 @@ extern const struct _mp_obj_module_t time_module;
 
 extern const struct _mp_obj_module_t touchio_module;
 #define TOUCHIO_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_touchio), (mp_obj_t)&touchio_module },
-# 544 "../../py/circuitpy_mpconfig.h"
+# 547 "../../py/circuitpy_mpconfig.h"
 #define UHEAP_MODULE 
 
 
@@ -22609,7 +22612,7 @@ extern const struct _mp_obj_module_t usb_hid_module;
 
 extern const struct _mp_obj_module_t usb_midi_module;
 #define USB_MIDI_MODULE { MP_OBJ_NEW_QSTR(MP_QSTR_usb_midi),(mp_obj_t)&usb_midi_module },
-# 565 "../../py/circuitpy_mpconfig.h"
+# 568 "../../py/circuitpy_mpconfig.h"
 #define USTACK_MODULE 
 
 
@@ -22625,6 +22628,12 @@ extern const struct _mp_obj_module_t usb_midi_module;
 
 #define JSON_MODULE 
 
+
+
+
+
+
+#define ULAB_MODULE 
 
 
 
@@ -22651,7 +22660,7 @@ extern const struct _mp_obj_module_t usb_midi_module;
 // Some of these definitions will be blank depending on what is turned on and off.
 // Some are omitted because they're in MICROPY_PORT_BUILTIN_MODULE_WEAK_LINKS above.
 #define MICROPY_PORT_BUILTIN_MODULES_STRONG_LINKS ANALOGIO_MODULE AUDIOBUSIO_MODULE AUDIOCORE_MODULE AUDIOIO_MODULE AUDIOMIXER_MODULE AUDIOMP3_MODULE AUDIOPWMIO_MODULE BITBANGIO_MODULE BLEIO_MODULE BOARD_MODULE BUSIO_MODULE DIGITALIO_MODULE DISPLAYIO_MODULE FONTIO_MODULE TERMINALIO_MODULE ERRNO_MODULE FREQUENCYIO_MODULE GAMEPAD_MODULE GAMEPADSHIFT_MODULE I2CSLAVE_MODULE JSON_MODULE MATH_MODULE _EVE_MODULE MICROCONTROLLER_MODULE NEOPIXEL_WRITE_MODULE NETWORK_MODULE SOCKET_MODULE WIZNET_MODULE PEW_MODULE PIXELBUF_MODULE PS2IO_MODULE PULSEIO_MODULE RANDOM_MODULE RE_MODULE ROTARYIO_MODULE RTC_MODULE SAMD_MODULE STAGE_MODULE STORAGE_MODULE STRUCT_MODULE SUPERVISOR_MODULE TOUCHIO_MODULE UHEAP_MODULE USB_HID_MODULE USB_MIDI_MODULE USTACK_MODULE
-# 653 "../../py/circuitpy_mpconfig.h"
+# 662 "../../py/circuitpy_mpconfig.h"
 // If weak links are enabled, just include strong links in the main list of modules,
 // and also include the underscore alternate names.
 
@@ -22667,7 +22676,7 @@ extern const struct _mp_obj_module_t usb_midi_module;
 
 // We need to provide a declaration/definition of alloca()
 #include <alloca.h>
-# 667 "../../py/circuitpy_mpconfig.h"
+# 676 "../../py/circuitpy_mpconfig.h"
 # 1 "/usr/arm-none-eabi/include/alloca.h" 1 3
 
 # 1 "/usr/arm-none-eabi/include/alloca.h" 3
@@ -24162,12 +24171,12 @@ void _reclaim_reent (struct _reent *);
 
 
 #define alloca(size) __builtin_alloca(size)
-# 668 "../../py/circuitpy_mpconfig.h" 2
+# 677 "../../py/circuitpy_mpconfig.h" 2
 
 #define MP_STATE_PORT MP_STATE_VM
 
 #include "supervisor/flash_root_pointers.h"
-# 671 "../../py/circuitpy_mpconfig.h"
+# 680 "../../py/circuitpy_mpconfig.h"
 # 1 "../../supervisor/flash_root_pointers.h" 1
 
 # 1 "../../supervisor/flash_root_pointers.h"
@@ -24235,10 +24244,10 @@ void _reclaim_reent (struct _reent *);
 
 #define FLASH_ROOT_POINTERS 
 # 33 "../../supervisor/flash_root_pointers.h" 2
-# 672 "../../py/circuitpy_mpconfig.h" 2
+# 681 "../../py/circuitpy_mpconfig.h" 2
 
 #define CIRCUITPY_COMMON_ROOT_POINTERS const char *readline_hist[8]; vstr_t *repl_line; mp_obj_t rtc_time_source; GAMEPAD_ROOT_POINTERS mp_obj_t pew_singleton; mp_obj_t terminal_tilegrid_tiles; BOARD_UART_ROOT_POINTER FLASH_ROOT_POINTERS NETWORK_ROOT_POINTERS
-# 684 "../../py/circuitpy_mpconfig.h"
+# 693 "../../py/circuitpy_mpconfig.h"
 void supervisor_run_background_tasks_if_tick(void);
 #define RUN_BACKGROUND_TASKS (supervisor_run_background_tasks_if_tick())
 
