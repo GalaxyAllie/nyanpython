@@ -1,6 +1,0 @@
-Q(__name__)
-Q(digitalio)
-Q(DigitalInOut)
-Q(Direction)
-Q(DriveMode)
-Q(Pull)

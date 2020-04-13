@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/common-hal/pulseio/__init__.o: \
- common-hal/pulseio/__init__.c
- common-hal/pulseio/__init__.c :

@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/peripherals/samd/samd21/cache.o: \
- peripherals/samd/samd21/cache.c
- peripherals/samd/samd21/cache.c :

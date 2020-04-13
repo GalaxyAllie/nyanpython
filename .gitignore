@@ -1,3 +1,15 @@
+# Compiled Sources
+###################
+*.o
+*.a
+!atmel-samd/asf/**/*.a
+*.elf
+*.bin
+*.map
+*.hex
+*.dis
+*.exe
+
 # Packages
 ############
 dist/
@@ -13,6 +25,7 @@ dist/
 
 # Build directory
 ######################
+build/
 bin/
 circuitpython-stubs/
 

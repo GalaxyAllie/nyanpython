@@ -1,5 +1,0 @@
-TRANSLATE("No hardware support on pin")
-TRANSLATE("EXTINT channel already in use")
-TRANSLATE("Failed to allocate RX buffer of %d bytes")
-TRANSLATE("pop from an empty PulseIn")
-TRANSLATE("index out of range")

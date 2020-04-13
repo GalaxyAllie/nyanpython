@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/common-hal/touchio/__init__.o: \
- common-hal/touchio/__init__.c
- common-hal/touchio/__init__.c :

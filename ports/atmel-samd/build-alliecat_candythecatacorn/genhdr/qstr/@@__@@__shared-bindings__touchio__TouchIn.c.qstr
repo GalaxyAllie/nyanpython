@@ -1,8 +1,0 @@
-TRANSLATE("threshold must be in the range 0-65536")
-Q(__enter__)
-Q(__exit__)
-Q(deinit)
-Q(value)
-Q(raw_value)
-Q(threshold)
-Q(TouchIn)

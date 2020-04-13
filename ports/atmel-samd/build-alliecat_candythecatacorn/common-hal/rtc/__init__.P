@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/common-hal/rtc/__init__.o: \
- common-hal/rtc/__init__.c
- common-hal/rtc/__init__.c :

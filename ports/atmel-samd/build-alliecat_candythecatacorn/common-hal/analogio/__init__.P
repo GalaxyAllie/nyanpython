@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/common-hal/analogio/__init__.o: \
- common-hal/analogio/__init__.c
- common-hal/analogio/__init__.c :

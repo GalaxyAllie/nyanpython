@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/shared-module/usb_hid/__init__.o: \
- ../../shared-module/usb_hid/__init__.c
- ../../shared-module/usb_hid/__init__.c :

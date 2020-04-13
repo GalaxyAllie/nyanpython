@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/common-hal/nvm/__init__.o: \
- common-hal/nvm/__init__.c
- common-hal/nvm/__init__.c :

@@ -1,7 +1,0 @@
-TRANSLATE("Expected a %q")
-TRANSLATE("Array must contain halfwords (type 'H')")
-Q(deinit)
-Q(__enter__)
-Q(__exit__)
-Q(send)
-Q(PulseOut)

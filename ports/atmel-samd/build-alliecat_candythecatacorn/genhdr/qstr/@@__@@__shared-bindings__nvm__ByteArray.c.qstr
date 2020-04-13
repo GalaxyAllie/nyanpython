@@ -1,8 +1,0 @@
-TRANSLATE("only slices with step=1 (aka None) are supported")
-TRANSLATE("Slice and value different lengths.")
-TRANSLATE("Array values should be single bytes.")
-TRANSLATE("array/bytes required on right side")
-TRANSLATE("Unable to write to nvm.")
-TRANSLATE("Bytes must be between 0 and 255.")
-TRANSLATE("Unable to write to nvm.")
-Q(ByteArray)

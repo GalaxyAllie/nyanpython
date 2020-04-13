@@ -1,3 +1,0 @@
-build-alliecat_candythecatacorn/shared-bindings/help.o: \
- ../../shared-bindings/help.c
- ../../shared-bindings/help.c :
