@@ -35,8 +35,6 @@
 
 #include "supervisor/spi_flash_api.h"
 
-#include "tick.h"
-
 displayio_fourwire_obj_t board_display_obj;
 
 #define DELAY 0x80
@@ -61,7 +59,7 @@ uint8_t display_init_sequence[] = {
 	0x3a, 1, 0x05, // COLMOD - 16bit color
 	0xe0, 0x10, 0x02, 0x1c, 0x07, 0x12,
 				0x37, 0x32, 0x29, 0x2d,
-				0x29, 0x25, 0x2B, 0x39, 
+				0x29, 0x25, 0x2B, 0x39,
 				0x00, 0x01, 0x03, 0x10, // _GMCTRP1 Gamma
 	0xe1, 0x10, 0x03, 0x1d, 0x07, 0x06,
 				0x2E, 0x2C, 0x29, 0x2D,
@@ -80,7 +78,9 @@ void board_init(void) {
         &pin_PA08, // Command or data
         &pin_PB12, // Chip select
         &pin_PB10, // Reset
-        24000000);
+        24000000, // Baudrate
+        0, // Polarity
+        0); // Phase
 
     displayio_display_obj_t* display = &displays[0].display;
     display->base.type = &displayio_display_type;
@@ -96,6 +96,7 @@ void board_init(void) {
         false, // Pixels in a byte share a row. Only used for depth < 8
         1, // bytes per cell. Only valid for depths < 8
         false, // reverse_pixels_in_byte. Only valid for depths < 8
+        true, // reverse_pixels_in_word
         MIPI_COMMAND_SET_COLUMN_ADDRESS, // Set column command
         MIPI_COMMAND_SET_PAGE_ADDRESS, // Set row command
         MIPI_COMMAND_WRITE_MEMORY_START, // Write memory command
@@ -109,7 +110,8 @@ void board_init(void) {
         false, // single_byte_bounds
         false, // data_as_commands
         true, // auto_refresh
-        60); // native_frames_per_second
+        60, // native_frames_per_second
+        true); // backlight_on_high
 }
 
 bool board_requests_safe_mode(void) {

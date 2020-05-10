@@ -31,7 +31,6 @@
 #include "shared-bindings/displayio/FourWire.h"
 #include "shared-module/displayio/__init__.h"
 #include "shared-module/displayio/mipi_constants.h"
-#include "tick.h"
 
 displayio_fourwire_obj_t board_display_obj;
 
@@ -59,7 +58,9 @@ void board_init(void) {
         &pin_P0_08, // TFT_DC Command or data
         &pin_P0_14, // TFT_CS Chip select
         &pin_P0_13, // TFT_RST Reset
-        60000000);
+        60000000, // Baudrate
+        0, // Polarity
+        0); // Phase
 
     displayio_display_obj_t* display = &displays[0].display;
     display->base.type = &displayio_display_type;
@@ -75,20 +76,22 @@ void board_init(void) {
         false, // Pixels in a byte share a row. Only used for depth < 8
         1, // bytes per cell. Only valid for depths < 8
         false, // reverse_pixels_in_byte. Only valid for depths < 8
+        true, // reverse_pixels_in_word
         MIPI_COMMAND_SET_COLUMN_ADDRESS, // Set column command
         MIPI_COMMAND_SET_PAGE_ADDRESS, // Set row command
         MIPI_COMMAND_WRITE_MEMORY_START, // Write memory command
         0x37, // set vertical scroll command
         display_init_sequence,
         sizeof(display_init_sequence),
-        NULL,  // backlight pin
+        &pin_P0_02, // backlight pin
         NO_BRIGHTNESS_COMMAND,
         1.0f, // brightness (ignored)
         true, // auto_brightness
         false, // single_byte_bounds
         false, // data_as_commands
         true, // auto_refresh
-        60); // native_frames_per_second
+        60, // native_frames_per_second
+        false); // backlight_on_high
 }
 
 bool board_requests_safe_mode(void) {

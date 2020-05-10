@@ -198,15 +198,18 @@ void common_hal_busio_uart_construct(busio_uart_obj_t *self,
       claim_pin(self->tx_pin->pin);
 
     if (self->rx_pin != NULL) {
-        ringbuf_alloc(&self->rbuf, receiver_buffer_size, true);
+        // The LPUART ring buffer wastes one byte to distinguish between full and empty.
+        self->ringbuf = gc_alloc(receiver_buffer_size + 1, false, true /*long-lived*/);
 
-        if (!self->rbuf.buf) {
+        if (!self->ringbuf) {
             LPUART_Deinit(self->uart);
             mp_raise_msg(&mp_type_MemoryError, translate("Failed to allocate RX buffer"));
         }
 
         LPUART_TransferCreateHandle(self->uart, &self->handle, LPUART_UserCallback, self);
-        LPUART_TransferStartRingBuffer(self->uart, &self->handle, self->rbuf.buf, self->rbuf.size);
+        // Pass actual allocated size; the LPUART routines are cognizant that
+        // the capacity is one less than the size.
+        LPUART_TransferStartRingBuffer(self->uart, &self->handle, self->ringbuf, receiver_buffer_size + 1);
 
         claim_pin(self->rx_pin->pin);
     }
@@ -223,9 +226,7 @@ void common_hal_busio_uart_deinit(busio_uart_obj_t *self) {
 
     LPUART_Deinit(self->uart);
 
-    gc_free(self->rbuf.buf);
-    self->rbuf.size = 0;
-    self->rbuf.iput = self->rbuf.iget = 0;
+    gc_free(self->ringbuf);
 
 //    reset_pin_number(self->rx_pin);
 //    reset_pin_number(self->tx_pin);
@@ -270,9 +271,14 @@ size_t common_hal_busio_uart_read(busio_uart_obj_t *self, uint8_t *data, size_t 
         LPUART_TransferAbortReceive(self->uart, &self->handle);
     }
 
+    // No data left, we got it all
+    if (self->handle.rxData == NULL) {
+        return len;
+    }
+
     // The only place we can reliably tell how many bytes have been received is from the current
     // wp in the handle (because the abort nukes rxDataSize, and reading it before abort is a race.)
-    return self->handle.rxData-data;
+    return self->handle.rxData - data;
 }
 
 // Write characters.
